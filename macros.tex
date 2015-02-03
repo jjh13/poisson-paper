@@ -1,0 +1,80 @@
+%
+% macros.tex
+%
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+%\definecolor{turquoise}{cmyk}{0.65,0,0.1,0.1}
+%\usepackage{graphics,graphicx}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%% General Commands
+%%%%%%%%%%%%% citation commands
+\newcommand{\SC}[1]{Section~\ref{#1}}
+\newcommand{\SCp}[1]{Section~\ref{#1} on page~\pageref{#1}}
+\newcommand{\EQ}[1]{\eqref{#1}}
+\newcommand{\EQp}[1]{Equation~\ref{#1} on page~\pageref{#1}}
+\newcommand{\FG}[1]{Figure~\ref{#1}}
+\newcommand{\FGp}[1]{Figure~\ref{#1} on page~\pageref{#1}}
+\newcommand{\TA}[1]{Table~\ref{#1}}
+\newcommand{\TAp}[1]{Table~\ref{#1} on page~\pageref{#1}}
+
+%%%%%%%%%%%%% editorial notes
+%\newcommand{\ednote}[1]{}
+\newcommand{\ednote}[1]{{\color{red}[[XXX #1 ]]}} %colour in .ps or pdf only
+\newcommand{\tmnote}[1]{{\color{BlueGreen}[[TM: #1 ]]}} %colour in .ps or pdf only
+%\newcommand{\hynote}[1]{{\color{Brown}[[HY: #1 ]]}} %colour in .ps or pdf only
+%\newcommand{\cnnote}[1]{{\color{Orange}[[CN: #1 ]]}} %colour in .ps or pdf only
+%\newcommand{\rvnote}[1]{{\color{red}[[R: #1 ]]\\}} %colour in .ps or pdf only
+%\newcommand{\ednote}[1]{}
+%\newcommand{\tmnote}[1]{}
+%\newcommand{\hynote}[1]{}
+%\newcommand{\cnnote}[1]{}
+
+
+%%%%%%%%%%%%% Mathy things
+\newcommand{\Xii}{\ensuremath{\mathbf{X}}}
+\newcommand{\Phii}{\ensuremath{\mathbf{P}}}
+\newcommand{\lapl}{\Delta}
+\newcommand{\ilapl}{\Delta^{-1}}
+\newcommand{\grad}{\nabla}
+\newcommand{\ucub}{\mathcal{C}}
+\newcommand{\bcub}{\partial\mathcal{C}}
+\newcommand{\icub}{\partial\mathcal{C}}
+
+\newcommand{\outlat}{\mathcal{L}_h^{\partial\mathcal{C}}}
+\newcommand{\intlat}{\mathcal{L}_h^{\mathcal{C}_i}}
+
+\newcommand{\realn}{\mathbb{R}}
+\newcommand{\natn}{\mathbb{N}}
+\newcommand{\ratn}{\mathbb{Q}}
+\newcommand{\intn}{\mathbb{Z}}
+\newcommand{\patch}{\mathcal{P}}
+\newcommand{\fspce}[2]{\mathbb{V}(#1, #2)}
+\newcommand{\fspceh}[2]{\mathbb{V}_h(#1, #2)}
+\newcommand{\fspces}{\mathbb{V}}
+\newcommand{\sump}{\displaystyle\sum\limits}
+
+\newcommand{\lat}{\mathcal{L}}
+
+\newcommand{\ind}{\chi\left(\mathbf{x}\right)}
+\newcommand{\indm}[1]{\chi_{#1}(\mathbf{x})}
+\newcommand{\indms}[1]{\chi_{#1}}
+\newcommand{\inda}{\tilde{\chi}}
+\newcommand{\indapprox}[1]{\inda_{#1}(\mathbf{x})}
+
+
+\newcommand{\innerp}[2] { \langle #1, #2 \rangle }
+\newcommand{\genfunc}[1]{\varphi\left(\frac{#1}{h} - \mathbf{m}\right)}
+\newcommand{\genfuncdef}[1]{\varphi(\frac{#1}{h} - \mathbf{Lm})}
+
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vn}{\mathbf{n}}
+\newcommand{\vm}{\mathbf{m}}
+\newcommand{\vomg}{\mathbf{m}}
+\newcommand{\surfdelt}[2]{\delta_{\partial{#1}}(\vx{#2})}
+\newcommand{\phis}[1]{\varphi_\mathbf{#1}}
+
+\newcommand{\blip}[3] { \langle #2, #3 \rangle_{{BL}^{#1} }}
+\newcommand{\bln}[2]{\left | \left | #2 \right|\right|_{{BL}^{#1}}}
+\newcommand{\dv}[1]{\mathbf{D}_{#1}}
+\newcommand{\scint}[1]{\ensuremath{\times 10^{#1}}}
+
