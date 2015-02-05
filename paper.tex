@@ -118,8 +118,14 @@
 % http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
 % The documentation is contained in the cite.sty file itself.
 
-\usepackage{amsfonts}
+\usepackage{cite}
 
+% Setup our packages and macros
+\usepackage[cmex10]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\input{./macros.tex}
 
 
 
@@ -387,7 +393,8 @@
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-\input{./macros.tex}
+
+
 
 \begin{document}
 %
@@ -500,7 +507,8 @@
 \IEEEpeerreviewmaketitle
 
 \input{./introduction.tex}
-
+%input{./relatedwork.tex}
+\input{./review.tex}
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
