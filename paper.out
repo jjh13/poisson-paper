@@ -1,18 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Preliminaries}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Poisson Surface Reconstruction}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Sampling Lattices}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Box Splines}{section.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Cartesian Lattice}{subsection.2.3}% 6
-\BOOKMARK [3][-]{subsubsection.2.3.2}{BCC Lattice}{subsection.2.3}% 7
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Shifted Basis Functions}{subsection.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.4}{Shift Invariant Spaces}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.5}{Irregular Sampling}{section.2}% 10
-\BOOKMARK [1][-]{section.3}{Conclusion}{}% 11
-\BOOKMARK [1][-]{section*.1}{Appendix A: Proof of the First Zonklar Equation}{}% 12
-\BOOKMARK [1][-]{section*.2}{Appendix B}{}% 13
-\BOOKMARK [1][-]{section*.4}{References}{}% 14
-\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 15
-\BOOKMARK [2][-]{IEEEbiography.1}{Michael Shell}{IEEEbiography.0}% 16
-\BOOKMARK [2][-]{IEEEbiography.2}{John Doe}{IEEEbiography.0}% 17
-\BOOKMARK [2][-]{IEEEbiography.3}{Jane Doe}{IEEEbiography.0}% 18
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Preliminaries}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Poisson Surface Reconstruction}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Sampling Lattices}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Box Splines}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Cartesian Lattice}{subsection.3.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.2}{BCC Lattice}{subsection.3.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Shifted Basis Functions}{subsection.3.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Shift Invariant Spaces}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Irregular Sampling}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 12
+\BOOKMARK [1][-]{section*.1}{Appendix A: Proof of the First Zonklar Equation}{}% 13
+\BOOKMARK [1][-]{section*.2}{Appendix B}{}% 14
+\BOOKMARK [1][-]{section*.4}{References}{}% 15
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 16
+\BOOKMARK [2][-]{IEEEbiography.1}{Michael Shell}{IEEEbiography.0}% 17
+\BOOKMARK [2][-]{IEEEbiography.2}{John Doe}{IEEEbiography.0}% 18
+\BOOKMARK [2][-]{IEEEbiography.3}{Jane Doe}{IEEEbiography.0}% 19

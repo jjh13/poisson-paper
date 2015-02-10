@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 21:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 FEB 2015 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -408,46 +408,42 @@ e
 LaTeX Warning: No \author given.
 
 (./abstract.tex) (./introduction.tex
-
-LaTeX Warning: Reference `sec:smpl_review' on page 1 undefined on input line 6.
-
-
-<figures/lattice/cc.png, id=4, 1027.84pt x 1027.84pt>
+<figures/lattice/cc.png, id=81, 1027.84pt x 1027.84pt>
 File: figures/lattice/cc.png Graphic file (type png)
 
 <use figures/lattice/cc.png>
 Package pdftex.def Info: figures/lattice/cc.png used on input line 11.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/bcc.png, id=6, 1027.84pt x 1027.84pt>
+<figures/lattice/bcc.png, id=83, 1027.84pt x 1027.84pt>
 File: figures/lattice/bcc.png Graphic file (type png)
 
 <use figures/lattice/bcc.png>
 Package pdftex.def Info: figures/lattice/bcc.png used on input line 12.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/fcc.png, id=7, 1027.84pt x 1027.84pt>
+<figures/lattice/fcc.png, id=84, 1027.84pt x 1027.84pt>
 File: figures/lattice/fcc.png Graphic file (type png)
 
 <use figures/lattice/fcc.png>
 Package pdftex.def Info: figures/lattice/fcc.png used on input line 13.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/cc_cell.png, id=8, 1027.84pt x 1027.84pt>
+<figures/lattice/cc_cell.png, id=85, 1027.84pt x 1027.84pt>
 File: figures/lattice/cc_cell.png Graphic file (type png)
 
 <use figures/lattice/cc_cell.png>
 Package pdftex.def Info: figures/lattice/cc_cell.png used on input line 16.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/bcc_cell.png, id=9, 1027.84pt x 1027.84pt>
+<figures/lattice/bcc_cell.png, id=86, 1027.84pt x 1027.84pt>
 File: figures/lattice/bcc_cell.png Graphic file (type png)
 
 <use figures/lattice/bcc_cell.png>
 Package pdftex.def Info: figures/lattice/bcc_cell.png used on input line 17.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/fcc_cell.png, id=10, 1027.84pt x 1027.84pt>
+<figures/lattice/fcc_cell.png, id=87, 1027.84pt x 1027.84pt>
 File: figures/lattice/fcc_cell.png Graphic file (type png)
 
 <use figures/lattice/fcc_cell.png>
@@ -464,145 +460,72 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `practicalbox' on page 1 undefined on input line 25.
-
-
 LaTeX Warning: Reference `sec:that-section-where-i-describe-this' on page 1 und
 efined on input line 25.
-
-
-LaTeX Warning: Citation `gradrev' on page 1 undefined on input line 32.
 
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ])
-(./review.tex
+(./relatedwork.tex [2 <./figures/lattice/cc.png> <./figures/lattice/bcc.png> <.
+/figures/lattice/fcc.png> <./figures/lattice/cc_cell.png> <./figures/lattice/bc
+c_cell.png> <./figures/lattice/fcc_cell.png>]
 
-LaTeX Warning: Citation `Kazhdan06' on page 2 undefined on input line 16.
+LaTeX Warning: Reference `sec:obtainingV' on page 3 undefined on input line 82.
 
-[2 <./figures/lattice/cc.png> <./figures/lattice/bcc.png> <./figures/lattice/fc
-c.png> <./figures/lattice/cc_cell.png> <./figures/lattice/bcc_cell.png> <./figu
-res/lattice/fcc_cell.png>]
+
+
+LaTeX Warning: Reference `sec:divergence' on page 3 undefined on input line 94.
+
+
+
+LaTeX Warning: Reference `sec:recoveringX' on page 3 undefined on input line 97
+.
+
+) (./review.tex
 
 LaTeX Warning: Reference `sec:levelset' on page 3 undefined on input line 21.
 
+[3]
 
-LaTeX Warning: Citation `Kazhdan06' on page 3 undefined on input line 23.
+LaTeX Warning: Reference `sec:pipeline' on page 4 undefined on input line 27.
 
-
-LaTeX Warning: Citation `reconbench' on page 3 undefined on input line 23.
-
-
-LaTeX Warning: Citation `screenedk' on page 3 undefined on input line 23.
-
-
-LaTeX Warning: Citation `variational' on page 3 undefined on input line 25.
-
-
-LaTeX Warning: Reference `sec:pipeline' on page 3 undefined on input line 27.
-
-
-LaTeX Warning: Reference `sec:sis_review' on page 3 undefined on input line 31.
-
-
-
-LaTeX Warning: Reference `fig:lattices' on page 3 undefined on input line 44.
-
-
-LaTeX Warning: Citation `boorboxsplines' on page 3 undefined on input line 54.
-
-
-LaTeX Warning: Citation `firstbox' on page 3 undefined on input line 54.
-
-[3] <figures/boxspline/2dex.png, id=68, 1027.84pt x 1027.84pt>
+<figures/boxspline/2dex.png, id=180, 1027.84pt x 1027.84pt>
 File: figures/boxspline/2dex.png Graphic file (type png)
 
 <use figures/boxspline/2dex.png>
 Package pdftex.def Info: figures/boxspline/2dex.png used on input line 59.
 (pdftex.def)             Requested size: 253.04987pt x 253.03848pt.
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [5 <./figures/boxspline/2dex.png>]) (./paper.bbl
+Missing character: There is no Ã in font ptmr7t!
+ [6])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 711.
+ [7
 
-LaTeX Warning: Reference `eq:box_def' on page 4 undefined on input line 67.
-
-
-LaTeX Warning: Reference `eq:box_def' on page 4 undefined on input line 67.
-
-
-LaTeX Warning: Citation `practicalbox' on page 4 undefined on input line 79.
-
-
-LaTeX Warning: Citation `practicalbox' on page 4 undefined on input line 79.
-
-
-LaTeX Warning: Citation `fastbox' on page 4 undefined on input line 79.
-
-
-LaTeX Warning: Citation `linearrev' on page 4 undefined on input line 82.
-
-
-LaTeX Warning: Citation `gradrev' on page 4 undefined on input line 82.
-
-
-LaTeX Warning: Citation `quasibcc' on page 4 undefined on input line 91.
-
-
-LaTeX Warning: Citation `interprev' on page 4 undefined on input line 91.
-
-[4 <./figures/boxspline/2dex.png>]
-
-LaTeX Warning: Citation `fftk' on page 5 undefined on input line 104.
-
-
-LaTeX Warning: Citation `variational' on page 5 undefined on input line 106.
-
-
-LaTeX Warning: Citation `onvari' on page 5 undefined on input line 106.
-
-
-LaTeX Warning: Citation `xu2012rec' on page 5 undefined on input line 106.
-
-
-LaTeX Warning: Reference `eq:minexp' on page 5 undefined on input line 117.
-
-
-LaTeX Warning: Citation `xu2012rec' on page 5 undefined on input line 117.
-
-
-LaTeX Warning: Citation `xu2012rec' on page 5 undefined on input line 117.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 716.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 716.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 711.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 716.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 716.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 711.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 711.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 4AC30813759D5D694E41ED192168711F;1192.
 
-
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  84D592FDB6F5819B5F22B93B0B8D0BBB;1144.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 716.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
  ) 
 Here is how much of TeX's memory you used:
- 7510 strings out of 493117
- 110315 string characters out of 6135433
- 214333 words of memory out of 5000000
- 10826 multiletter control sequences out of 15000+600000
- 47319 words of font info for 100 fonts, out of 8000000 for 9000
+ 7578 strings out of 493117
+ 111220 string characters out of 6135433
+ 218118 words of memory out of 5000000
+ 10863 multiletter control sequences out of 15000+600000
+ 45635 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 31i,11n,35p,1562b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,11n,35p,1562b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texl
@@ -635,10 +558,10 @@ ic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
 tmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (5 pages, 1698229 bytes).
+Output written on paper.pdf (7 pages, 1713404 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

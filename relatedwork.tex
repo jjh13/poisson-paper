@@ -1,47 +1,52 @@
 \section{Related Work}
-.
-Surface reconstruction is an active area of research in computer graphics. It is beyond the scope of this work to touch on all the relevant research surrounding the subject. Thus, we only very briefly review some relevant contributions. Those seeking a more in-depth review may look to a recent survey of the subject \cite{sve05ss}, we focus mainly on some of the more related recent developments. 
+Surface reconstruction is still a very active area of research in computer 
+graphics and it's beyond the scope of this work to touch on all the material 
+related to the subject. We therefore very briefly review some relevant contributions -- 
+those seeking a more in-depth review may look to a recent survey of the field 
+\cite{reconstar_eg14}. We focus mainly on some of the more related and recent 
+developments. 
 
-Surface reconstruction algorithms generally fall under two categories:
-\emph{implicit} algorithms and \emph{explicit} algorithms. The common
-theme of implicit algorithms is the desire to find an implicit
-function $f : \realn^3 \mapsto \realn $, for which the iso-surface
-defined by $f(\mathbf{x})=s$ (for some iso-value $s \in \realn$)
-represents an approximation to the original surface. Explicit
-algorithms rely on combinatorial techniques, inferring meshes through
-a set predefined logic or rules.
+Many surface reconstruction algorithms are so-called 
+``\emph{implicit}'' reconstruction algorithms. They attempt to 
+reconstruct an implicit function, $f : \realn^3 \mapsto \realn $, whose 
+level-set, $f(\mathbf{x})=s$ (for some iso-value $s \in \realn$), represents an
+approximation to the original surface. Other non-implicit techniques
+generally infer meshes through some other combinatorial means, 
+or a set predefined logic or rules.
 
-In terms of explicit algorithms, there exist many Delaunay style
-algorithms in which a triangulation is constructed using only a subset
-of the original point-set \cite{delaunay}. The Power Crust
-\cite{powercrust} and Cocone \cite{cocone} algorithms are two
-well-known techniques that fall under this category. These techniques
-often aim to interpolate the input point set, thus in the presence of
-noise, tend to over-fit the surface. When the input data are noisy,
-implicit approaches often perform better, as they inherently attempt
-to fit locally smooth basis functions to the data, averaging out any
-noise. Reconstructing either a distance function or an indicator
-function is common to these approaches.
+For example, there exist many Delaunay style algorithms in which a 
+triangulation is constructed using a subset of the original point-set 
+\cite{delaunay}. The Power Crust \cite{powercrust} and Cocone \cite{cocone} 
+algorithms are two other well-known techniques that do not construct 
+implicit functional representations. These techniques
+often aim to exactly interpolate the input point set, and in the presence of
+noise tend to over-fit the surface. When the input data are noisy
+implicit approaches often perform better than non-implicit algorithms, 
+as implicit algorithms inherently attempt to fit locally smooth basis 
+functions to the data, averaging out any noise. Reconstructing either 
+a distance function or an indicator function is common to these 
+approaches.
 
-One of the most well known implicit algorithms is the %Graph Cut \tm{this is not graph cuts!!}
-algorithm of by Hoppe et al.~\cite{hoppecut}. In this work a set of
+One of the most well known implicit algorithms is the algorithm of 
+by Hoppe et al.~\cite{hoppecut}. In this work a set of
 tangent planes is constructed to create an approximation to a
 surface's distance function. A more recent work, is the Smoothed
 Signed Distance Field reconstruction technique \cite{ssdrecon}, in
 which an oriented point set imposes constraints on the reconstructed
 function, its gradient, and its Hessian. These constraints are
-tantamount to requiring that the reconstructed function be an
+equvalent to requiring that the reconstructed function be an
 approximation to the distance field of the original model. Other
 techniques attempt to reconstruct a signed distance function within a
 function space spanned by radial basis functions \cite{radial}.
 Recently, there has also been research that incorporates point normals
-into the radial basis reconstruction framework \cite{hermite}.
+into the radial basis reconstruction framework \cite{hermite}. \ednote{Add 
+that paper from torsten here}
 
-Another approach is to find an approximate indicator function of the
-original model. A well known technique \cite{fftk} transforms the
-smoothed gradient to the Fourier domain, inverts it, then reconstructs
-it in the spatial domain. This approach often deals well with
-incomplete, missing or otherwise noisy data, with the guarantee of
+Another approach is to find an indicator function that approximates the
+``inside-outside'' function of original model. An early technique \cite{fftk} 
+transforms the smoothed gradient to the Fourier domain, applies an appropriate 
+operator, then reconstructs it in the spatial domain. This approach often deals well with
+incomplete, missing, or otherwise noisy data and has the guarantee of
 creating a water tight surface. However, it involves reconstructing
 the indicator on a regular grid, which becomes very memory intensive
 as the grid is refined.
@@ -49,10 +54,9 @@ as the grid is refined.
 Poisson surface reconstruction techniques make the observation that
 the Fourier method is equivalently stated as a spatial Poisson problem
 \cite{Kazhdan06,screenedk}. Moreover, they seek to rectify the memory
-limitations of said work, while still maintaining the benefits it
-provides. However, current techniques based on this idea have been
-shown to over-smooth the initial point-set, and thus the resulting
-surface. \cite{reconbench}.
+limitations of that work, while still maintaining its benefits. However, 
+current techniques based on this idea have been shown to over-smooth 
+the initial point-set, and therefore the resulting surface. \cite{reconbench}.
 
 It is also possible to reconstruct the indicator of a point set within
 a wavelet basis \cite{wavelet}. In this work, an approximate indicator
@@ -67,12 +71,12 @@ Our approach aims to solve the Poisson surface reconstruction problem
 in the setting of shift-invariant spaces. A crucial step in this
 regard is the accurate estimation of the divergence of the gradient
 field from the oriented point-set. Radial basis functions (RBFs) are
-generally used in the context of the reconstruction of scattered data. 
-However, RBF techniques are often computationally
+generally used in the context of the reconstruction of scattered data, 
+however, RBF techniques are often computationally
 expensive, requiring the solution of large unstable systems of
 equations (for exact interpolation.) A proposed solution to this
 problem is to ``\emph{re-sample}'' the input data onto a regular
-shift-invariant space . This allows one to use efficient compact
+shift-invariant space. This allows one to use efficient compact
 reconstruction kernels and data processing techniques
 \cite{variational,onvari}. Recently, an extension of this idea to box
 spline spaces \cite{xu2012rec} proposes a variational reconstruction
@@ -88,10 +92,21 @@ trilinearly distributed about either a grid or an oct-tree
 respectively, and is known to over-smooth data.
 
 Having obtained a high-quality lattice-based approximation of the
-gradient field, we invoke the theory behind shift-invariant spaces,
+gradient field, we invoke the theory behind shift-invariant spaces
 and accurately estimate the divergence by applying derivative filters
 that are designed to harness the full approximation capabilities of
-the target space (\SC{sec:divergence}). In a similar manner, we then
-solve the Poisson equation by applying an \emph{inverse} Laplacian
-filter that is tailored to match the approximation order of the target
-space (\SC{sec:recoveringX}).
+the target space (\SC{sec:divergence}). 
+
+Once, the smoothed gradient's divergence has been calculated, recovering the indicator
+function is a simple matter of taking the inverse of the Laplacian over domain 
+(i.e. solving the Poisson system). To do this, we take an approach that is also inspired 
+by filtering methodologies in signal processing. In particular, we're interested in 
+an approximate solution to Poisson?s equation that lies in a chosen shift-invariant 
+space. Our solution methodology is reminiscent of the finite 
+element method \cite{finite_el}. However, we do not impose any boundary 
+conditions on the generating kernels. Rather, we satisfy homogeneous 
+Dirichlet boundary conditions implicitly by requiring that the coefficient sequence be odd 
+(Section III). The solution is obtained by applying a digital filter to point samples. 
+We approach the problem from first principles and derive the tools necessary 
+to design solution filters for a chosen shift-invariant space (\SC{sec:recoveringX}).
+\ednote{I still need to fix-up section refs/refs here.}

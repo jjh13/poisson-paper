@@ -20,53 +20,94 @@
 \citation{gradrev}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}}
 \newlabel{sec:intro}{{I}{1}{Introduction}{section.1}{}}
-\citation{Kazhdan06}
+\citation{sve05ss}
+\citation{delaunay}
+\citation{powercrust}
+\citation{cocone}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Sampling lattices (top) with with their corresponding Voronoi regions (bottom). Left to right are the CC, BCC and FCC lattices respectively. }}{2}{figure.1}}
 \newlabel{fig:lattices}{{1}{2}{Sampling lattices (top) with with their corresponding Voronoi regions (bottom). Left to right are the CC, BCC and FCC lattices respectively}{figure.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {II}Preliminaries}{2}{section.2}}
-\newlabel{sec:pois_review}{{II}{2}{Preliminaries}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Poisson Surface Reconstruction}{2}{subsection.2.1}}
-\newlabel{eq:poisson}{{1}{2}{Poisson Surface Reconstruction}{equation.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work}{2}{section.2}}
+\citation{hoppecut}
+\citation{ssdrecon}
+\citation{radial}
+\citation{hermite}
+\citation{fftk}
+\citation{Kazhdan06,screenedk}
+\citation{reconbench}
+\citation{wavelet}
+\citation{variational,onvari}
+\citation{xu2012rec}
+\citation{fftk,Kazhdan06,screenedk}
+\citation{Kazhdan06}
 \citation{Kazhdan06}
 \citation{reconbench}
 \citation{screenedk}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Preliminaries}{3}{section.3}}
+\newlabel{sec:pois_review}{{III}{3}{Preliminaries}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Poisson Surface Reconstruction}{3}{subsection.3.1}}
+\newlabel{eq:poisson}{{1}{3}{Poisson Surface Reconstruction}{equation.3.1}{}}
+\newlabel{eq:vdef}{{2}{3}{Poisson Surface Reconstruction}{equation.3.2}{}}
 \citation{variational}
 \citation{boorboxsplines}
 \citation{firstbox}
-\newlabel{eq:vdef}{{2}{3}{Poisson Surface Reconstruction}{equation.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Sampling Lattices}{3}{subsection.2.2}}
-\newlabel{sec:smpl_review}{{\unhbox \voidb@x \hbox {II-B}}{3}{Sampling Lattices}{subsection.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Box Splines}{3}{subsection.2.3}}
-\newlabel{sec:box_review}{{\unhbox \voidb@x \hbox {II-C}}{3}{Box Splines}{subsection.2.3}{}}
-\newlabel{eq:box_def}{{3}{3}{Box Splines}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Sampling Lattices}{4}{subsection.3.2}}
+\newlabel{sec:smpl_review}{{\unhbox \voidb@x \hbox {III-B}}{4}{Sampling Lattices}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Box Splines}{4}{subsection.3.3}}
+\newlabel{sec:box_review}{{\unhbox \voidb@x \hbox {III-C}}{4}{Box Splines}{subsection.3.3}{}}
+\newlabel{eq:box_def}{{3}{4}{Box Splines}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}Cartesian Lattice}{4}{subsubsection.3.3.1}}
 \citation{practicalbox}
 \citation{practicalbox}
 \citation{fastbox}
 \citation{linearrev}
 \citation{gradrev}
 \citation{quasibcc,interprev}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf  {\xi }_1, \mathbf  {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf  {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf  {\xi }_3$. }}{4}{figure.2}}
-\newlabel{fig:box2d}{{2}{4}{An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf {\xi }_1, \mathbf {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf {\xi }_3$}{figure.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}1}Cartesian Lattice}{4}{subsubsection.2.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}2}BCC Lattice}{4}{subsubsection.2.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}3}Shifted Basis Functions}{4}{subsubsection.2.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Shift Invariant Spaces}{4}{subsection.2.4}}
-\newlabel{sec:sis_review}{{\unhbox \voidb@x \hbox {II-D}}{4}{Shift Invariant Spaces}{subsection.2.4}{}}
 \citation{fftk}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf  {\xi }_1, \mathbf  {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf  {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf  {\xi }_3$. }}{5}{figure.2}}
+\newlabel{fig:box2d}{{2}{5}{An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf {\xi }_1, \mathbf {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf {\xi }_3$}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}BCC Lattice}{5}{subsubsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}3}Shifted Basis Functions}{5}{subsubsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Shift Invariant Spaces}{5}{subsection.3.4}}
+\newlabel{sec:sis_review}{{\unhbox \voidb@x \hbox {III-D}}{5}{Shift Invariant Spaces}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Irregular Sampling}{5}{subsection.3.5}}
+\newlabel{sec:vari_review}{{\unhbox \voidb@x \hbox {III-E}}{5}{Irregular Sampling}{subsection.3.5}{}}
 \citation{variational}
 \citation{onvari}
 \citation{xu2012rec}
 \citation{xu2012rec}
 \citation{xu2012rec}
-\bibcite{IEEEhowto:kopka}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-E}}Irregular Sampling}{5}{subsection.2.5}}
-\newlabel{sec:vari_review}{{\unhbox \voidb@x \hbox {II-E}}{5}{Irregular Sampling}{subsection.2.5}{}}
-\newlabel{eq:minexp}{{5}{5}{Irregular Sampling}{equation.2.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Conclusion}{5}{section.3}}
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}A: Proof of the First Zonklar Equation}{5}{section*.1}}
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}B}{5}{section*.2}}
-\@writefile{toc}{\contentsline {section}{References}{5}{section*.4}}
-\@writefile{toc}{\contentsline {section}{Biographies}{5}{IEEEbiography.0}}
-\@writefile{toc}{\contentsline {subsection}{Michael Shell}{5}{IEEEbiography.1}}
-\@writefile{toc}{\contentsline {subsection}{John Doe}{5}{IEEEbiography.2}}
-\@writefile{toc}{\contentsline {subsection}{Jane Doe}{5}{IEEEbiography.3}}
+\bibstyle{IEEEtran}
+\bibdata{IEEEabrv,./paper.bib}
+\bibcite{practicalbox}{1}
+\bibcite{gradrev}{2}
+\bibcite{sve05ss}{3}
+\bibcite{delaunay}{4}
+\bibcite{powercrust}{5}
+\bibcite{cocone}{6}
+\bibcite{hoppecut}{7}
+\bibcite{ssdrecon}{8}
+\bibcite{radial}{9}
+\bibcite{hermite}{10}
+\bibcite{fftk}{11}
+\bibcite{Kazhdan06}{12}
+\bibcite{screenedk}{13}
+\bibcite{reconbench}{14}
+\bibcite{wavelet}{15}
+\bibcite{variational}{16}
+\bibcite{onvari}{17}
+\bibcite{xu2012rec}{18}
+\bibcite{boorboxsplines}{19}
+\newlabel{eq:minexp}{{5}{6}{Irregular Sampling}{equation.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclusion}{6}{section.4}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}A: Proof of the First Zonklar Equation}{6}{section*.1}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}B}{6}{section*.2}}
+\@writefile{toc}{\contentsline {section}{References}{6}{section*.4}}
+\bibcite{firstbox}{20}
+\bibcite{fastbox}{21}
+\bibcite{linearrev}{22}
+\bibcite{quasibcc}{23}
+\bibcite{interprev}{24}
+\@writefile{toc}{\contentsline {section}{Biographies}{7}{IEEEbiography.0}}
+\@writefile{toc}{\contentsline {subsection}{Michael Shell}{7}{IEEEbiography.1}}
+\@writefile{toc}{\contentsline {subsection}{John Doe}{7}{IEEEbiography.2}}
+\@writefile{toc}{\contentsline {subsection}{Jane Doe}{7}{IEEEbiography.3}}

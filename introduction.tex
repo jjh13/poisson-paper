@@ -33,13 +33,11 @@ as well as displaying the ability to capture higher frequency details that are s
 
 To summarize, our contributions are as follows:
 \begin{itemize}
-\item[$\bullet$] We cast the Poisson surface reconstruction problem into the framework of shift-invariant spaces.
+\item[$\bullet$] We reformulate the Poisson surface reconstruction approach using general shift-invariant spaces as the target approximation space
 \item[$\bullet$] Specifically, we investigate the reconstruction of surfaces in both a sub-optimal (Cartesian) and an optimal (BCC)
-  box-spline function space.
-\item[$\bullet$] We present a variational scheme that not only considers the usual centered generating kernels, but allows for the
-  possibility of recovering each component of the gradient field in a space spanned by a shifted kernel. On the Cartesian
-  lattice, these components are orthogonal whereas on the BCC lattice,  the components are non-orthogonal and correspond to the directions associated with the underlying box-spline matrix.
-\item[$\bullet$] We present an extension of the error kernel of Blu and Unser to general linear operators, and show how to design filters that respect the approximation order of the approximation space.
+  box-spline function space
+\item[$\bullet$] We present a new variational resampling scheme that resamples the original scattered oriented points' normals onto any regular lattice. This resampling scheme depends on the generating kernel, but is general enough to be extended to shifted generating kernels as this has been shown to improve gradient estimation in shift invariant spaces. 
+\item[$\bullet$] We present an extension of the error kernel of Blu and Unser to general linear operators and show how to design filters that respect the full approximation order of the target approximation space.
 \item[$\bullet$] While our focus is on comparing the surface reconstruction algorithm on both the CC and BCC lattices, we also provide qualitative and quantitative comparisons between the presented technique (on both the Cartesian and BCC lattices) and similar methods. 
 \end{itemize}
 
