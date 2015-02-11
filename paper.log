@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 FEB 2015 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 FEB 2015 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -467,101 +467,123 @@ efined on input line 25.
 
 
 ])
-(./relatedwork.tex [2 <./figures/lattice/cc.png> <./figures/lattice/bcc.png> <.
-/figures/lattice/fcc.png> <./figures/lattice/cc_cell.png> <./figures/lattice/bc
-c_cell.png> <./figures/lattice/fcc_cell.png>]
+(./relatedwork.tex
 
-LaTeX Warning: Reference `sec:obtainingV' on page 3 undefined on input line 82.
+LaTeX Warning: Citation `reconstar_eg14' on page 2 undefined on input line 6.
+
+[2 <./figures/lattice/cc.png> <./figures/lattice/bcc.png> <./figures/lattice/fc
+c.png> <./figures/lattice/cc_cell.png> <./figures/lattice/bcc_cell.png> <./figu
+res/lattice/fcc_cell.png>]
+
+LaTeX Warning: Reference `sec:obtainingV' on page 3 undefined on input line 86.
 
 
 
-LaTeX Warning: Reference `sec:divergence' on page 3 undefined on input line 94.
+LaTeX Warning: Reference `sec:divergence' on page 3 undefined on input line 98.
 
 
 
-LaTeX Warning: Reference `sec:recoveringX' on page 3 undefined on input line 97
-.
+LaTeX Warning: Citation `finite_el' on page 3 undefined on input line 106.
 
-) (./review.tex
 
-LaTeX Warning: Reference `sec:levelset' on page 3 undefined on input line 21.
+LaTeX Warning: Reference `sec:recoveringX' on page 3 undefined on input line 11
+1.
 
-[3]
+) (./prelim.tex [3]
+
+LaTeX Warning: Reference `sec:levelset' on page 4 undefined on input line 21.
+
 
 LaTeX Warning: Reference `sec:pipeline' on page 4 undefined on input line 27.
 
-<figures/boxspline/2dex.png, id=180, 1027.84pt x 1027.84pt>
+[4] <figures/boxspline/2dex.png, id=192, 1027.84pt x 1027.84pt>
 File: figures/boxspline/2dex.png Graphic file (type png)
 
 <use figures/boxspline/2dex.png>
-Package pdftex.def Info: figures/boxspline/2dex.png used on input line 59.
+Package pdftex.def Info: figures/boxspline/2dex.png used on input line 76.
 (pdftex.def)             Requested size: 253.04987pt x 253.03848pt.
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./figures/boxspline/2dex.png>]) (./paper.bbl
+ [5 <./figures/boxspline/2dex.png>])
+(./paper.bbl
 Missing character: There is no Ã in font ptmr7t!
  [6])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 711.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 713.
  [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 711.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 713.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 711.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 711.
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 4AC30813759D5D694E41ED192168711F;1192.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 713.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 713.
 
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper.out':
+(rerunfilecheck)             Before: 4AC30813759D5D694E41ED192168711F;1192
+(rerunfilecheck)             After:  383D207E3491E3BBDF4C3B99BF96A48D;1192.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 713.
  ) 
 Here is how much of TeX's memory you used:
- 7578 strings out of 493117
- 111220 string characters out of 6135433
- 218118 words of memory out of 5000000
- 10863 multiletter control sequences out of 15000+600000
+ 7583 strings out of 493117
+ 111304 string characters out of 6135433
+ 217118 words of memory out of 5000000
+ 10865 multiletter control sequences out of 15000+600000
  45635 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 31i,11n,35p,1562b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
-tmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (7 pages, 1713404 bytes).
+ 31i,11n,35p,1562b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsubsection.3.3.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
+bi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (7 pages, 1714479 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
