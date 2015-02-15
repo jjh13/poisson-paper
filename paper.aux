@@ -31,6 +31,7 @@
 \citation{ssdrecon}
 \citation{radial}
 \citation{hermite}
+\citation{Fuhrmann2014}
 \citation{fftk}
 \citation{Kazhdan06,screenedk}
 \citation{reconbench}
@@ -56,24 +57,62 @@
 \newlabel{sec:sis_review}{{\unhbox \voidb@x \hbox {III-C}}{4}{Shift Invariant Spaces}{subsection.3.3}{}}
 \citation{boorboxsplines}
 \citation{firstbox}
-\citation{practicalbox}
-\citation{practicalbox}
-\citation{fastbox}
+\citation{fftk}
+\citation{variational}
+\citation{onvari}
+\citation{xu2012rec}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Box Splines}{5}{subsection.3.4}}
 \newlabel{sec:box_review}{{\unhbox \voidb@x \hbox {III-D}}{5}{Box Splines}{subsection.3.4}{}}
 \newlabel{eq:box_def}{{4}{5}{Box Splines}{equation.3.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf  {\xi }_1, \mathbf  {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf  {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf  {\xi }_3$. }}{5}{figure.2}}
 \newlabel{fig:box2d}{{2}{5}{An example of box splines in 2D. On the left is the box spline comprised of the direction vectors $\mathbf {\xi }_1, \mathbf {\xi }_2$, (the case n=s) which is the indicator function of the Minkowski sum of the vectors. The box spline on the right, includes a third vector $\mathbf {\xi }_3$, which can be thought of as ``smearing'' the first spline along the direction $\mathbf {\xi }_3$}{figure.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}1}Cartesian Lattice}{5}{subsubsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}2}BCC Lattice}{5}{subsubsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Irregular Sampling}{5}{subsection.3.5}}
+\newlabel{sec:vari_review}{{\unhbox \voidb@x \hbox {III-E}}{5}{Irregular Sampling}{subsection.3.5}{}}
+\newlabel{eq:minexp}{{5}{5}{Irregular Sampling}{equation.3.5}{}}
+\citation{xu2012rec}
+\citation{xu2012rec}
+\citation{zahgrad}
+\citation{gradrev}
+\citation{gradrev}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Approach}{6}{section.4}}
+\newlabel{sec:pipeline}{{IV}{6}{Approach}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Obtaining $\mathaccentV {vec}17E{V}(\mathbf  {x})$}{6}{subsection.4.1}}
+\newlabel{sec:getting_vd}{{\unhbox \voidb@x \hbox {IV-A}}{6}{Obtaining $\vec {V}(\vx )$}{subsection.4.1}{}}
+\newlabel{sec:obtainingV}{{\unhbox \voidb@x \hbox {IV-A}}{6}{Obtaining $\vec {V}(\vx )$}{subsection.4.1}{}}
+\newlabel{eq:vari_eqn}{{7}{6}{Obtaining $\vec {V}(\vx )$}{equation.4.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Divergence of $\mathaccentV {vec}17E{V}(\mathbf  {x})$}{6}{subsection.4.2}}
+\newlabel{sec:divergence}{{\unhbox \voidb@x \hbox {IV-B}}{6}{Divergence of $\vec {V}(\vx )$}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}Spaces Spanned by a Single Generating Function}{6}{subsubsection.4.2.1}}
+\newlabel{eq:div_dir}{{8}{6}{Spaces Spanned by a Single Generating Function}{equation.4.8}{}}
+\newlabel{eq:divergenceViaFiltering}{{9}{6}{Spaces Spanned by a Single Generating Function}{equation.4.9}{}}
+\citation{practicalbox}
+\citation{practicalbox}
+\citation{fastbox}
 \citation{linearrev}
 \citation{gradrev}
-\citation{fftk}
-\citation{variational}
-\citation{onvari}
-\citation{xu2012rec}
-\citation{xu2012rec}
-\citation{xu2012rec}
+\citation{reconbench}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A high level overview of our surface reconstruction pipeline in 2D. On the far left, a) shows the initial point-set. b) is the result of the smoothed variational reconstruction of the gradient of the indicator, the top image is the component in basis, the bottom is the y component. The approximate divergence of the smoothed indicator function is c), and d) is the resulting indicator function. {\color  {red}[[XXX UA: Please fix this. ]]}}}{7}{figure.3}}
+\newlabel{fig:pipeline}{{3}{7}{A high level overview of our surface reconstruction pipeline in 2D. On the far left, a) shows the initial point-set. b) is the result of the smoothed variational reconstruction of the gradient of the indicator, the top image is the component in basis, the bottom is the y component. The approximate divergence of the smoothed indicator function is c), and d) is the resulting indicator function. \ednote {UA: Please fix this.}}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Shifted Reconstruction Spaces}{7}{subsubsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}3}Four Direction Divergence on the BCC Lattice}{7}{subsubsection.4.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Experiments and Results}{7}{subsection.4.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}1}Cartesian Lattice}{7}{subsubsection.4.3.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Filters used in our experiments. These filters are applied along the principal lattice directions.}}{7}{table.1}}
+\newlabel{tab:filters}{{I}{7}{Filters used in our experiments. These filters are applied along the principal lattice directions}{table.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}2}BCC Lattice}{7}{subsubsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}3}Shifted Basis Functions}{7}{subsubsection.4.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results and Discussion}{7}{section.5}}
+\citation{reconbench}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Robustness}{8}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Complexity}{8}{subsection.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\ensuremath  {\times 10^{2}}$ and $\lambda _2 = 1\ensuremath  {\times 10^{-4}}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model.}}{8}{figure.6}}
+\newlabel{fig:r1}{{6}{8}{A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\scint {2}$ and $\lambda _2 = 1\scint {-4}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\ensuremath  {\times 10^{-3}}$, $1\ensuremath  {\times 10^{-4}}$, $1\ensuremath  {\times 10^{-5}}$ and $1\ensuremath  {\times 10^{-6}}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error.}}{9}{figure.4}}
+\newlabel{fig:t1}{{4}{9}{An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\scint {-3}$, $1\scint {-4}$, $1\scint {-5}$ and $1\scint {-6}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\ensuremath  {\times 10^{2}}$, and $\lambda _2=5\ensuremath  {\times 10^{-5}}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach.}}{9}{figure.5}}
+\newlabel{fig:t2}{{5}{9}{A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\scint {2}$, and $\lambda _2=5\scint {-5}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Parameter Selection}{9}{subsection.5.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{9}{section.6}}
 \bibstyle{IEEEtran}
 \bibdata{IEEEabrv,./paper.bib}
 \bibcite{practicalbox}{1}
@@ -91,14 +130,6 @@
 \bibcite{screenedk}{13}
 \bibcite{reconbench}{14}
 \bibcite{wavelet}{15}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}3}Shifted Basis Functions}{6}{subsubsection.3.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-E}}Irregular Sampling}{6}{subsection.3.5}}
-\newlabel{sec:vari_review}{{\unhbox \voidb@x \hbox {III-E}}{6}{Irregular Sampling}{subsection.3.5}{}}
-\newlabel{eq:minexp}{{5}{6}{Irregular Sampling}{equation.3.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclusion}{6}{section.4}}
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}A: Proof of the First Zonklar Equation}{6}{section*.1}}
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  {}B}{6}{section*.2}}
-\@writefile{toc}{\contentsline {section}{References}{6}{section*.4}}
 \bibcite{variational}{16}
 \bibcite{onvari}{17}
 \bibcite{xu2012rec}{18}
@@ -107,8 +138,11 @@
 \bibcite{fastbox}{21}
 \bibcite{linearrev}{22}
 \bibcite{quasibcc}{23}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\ensuremath  {\times 10^{2}})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor.}}{10}{figure.7}}
+\newlabel{fig:r2}{{7}{10}{Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\scint {2})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{10}{section*.2}}
 \bibcite{interprev}{24}
-\@writefile{toc}{\contentsline {section}{Biographies}{7}{IEEEbiography.0}}
-\@writefile{toc}{\contentsline {subsection}{Michael Shell}{7}{IEEEbiography.1}}
-\@writefile{toc}{\contentsline {subsection}{John Doe}{7}{IEEEbiography.2}}
-\@writefile{toc}{\contentsline {subsection}{Jane Doe}{7}{IEEEbiography.3}}
+\@writefile{toc}{\contentsline {section}{Biographies}{11}{IEEEbiography.0}}
+\@writefile{toc}{\contentsline {subsection}{Michael Shell}{11}{IEEEbiography.1}}
+\@writefile{toc}{\contentsline {subsection}{John Doe}{11}{IEEEbiography.2}}
+\@writefile{toc}{\contentsline {subsection}{Jane Doe}{11}{IEEEbiography.3}}

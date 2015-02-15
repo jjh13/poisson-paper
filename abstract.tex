@@ -1,24 +1,18 @@
 In this work, we cast the well-known Poisson surface reconstruction algorithm into a more general setting, we reformulate it in terms of shift invariant spaces (spaces that are spanned by lattice translates of an admissible generating function). The treatment is general, but our specific interest is in reconstructing a surface of a solid model from an oriented point-set within function spaces defined over the body centred cubic lattice. We also propose a general framework for approximating the solution to Poisson?s equation in a hypercube with zero Dirichlet boundary conditions, and a new variational scheme to re-sample the initial oriented point-set onto a regular grid. Once the points have been re-sampled onto a grid, the rest of the pipeline is purely based on digital filtering. We also analyze the error incurred via the digital filtering approximation methodology and propose a Fourier domain error kernel that can be used to design solution filters that fully exploit the approximation capabilities of the target space. Finally, we show that a host of Poisson-like methods fail to take advantage of the full approximation spaces over which they are defined.
 
-
-%We analyze the error incurred via this approximation methodology and propose a Fourier domain error kernel that can be used to design solution filters that fully exploit the approximation capabilities of the target space and are akin to interpolation and quasi-interpolation filters. 
-
-%Our error kernel formulation is validated by conducting numerical experiments on the two dimensional square lattice and the three dimensional Cartesian and body-centered cubic lattices. Additionally, we comment on the equivalence between our method and the finite element method and show how our error kernel formulation can be easily extended to a larger class of differential operators.
-
 %%%%
 % Todo
 %%%%
 
 %2. Related work:
-%Update references with the work Torsten pointed out { Read, and I have the ref, I just need to slap it in.}
 %Cite additional work that talks about the benefits of non-Cartsian lattices (in volume rendering, flow simulation etc.). 
-%There are a couple of works that deal with solving Poisson?s equation on non-Cartesian lattices. Please see the attached version of my paper.
+%There are a couple of works that deal with solving Poisson's equation on non-Cartesian lattices. Please see the attached version of my paper.
 
-%4. Approach:
-%Expand 4.3 into a new section ? section 5. Move Table 1 to section 6.
+%5. Indicator funcition:
+%Expand
 
-%5. Solving Poisson?s Equation.
+%6. Solving Poisson?s Equation.
 %This section spells out the details of the filtering methodology for solving Poisson?s equation. I will work on this part. The aim would be to condense the material so that it blends well with the rest of the paper.
 
-%6. Results and Discussion.
+%7. Results and Discussion.
 % Additionally, need a subsection here that derives the filter weights for CC and BCC. The rest of the section shows the comparative surface reconstruction experimental results + discussion.

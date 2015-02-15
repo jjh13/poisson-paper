@@ -39,8 +39,11 @@ approximation to the distance field of the original model. Other
 techniques attempt to reconstruct a signed distance function within a
 function space spanned by radial basis functions \cite{radial}.
 Recently, there has also been research that incorporates point normals
-into the radial basis reconstruction framework \cite{hermite}. \ednote{Add 
-that paper from torsten here}
+into the radial basis reconstruction framework \cite{hermite}. It's also
+possible to construct an implicit function as a normalize sum of 
+compactly supported basis functions defined over an oct-tree, 
+essentially ``smearing'' the point-set around space and constructing 
+an indicator ``shell'' around them \cite{Fuhrmann2014}.
 
 Another approach is to find an indicator function that approximates the
 ``inside-outside'' function of original model. An early technique \cite{fftk} 

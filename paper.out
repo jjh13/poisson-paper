@@ -5,15 +5,24 @@
 \BOOKMARK [2][-]{subsection.3.2}{Sampling Lattices}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{Shift Invariant Spaces}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.4}{Box Splines}{section.3}% 7
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Cartesian Lattice}{subsection.3.4}% 8
-\BOOKMARK [3][-]{subsubsection.3.4.2}{BCC Lattice}{subsection.3.4}% 9
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Shifted Basis Functions}{subsection.3.4}% 10
-\BOOKMARK [2][-]{subsection.3.5}{Irregular Sampling}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 12
-\BOOKMARK [1][-]{section*.1}{Appendix A: Proof of the First Zonklar Equation}{}% 13
-\BOOKMARK [1][-]{section*.2}{Appendix B}{}% 14
-\BOOKMARK [1][-]{section*.4}{References}{}% 15
-\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 16
-\BOOKMARK [2][-]{IEEEbiography.1}{Michael Shell}{IEEEbiography.0}% 17
-\BOOKMARK [2][-]{IEEEbiography.2}{John Doe}{IEEEbiography.0}% 18
-\BOOKMARK [2][-]{IEEEbiography.3}{Jane Doe}{IEEEbiography.0}% 19
+\BOOKMARK [2][-]{subsection.3.5}{Irregular Sampling}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Approach}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Obtaining \(x\)}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Divergence of \(x\)}{section.4}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Spaces Spanned by a Single Generating Function}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Shifted Reconstruction Spaces}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Four Direction Divergence on the BCC Lattice}{subsection.4.2}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Experiments and Results}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Cartesian Lattice}{subsection.4.3}% 16
+\BOOKMARK [3][-]{subsubsection.4.3.2}{BCC Lattice}{subsection.4.3}% 17
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Shifted Basis Functions}{subsection.4.3}% 18
+\BOOKMARK [1][-]{section.5}{Results and Discussion}{}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Robustness}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.2}{Complexity}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.3}{Parameter Selection}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 23
+\BOOKMARK [1][-]{section*.2}{References}{}% 24
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 25
+\BOOKMARK [2][-]{IEEEbiography.1}{Michael Shell}{IEEEbiography.0}% 26
+\BOOKMARK [2][-]{IEEEbiography.2}{John Doe}{IEEEbiography.0}% 27
+\BOOKMARK [2][-]{IEEEbiography.3}{Jane Doe}{IEEEbiography.0}% 28
