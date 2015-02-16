@@ -31,12 +31,10 @@ U.~R. Alim, T.~M\"{o}ller, and L.~Condat, ``Gradient estimation revitalized,''
   \emph{IEEE Trans. on Vis. and Comp. Graph.}, vol.~16, no.~6, pp. 1494--1503,
   November-December 2010.
 
-\bibitem{sve05ss}
-O.~Schall and M.~Samozino, ``Surface from scattered points: A brief survey of
-  recent developments,'' in \emph{1st International Workshop on Semantic
-  Virtual Environments}, B.~Falcidieno and N.~Magnenat-Thalmann, Eds.\hskip 1em
-  plus 0.5em minus 0.4em\relax Villars, Switzerland: MIRALab, 2005, pp.
-  138--147.
+\bibitem{reconstar_eg14}
+M.~Berger, A.~Tagliasacchi, L.~M. Seversky, P.~Alliez, J.~A. Levine, A.~Sharf,
+  and C.~Silva, ``State of the art in surface reconstruction from point
+  clouds,'' \emph{Eurographics STAR (Proc. of EG'14)}, 2014.
 
 \bibitem{delaunay}
 F.~Cazals and J.~Giesen, ``Delaunay triangulation based surface reconstruction:
@@ -77,6 +75,13 @@ J.~C. Carr, R.~K. Beatson, J.~B. Cherrie, T.~J. Mitchell, W.~R. Fright, B.~C.
 I.~MacÃedo, J.~P. Gois, and L.~Velho, ``Hermite radial basis functions
   implicits,'' \emph{CG Forum}, vol.~30, no.~1, pp. 27--42, 2011.
 
+\bibitem{Fuhrmann2014}
+\BIBentryALTinterwordspacing
+S.~Fuhrmann and M.~Goesele, ``Floating scale surface reconstruction,''
+  \emph{ACM Trans. Graph.}, vol.~33, no.~4, pp. 46:1--46:11, Jul. 2014.
+  [Online]. Available: \url{http://doi.acm.org/10.1145/2601097.2601163}
+\BIBentrySTDinterwordspacing
+
 \bibitem{fftk}
 M.~Kazhdan, ``Reconstruction of solid models from oriented point sets,'' in
   \emph{Proc. SGP}, ser. SGP '05.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -101,6 +106,33 @@ M.~Berger, J.~A. Levine, L.~G. Nonato, G.~Taubin, and C.~T. Silva, ``A
 J.~Manson, G.~Petrova, and S.~Schaefer, ``Streaming surface reconstruction
   using wavelets,'' \emph{Proc. SGP}, vol.~27, no.~5, pp. 1411--1420, 2008.
 
+\bibitem{firstbox}
+A.~Entezari, R.~Dyer, and T.~M\"oller, ``Linear and cubic box splines for the
+  body centered cubic lattice,'' in \emph{Visualization, 2004. IEEE}, 2004, pp.
+  11--18.
+
+\bibitem{hvolrecon}
+B.~Finkbeiner, U.~R. Alim, D.~V.~D. Ville, and T.~M\"{o}ller, ``High-quality
+  volumetric reconstruction on optimal lattices for computed tomography,''
+  \emph{Proceedings of Eurographics/{IEEE}-{VGTC} Symposium on Visualization},
+  vol.~28, no.~3, 2009, forthcoming.
+
+\bibitem{lboltzman}
+U.~R. Alim, A.~Entezari, and T.~Möller, ``The lattice-boltzmann method on
+  optimal sampling lattices,'' \emph{IEEE Transactions on Visualization and
+  Computer Graphics}, vol.~15, no.~4, pp. 630--641, 2009.
+
+\bibitem{hamilton2013}
+B.~Hamilton and S.~Bilbao, ``On finite difference schemes for the 3-d wave
+  equation using non-cartesian grids,'' in \emph{Proc. Sound and Music
+  Computing (SMC) Conf., Stockholm, Sweden}, 2013, pp. 592--599.
+
+\bibitem{hamilton2013hexagonal}
+------, ``Hexagonal vs. rectilinear grids for explicit finite difference
+  schemes for the two-dimensional wave equation,'' in \emph{Proceedings of
+  Meetings on Acoustics}, vol.~19, no.~1.\hskip 1em plus 0.5em minus
+  0.4em\relax Acoustical Society of America, 2013, p. 015120.
+
 \bibitem{variational}
 M.~Arigovindan, M.~Suhling, P.~Hunziker, and M.~Unser, ``Variational image
   reconstruction from arbitrarily spaced samples: a fast multiresolution spline
@@ -118,25 +150,6 @@ X.~Xu, A.~Alvarado, and A.~Entezari, ``Reconstruction of irregularly-sampled
   volumetric data in efficient box spline spaces,'' \emph{IEEE Trans. Med.
   Img.}, vol.~31, no.~7, pp. 1472--1480, 2012.
 
-\bibitem{boorboxsplines}
-C.~de~Boor, K.~H{\"o}llig, and S.~Riemenschneider, \emph{Box Splines (Applied
-  Mathematical Sciences)}, softcover reprint of hardcover 1st ed.
-  1993~ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2 2010.
-
-\bibitem{firstbox}
-A.~Entezari, R.~Dyer, and T.~M\"oller, ``Linear and cubic box splines for the
-  body centered cubic lattice,'' in \emph{Visualization, 2004. IEEE}, 2004, pp.
-  11--18.
-
-\bibitem{fastbox}
-B.~Finkbeiner, A.~Entezari, D.~Van De~Ville, and T.~M\"{o}ller, ``Efficient
-  volume rendering on the body centered cubic lattice using box splines,''
-  \emph{Comput. Graph.}, vol.~34, no.~4, pp. 409--423, Aug. 2010.
-
-\bibitem{linearrev}
-T.~Blu, P.~Thevenaz, and M.~Unser, ``Linear interpolation revitalized,''
-  \emph{IEEE Trans. Img. Proc.}, vol.~13, no.~5, pp. 710--719, May 2004.
-
 \bibitem{quasibcc}
 A.~Entezari, M.~Mirzargar, and L.~Kalantari, ``Quasi-interpolation on the body
   centered cubic lattice,'' in \emph{Proc. Eurographics / IEEE - VGTC Conf. on
@@ -146,5 +159,24 @@ A.~Entezari, M.~Mirzargar, and L.~Kalantari, ``Quasi-interpolation on the body
 \bibitem{interprev}
 P.~Thevenaz, T.~Blu, and M.~Unser, ``Interpolation revisited,'' \emph{IEEE
   Trans. Med. Img.}, vol.~19, no.~7, pp. 739--758, 2000.
+
+\bibitem{boorboxsplines}
+C.~de~Boor, K.~H{\"o}llig, and S.~Riemenschneider, \emph{Box Splines (Applied
+  Mathematical Sciences)}, softcover reprint of hardcover 1st ed.
+  1993~ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2 2010.
+
+\bibitem{zahgrad}
+Z.~Hossain, U.~Alim, and T.~M\"oller, ``Toward high-quality gradient estimation
+  on regular lattices,'' \emph{IEEE Trans. on Vis. and Comp. Graph.}, vol.~17,
+  no.~4, pp. 426--439, 2011.
+
+\bibitem{fastbox}
+B.~Finkbeiner, A.~Entezari, D.~Van De~Ville, and T.~M\"{o}ller, ``Efficient
+  volume rendering on the body centered cubic lattice using box splines,''
+  \emph{Comput. Graph.}, vol.~34, no.~4, pp. 409--423, Aug. 2010.
+
+\bibitem{linearrev}
+T.~Blu, P.~Thevenaz, and M.~Unser, ``Linear interpolation revitalized,''
+  \emph{IEEE Trans. Img. Proc.}, vol.~13, no.~5, pp. 710--719, May 2004.
 
 \end{thebibliography}

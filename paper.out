@@ -12,13 +12,15 @@
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Spaces Spanned by a Single Generating Function}{subsection.4.2}% 12
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Shifted Reconstruction Spaces}{subsection.4.2}% 13
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Four Direction Divergence on the BCC Lattice}{subsection.4.2}% 14
-\BOOKMARK [2][-]{subsection.4.3}{Experiments and Results}{section.4}% 15
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Cartesian Lattice}{subsection.4.3}% 16
-\BOOKMARK [3][-]{subsubsection.4.3.2}{BCC Lattice}{subsection.4.3}% 17
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Shifted Basis Functions}{subsection.4.3}% 18
-\BOOKMARK [1][-]{section.5}{Results and Discussion}{}% 19
-\BOOKMARK [2][-]{subsection.5.1}{Robustness}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.2}{Complexity}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.3}{Parameter Selection}{section.5}% 22
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 23
-\BOOKMARK [1][-]{section*.2}{References}{}% 24
+\BOOKMARK [1][-]{section.5}{Recovering the Indicator}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Extracting the Iso-Contour}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Experiments}{}% 17
+\BOOKMARK [2][-]{subsubsection.6.0.1}{Cartesian Lattice}{section.6}% 18
+\BOOKMARK [3][-]{subsubsection.6.0.2}{BCC Lattice}{subsubsection.6.0.1}% 19
+\BOOKMARK [3][-]{subsubsection.6.0.3}{Shifted Basis Functions}{subsubsection.6.0.1}% 20
+\BOOKMARK [1][-]{section.7}{Results and Discussion}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Robustness}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{Complexity}{section.7}% 23
+\BOOKMARK [2][-]{subsection.7.3}{Parameter Selection}{section.7}% 24
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 25
+\BOOKMARK [1][-]{section*.2}{References}{}% 26

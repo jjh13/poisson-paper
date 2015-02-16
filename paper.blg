@@ -9,51 +9,52 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: ./paper.bib
+Warning--I didn't find a database entry for "finite_el"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--edition ordinal word "Softcover reprint of hardcover 1st ed. 1993" may be too high (or improper) for conversion in boorboxsplines
 
 Done.
-You've used 24 entries,
+You've used 30 entries,
             4039 wiz_defined-function locations,
-            1361 strings with 18866 characters,
-and the built_in function-call counts, 22305 in all, are:
-= -- 1815
-> -- 519
-< -- 227
-+ -- 293
-- -- 79
-* -- 1121
-:= -- 3173
-add.period$ -- 57
-call.type$ -- 24
-change.case$ -- 27
-chr.to.int$ -- 537
-cite$ -- 25
-duplicate$ -- 1556
-empty$ -- 1754
-format.name$ -- 103
-if$ -- 5208
+            1394 strings with 20016 characters,
+and the built_in function-call counts, 26924 in all, are:
+= -- 2216
+> -- 625
+< -- 266
++ -- 351
+- -- 98
+* -- 1348
+:= -- 3882
+add.period$ -- 69
+call.type$ -- 30
+change.case$ -- 32
+chr.to.int$ -- 612
+cite$ -- 31
+duplicate$ -- 1898
+empty$ -- 2100
+format.name$ -- 127
+if$ -- 6279
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 260
-newline$ -- 95
-num.names$ -- 26
-pop$ -- 566
+int.to.str$ -- 30
+missing$ -- 319
+newline$ -- 115
+num.names$ -- 30
+pop$ -- 685
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1702
+skip$ -- 2076
 stack$ -- 0
-substring$ -- 1262
-swap$ -- 1368
-text.length$ -- 48
+substring$ -- 1456
+swap$ -- 1658
+text.length$ -- 62
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
+type$ -- 30
 warning$ -- 1
-while$ -- 106
-width$ -- 26
-write$ -- 269
-(There was 1 warning)
+while$ -- 122
+width$ -- 32
+write$ -- 334
+(There were 2 warnings)
