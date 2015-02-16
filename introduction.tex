@@ -1,7 +1,7 @@
 \section{Introduction}
 
 \label{sec:intro}
-Reconstructing a solid model from a scattered set of points is a common and well studied problem in computer graphics. Interest in this problem is rooted in the desire to convert real life data-sets -- acquired from range and now increasingly from commodity hardware like the Kinect -- to 3D polygonal models. The idea also has a applications in model re-meshing and hole filling. \ednote{This needs more meat, it's a pretty weak ending to the intro paragraph.}
+Reconstructing a solid model from a scattered set of points is a common and well studied problem in computer graphics. Interest in this problem is rooted in the desire to convert real life data-sets -- data acquired from range scanners and now increasingly from commodity hardware like the Kinect -- to 3D polygonal models. The idea also has a applications in model re-meshing and mesh hole filling, when one has a poorly formatted mesh and would like a better representation of it. 
 
 Given an oriented point-set, a common approach is to find an implicit function whose iso-contour corresponds to an approximation of the original surface. In this work we take a ``signal processing'' approach to this problem -- we cast the problem into a general shift-invariant setting. More explicitly, we reconstruct the desired implicit function within a function space spanned by lattice translates of a single generating function. The extension to this class of function spaces allows us to consider anchoring our basis functions at non-Cartesian lattice sites (\SC{sec:smpl_review}). Our approach is general and applicable to any valid lattice and generator, but our implementation is narrowed to applicable function spaces over the \emph{Body Centred Cubic} (BCC) and \emph{Cartesian} (CC) lattices.
 
@@ -17,7 +17,7 @@ Given an oriented point-set, a common approach is to find an implicit function w
 	\includegraphics[width=.3\linewidth]{figures/lattice/bcc_cell}
 	\includegraphics[width=.3\linewidth]{figures/lattice/fcc_cell} \\
    \hfill \mbox{}
-  \caption{\label{fig:lattices}%
+  \caption{\label{fig:lattices}
   Sampling lattices (top) with with their corresponding Voronoi regions (bottom). Left to right are the CC, BCC and FCC lattices respectively.
   }
 \end{figure*}
@@ -29,7 +29,7 @@ Our surface reconstruction methodology follows the general Poisson approach, but
 Additionally, we consider the possibility of approximating the smoothed gradient field representation within function spaces that are
 spanned by shifted versions of a single generating kernel. In the context of gradient estimation, introducing a shift in the direction
 of the derivative has shown to improve overall gradient approximation fidelity in terms of gradient orientation and magnitude,
-as well as displaying the ability to capture higher frequency details that are smoothed out in non-shifted schemes~\cite{gradrev}. Since the divergence operator is intimately connected to the gradient operator, these results are of interest to us. Using an appropriate discretization of the derivative/divergence operator is an important step in recovering the indicator function of the initial model. \ednote{Need to emphasize the error-kern here}
+as well as displaying the ability to capture higher frequency details that are smoothed out in non-shifted schemes~\cite{gradrev}. Since the divergence operator is intimately connected to the gradient operator, these results are of interest to us. Using an appropriate discretization of the derivative/divergence operator is an important step in recovering the indicator function of the initial model. We also derive specific error bounds, based on an error kernel formulation, for approximations of linear operators in arbitrary shift invariant spaces.
 
 To summarize, our contributions are as follows:
 \begin{itemize}
@@ -41,5 +41,4 @@ To summarize, our contributions are as follows:
 \item[$\bullet$] While our focus is on comparing the surface reconstruction algorithm on both the CC and BCC lattices, we also provide qualitative and quantitative comparisons between the presented technique (on both the Cartesian and BCC lattices) and similar methods. 
 \end{itemize}
 
-\ednote{OVERALL: What is lacking from this intro is the true purpose of this work (from the surface reconstruction aspect.) We want to show that the BCC beats the CC lattice. NOT that our scheme is better than Kazhdan's. We do show this, but we need to emphasize it above!}
 

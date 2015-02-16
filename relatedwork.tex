@@ -70,8 +70,18 @@ resulting surfaces are often non-smooth, and display many ``jagged''
 artifacts (although a form of smoothing is applied to the resulting
 indicator function in an attempt to rectify this.)
 
+Outside of the context of surface reconstruction there has been considerable
+evidence that shows non-Cartesian approaches to volume rendering 
+\cite{firstbox, practicalbox, hvolrecon} and fluid flow \cite{lboltzman} outperform 
+Cartesian approaches in both speed and memory consumption. Additionally, 
+finite difference Laplacian stencils on non-Cartesian grids lead to reduced 
+numerical dispersion compared to their Cartesian  counterparts (see e.g. 
+\cite{hamilton2013, hamilton2013hexagonal} and references therein). It is 
+therefore natural to question whether these advantages can be exploited 
+within the context of surface reconstruction.
+
 Our approach aims to solve the Poisson surface reconstruction problem
-in the setting of shift-invariant spaces. A crucial step in this
+in the setting of general shift-invariant spaces. A crucial step in this
 regard is the accurate estimation of the divergence of the gradient
 field from the oriented point-set. Radial basis functions (RBFs) are
 generally used in the context of the reconstruction of scattered data, 
