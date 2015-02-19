@@ -30,6 +30,66 @@
 %\newcommand{\cnnote}[1]{}
 
 
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\cvect}[1]{\boldsymbol{\mathsf{#1}}}
+\newcommand{\unitvect}[1]{\vec{\vect{#1}}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+
+\newcommand{\cube}{\mathcal{P}}
+\newcommand{\ocube}{\mathcal{P}_o}
+
+\newcommand{\ucube}{\mathcal{C}}
+\newcommand{\oucube}{\mathcal{C}_o}
+
+\newcommand{\Lnorm}[1]{\lVert #1 \rVert_{L_2(\ucube^s)}}
+\newcommand{\LLnorm}[1]{\lVert #1 \rVert_{L_2(\cube^s)}}
+\newcommand{\Ltwonorm}[1]{\lVert #1 \rVert_{L_2(\reel^s)}}
+\newcommand{\Ltwonormbig}[1]{\Bigl\lVert #1 \Bigr\rVert_{L_2(\reel^s)}}
+\renewcommand\Im{\operatorname{Im}}
+
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\order}[2]{o(#1,#2)}
+
+% Notation for a vector space
+\newcommand{\aspace}[2]{\mathbb{V}({#1},{#2})}
+
+% Notation for an orthogonal projection
+\newcommand{\oproj}[2]{\bigl(\mathsf{P}_{{#1}}#2\bigr)}
+
+
+% inner product notations
+\newcommand{\innerproduct}[2]{\bigl \langle #1 , #2 \bigr \rangle_{\cube^s}}
+\newcommand{\ip}[2]{\bigl \langle #1 , #2 \bigr \rangle }
+
+% For denoting point sets
+\newcommand{\pointset}[1]{\mathscr{#1}}
+
+\newcommand{\eunorm}[1]{\lVert#1\rVert}
+\newcommand{\abs}[1]{\bigl\lvert#1\bigr\rvert}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\transp}[1]{{#1}^{\mathsf{T}}}
+\newcommand{\invtransp}[1]{{#1}^{\mathsf{-T}}}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\scprod}[2]{#1\cdot#2}
+\newcommand{\reel}{\mathbb{R}}
+\newcommand{\rthree}{\reel^3}
+\newcommand{\cmplx}{\mathbb{C}}
+\newcommand{\ints}{\mathbb{Z}}
+\newcommand{\conj}[1]{{#1}^{_\star}}
+
+% Fourier Transform and Sine transform of a function
+\newcommand{\ft}[1]{\hat{#1}}
+\newcommand{\wft}[1]{\widehat{#1}}
+\newcommand{\st}[1]{\tilde{#1}}
+\newcommand{\wst}[1]{\widetilde{#1}}
+
+% Fourier Transform pairs
+\newcommand{\stpairs}[2]{#1 \Leftrightarrow #2}
+\newcommand{\ftpairs}[2]{#1 \leftrightarrow #2}
+
+\newcommand{\dftpairs}[1]{\stackrel{{#1}}{\leftrightarrow}}
+
+
 %%%%%%%%%%%%% Mathy things
 \newcommand{\Xii}{\ensuremath{\mathbf{X}}}
 \newcommand{\Phii}{\ensuremath{\mathbf{P}}}
@@ -54,6 +114,8 @@
 \newcommand{\sump}{\displaystyle\sum\limits}
 
 \newcommand{\lat}{\mathcal{L}}
+\newcommand{\lattice}[1]{\mathcal{#1}}
+\newcommand{\duallattice}[1]{\mathcal{#1}^{\circ}}
 
 \newcommand{\ind}{\chi\left(\mathbf{x}\right)}
 \newcommand{\indm}[1]{\chi_{#1}(\mathbf{x})}

@@ -11,7 +11,7 @@ Integral to formulating surface reconstruction as a Poisson problem, is the obse
 	\lapl{\inda} = {\grad} \cdot \vec{V}.
 \end{equation}}
 We define the set of input surface points to be $P:=\{(\mathbf{p}_1,\mathbf{n}_1), (\mathbf{p}_2,\mathbf{n}_2) \hdots (\mathbf{p}_M,\mathbf{n}_M) : (\mathbf{p}_i,\mathbf{n}_i) \in
-\realn^3 \times \realn^3 \}$ where $\mathbf{p}_i$ and $\mathbf{n}_i$ are the position and normal vector of the $i^{th}$ sample respectively. Orientation can be succinctly represented with only two values, however, it is convenient to keep it denoted as the normal at a point. This is because the length of the normal can be used to encode the sampling density of the point-set at a point. For the following discussion, we also need to introduce the notation $\patch_{\mathbf{s}}$, which denotes a patch of the surface model about the sample location $\mathbf{s}$. 
+\realn^3 \times \realn^3 \}$ where $\mathbf{p}_i$ and $\mathbf{n}_i$ are the position and normal vector of the $i^{th}$ sample respectively. Orientation can be succinctly represented with only two values, however, it is convenient to keep it as the normal at a point, because the length of the normal can be used to encode the sampling density of the point-set at a point. For the following discussion, we also need to introduce the notation $\patch_{\mathbf{s}}$, which denotes a patch of the surface model about the sample location $\mathbf{s}$. 
 
 Inspired by the approach of Kazhdan et al.~\cite{Kazhdan06} the approximation $\vec{V}(\vx)$ is defined to be  {\small 
 \begin{eqnarray}
@@ -20,21 +20,20 @@ Inspired by the approach of Kazhdan et al.~\cite{Kazhdan06} the approximation $\
 \end{eqnarray}}
 Thus, $\vec{V}(\vx)$ approximates the gradient of the indicator smoothed by some filter $F$, broken up over surface patches of the model. We assume the point sampling to be uniform, thus the area of each patch $\left|\patch_s\right|$ should be a constant, and our resulting approximation will be scaled by an unknown factor. We return to this in \SC{sec:levelset}. The choice of $F$ places computational constraints on the resulting algorithm.
 
-$F$ is often explicitly chosen to be a compactly supported function. This simplifies and reduces the computational cost of the method when used in conjunction with an oct-tree based representation of $\vec{V}(\vx)$ \cite{Kazhdan06}. However, there is a disadvantage in that $F$ may over smooth data in areas of high curvature \cite{reconbench}, much in the same way that a representation of a sampled signal may fail to take advantage of the full approximation power of the function space in which it is represented if it is not properly prefiltered. Theoretically, one could reconstruct the surface at higher resolutions, allowing the basis functions to become more ``fine'', but increasing the total amount of memory used. However, this is not realistic in praxis. Another approach is to impose a type of ``interpolation'' constraint on the original data \cite{screenedk}.
+$F$ is often explicitly chosen to be a compactly supported function. This simplifies and reduces the computational cost of the method when used in conjunction with an oct-tree based representation of $\vec{V}(\vx)$ \cite{Kazhdan06}. However, the  disadvantage of this choice is that $F$ may over smooth data in areas of high curvature \cite{reconbench}, much in the same way that a representation of a sampled signal may fail to take advantage of the full approximation power of the function space in which it is represented if it is not properly prefiltered. Theoretically, one could simply reconstruct the surface at higher resolutions, allowing the basis functions to become more ``fine'', but increasing the total amount of memory used. On a regular grid, this is undesirable. Another approach is to impose a type of ``interpolation'' constraint on the original data \cite{screenedk} \SC{section on this}.
 
 Ideally, the filter $F$ should correspond to some globally supported RBF. However, as the support of $F$ grows, so does the cost of evaluating it at lattice sites. Moreover, the added benefit of a globally supported RBF is partially lost as the subsequent steps are entirely lattice-based and do not take the RBF into consideration. Our approach circumvents the choice of $F$ entirely by posing the gradient approximation problem as a variational problem that, in addition to imposing the interpolation constraint, also imposes constraints on the ``compactness'' and ``smoothness'' of the gradient approximation. The only kernel we need to consider is the one that generates our target shift-invariant space, i.e. the space used to recover the smoothed indicator function. This type of variational reconstruction can be seen as an approximation to radial basis approaches~\cite{variational}, and is well-suited to our Poisson formulation in shift-invariant spaces.
 
 Before presenting our approach (\SC{sec:pipeline}), we review the necessary background behind shift-invariant spaces and its connection to irregular sampling.
-%\ednote{UA: Provided additional motivation for the variational framework, and added a gluing paragraph to imrpove the flow.}
 
 \subsection{Sampling Lattices} \label{sec:smpl_review}
-In the univariate case, there is only one way to uniformly sample a signal; take equally spaced samples along the independent axis. However, when sampling multivariate signals, the situation is not as straightforward. A common approach is to inherit the ideas from the univariate case, and sample the function at regular intervals in each axis (known as a Cartesian sampling), while another might be to place samples at the centres of spheres arranged in the densest possible sphere packing (otherwise known as an FCC sampling). If $\mathbf{L}$ is a unimodular matrix, the set $\{\mathbf{L}\cdot\mathbf{n} : \mathbf{n} \in \intn^3 \}$ (linear combinations of the vectors of $\mathbb{L}$ with integer coefficients), represents all possible sampling lattices. $\mathbf{L}$ is often called the \emph{generating matrix} for a lattice. To control the sampling rate of a function, a uniform scaling parameter $h$ is introduced. Typically, for the problem of surface reconstruction, our input data are not uniformly distributed in space (or even about the surface of the model). However, the concept of a sampling lattice is fundamental in forming the definition of our target approximation spaces (\SC{sec:sis_review}).
+In the univariate case, there is only one way to uniformly sample a signal: take equally spaced samples along the independent axis. However, when sampling multivariate signals the situation is not as straightforward. A common approach is to inherit the ideas from the univariate case and sample the function at regular intervals in each axis -- a Cartesian sampling --  while another might be to place samples at the centres of spheres arranged in the densest possible sphere packing (otherwise known as an FCC sampling). If $\mathbf{L}$ is a unimodular matrix, the set $\lattice{L} := \{\mathbf{L}\cdot\mathbf{n} : \mathbf{n} \in \intn^3 \}$ represents all possible sampling lattices. $\mathbf{L}$ is often called the \emph{generating matrix} for a lattice, and we'll assume that $\mathbf{L}$ is normalized so that $\left|\det\mathbf{L}\right| = 1$. The lattice's dual, denoted by $\duallattice{L}$, is the lattice generated by $\mathbf{L}^{-T}$. Finally, to control the sampling rate of a function a uniform scaling parameter $h$ is introduced -- lattices scaled by this parameter will be denoted by $\lattice{L}_h$. Typically, for the problem of surface reconstruction, our input data are not uniformly distributed in space, or even about the surface of the model, but the concept of a sampling lattice is fundamental in forming the definition of our target approximation spaces (\SC{sec:sis_review}).
 
-The Cartesian lattice is given by the generating matrix $\mathbf{L}_C:=\mathbf{I}_3$, where $\mathbf{I}_3$ is the $3 \times 3$ identity matrix. There are many factors that contribute to the ubiquity of the Cartesian lattice in practice. Possibly one of its most attractive features is its separability. Owing to this, the implementation of generating functions that span function spaces on the Cartesian lattice may be realized by a tensor product extension of existing univariate techniques. Filtering techniques are also easy to implement, as the Fast Fourier Transform is also separable, and may be applied independently to each axis of the data. However, in terms of sampling efficiency, the BCC lattice is the optimal lattice in $\realn^3$, while the Cartesian is sub-optimal.
+The Cartesian lattice is given by the generating matrix $\mathbf{L}_C:=\mathbf{I}_3$, where $\mathbf{I}_3$ is the $3 \times 3$ identity matrix. There are many factors that contribute to the ubiquity of the Cartesian lattice in practice. Possibly one of its most attractive features is its separability. Owing to this, the implementation of generating functions that span function spaces on the Cartesian lattice may be realized by a tensor product extension of existing univariate techniques. Filtering techniques are also easy to implement, as the Fast Fourier Transform is  separable and may be applied independently to each axis of the data. However, in terms of sampling efficiency, the BCC lattice is the optimal lattice in $\realn^3$, while the Cartesian is sub-optimal.
 
-The Body-Centered Cubic (BCC) lattice is generated by the integer matrix  {\footnotesize
+The Body-Centered Cubic (BCC) lattice is generated by the matrix  {\footnotesize
 \begin{equation*} 
-	\mathbf{L}_B := 
+	\mathbf{L}_B := \frac{1}{\sqrt[3]{4}}
 	\begin{bmatrix}
 		-1 & 1 & 1 \\ 
 		1 & -1 & 1 \\ 
@@ -46,22 +45,48 @@ However, the BCC lattice is non-separable, and requires special care in data ret
 \subsection{Shift Invariant Spaces} \label{sec:sis_review}
 As our target reconstruction spaces, we consider the shift-invariant spaces defined by {\small 
 \begin{equation*}
-	\fspce{\varphi}{h\mathbf{L}} := \left\{ g(\vx) := \displaystyle\sum_{\mathbf{m} \in \intn^3} c[\mathbf{m}]\genfuncdef{\vx} : c \in \ell_2 \right\},
+	\fspce{\varphi}{ \lattice{L}_h} := \left\{ g(\vx) := \displaystyle\sum_{\mathbf{m} \in \intn^3} c[\mathbf{m}]\genfuncdef{\vx} : c \in \ell_2 \right\},
 \end{equation*}}
 where $\varphi$ is the generating function for the space, $h$ is a scaling parameter that controls the sampling rate or granularity, and $\mathbf{L}$ is the generating matrix for a given sampling lattice. Representing a function $f$ in a shift invariant space boils down to finding an appropriate coefficient $c[\mathbf{m}]$ vector that brings $g$ as close as possible to the true underlying function $f$. 
 
+Typically, as memory is a limited quantity, we are only interested in a finite number of points on a lattice. We denote the set of such points as $\{\mathbf{s}_1,\mathbf{s}_2,\ \hdots  \ \mathbf{s}_N\} \subset \mathbf{L}\intn^3.$ Corresponding to each lattice site is a coefficient $c_k$; we collect all such coefficients in the column vector $\mathbf{c}:=\left[c_1 \ c_2 \ \hdots \ c_N \right]^T.$ We also use the short hand notation $\varphi_k(\vx) := \varphi(\frac{\vx}{h}-\mathbf{s}_k)$; from this perspective, our function space is now {\small 
+\begin{equation}
+	\left\{ \displaystyle\sum_{k=0}^N c_k \varphi_k(\vx) \right\} \subset \fspce{\varphi}{\lattice{L}_h}.
+\end{equation}}
+Further, we denote $\mathbf{\Phii}$ to be the $M \times N$ matrix whose elements are given by sampling the basis functions anchored at each lattice site, or $\Phii_{i,j} := \varphi_j(\vx_i)$. Clearly, if our data are sampled at the lattice sites ($\vx_i = \mathbf{s}_i$), then the problem of finding an interpolative scheme reduces to finding $\mathbf{c}$ such that $\mathbf{\Phii c=f},$ which only involves inverting the square matrix $\mathbf{\Phii}.$ However, our sample locations are almost certain to not coincide with lattice sites and we must consider alternative schemes for finding $\mathbf{c}$, which we'll come back to in \SC{sec:vari_review}
+
+\subsection{Error Analysis} \label{sec:sis_error}
+To facilitate the classical analysis of signals in a shift-invariant space, we need a few notions first. The first tool we need is the Fourier transform of a multivariate function $f(\mathbf{x})$, which we define as $\ft{f}(\vect{\omega}) := \int_{\reel^3} f(\vect{x}) \exp(-2\pi \imath
+\vect{\omega} \cdot \vect{x})  \mathrm{d}\vect{x} $. The discrete time Fourier transform (DTFT) of a sequence $c[\cdot]$ associated with a lattice $\lattice{L}$ is defined as $\ft{C}(\vect{\omega}) := \sum_{\vect{m}  \in \ints^3} c[\vect{m}] \exp(-2 \pi \imath \vect{\omega} \cdot
+(\mat{L}\vect{n}))$. Recall that $\ft{C}(\vect{\omega})$ is periodic with respect to the dual lattice $\duallattice{L}$, i.e. $\ft{C}(\vect{\omega} + \invtransp{\mat{L}} \vect{m}) = \ft{C}(\vect{\omega}), \forall \vect{m} \in \ints^3$. The notation `$\ftpairs{}{}$' is subsequently employed to denote transform pairs, i.e. $\ftpairs{f(\vect{x})}{\ft{f}(\vect{\omega})}$ (Fourier transform pairs) and $\ftpairs{c[\vect{m}]}{\ft{C}(\vect{\omega})}$ (DTFT pairs).
+
+
+The inner product between two real valued functions $f_1$ and $f_2$ belonging to $L_2(\reel^3)$ is denoted as $\ip{f}{g} := \int_{\reel^3} f(\vect{x}) g(\vect{x}) d\vect{x}$. Likewise, the inner product between two functions $f_1$ and $f_2$ that belong to $L_2(\cube^s)$ is denoted as $\innerproduct{f_1}{f_2} := {2^{-s}} \int_{\cube^s} f_1(\vect{x}) f_2(\vect{x}) d\vect{x}$. The norms induced by these inner products are denoted as $\Ltwonorm{\cdot}$ and $\LLnorm{\cdot}$ respectively.
+
+
+In order to ensure that any function $g \in \aspace{\lattice{L}}{\varphi}$ has a unique representation in terms of a finite energy coefficient sequence $c[\cdot]$, the lattice translates $\{\varphi(\cdot - \mat{L}\vect{n})\}_{\vect{n}  \in \ints^s}$ must form a Riesz basis~\cite{kreyszig89}, i.e. there exist positive constants $a$ and $b$ such that $\forall c[\cdot] \in l_2(\ints^s)$,
+\begin{equation*}
+  a \norm{c}^2_{l_2(\ints^s)} \le \Ltwonormbig{\sum_{\vect{n} \in \ints^s}
+  c[\vect{n}] \varphi(\vect{x} - \mat{L}\vect{n})}^2 \le b
+	\norm{c}^2_{l_2(\ints^s)}.
+\end{equation*}
+
+\subsection{The Error Kernel}
+
+introduce error kernel.
+
+ polynomial spaces, 
+ 
+introduce notion of decay.
+
 If the generating function that spans the space satisfies the \emph{Strang-Fix} conditions of order $k$, and $f$ belongs to the Sobolev space of at least order $k$, then it can be shown that the minimum approximation error (in the least-squares sense) decays asymptotically as $O(h^k)$, and the space is said to have approximation order $k$. We often only have access to $f$ through a discrete amount of samples, $\mathbf{f} := \left[ f_1 \ f_2 \ \hdots \ f_M \right]^T$ located at sample points $S := \{\vx_1, \vx_2 \hdots \vx_M \}$ respectively. When this is the case, the minimum-error approximation is unattainable. However, interpolative and quasi-interpolative methods \cite{quasibcc,interprev}, which can be seen as oblique projections onto $\fspce{\varphi}{h\mathbf{L}}$, maintain the same order of accuracy.
+
 
 For sufficiently smooth functions $f$ that are uniformly sampled and properly prefiltered, the trilinear and linear reconstruction filters (Cartesian and BCC respectively) assure second order convergence, while the tricubic and Quintic assure fourth order. Another nicety of these spaces is that data processing techniques --- derivative approximation for example --- can often be represented by a convolution of the coefficient vector with either an \emph{Infinite Impulse Response} (IIR) or \emph{Finite Impulse Response} (FIR) filter. 
 
-Typically, as memory is a limited quantity, we are only interested in a finite number of points on a lattice. We denote the set of such points as $\{\mathbf{s}_1,\mathbf{s}_2,\ \hdots  \ \mathbf{s}_N\} \subset \mathbf{L}\intn^3.$ Corresponding to each lattice site is a coefficient $c_k$; we collect all such coefficients in the column vector $\mathbf{c}:=\left[c_1 \ c_2 \ \hdots \ c_N \right]^T.$ We also use the short hand notation $\varphi_k(\vx) := \varphi(\frac{\vx}{h}-\mathbf{s}_k)$; from this perspective, our function space is now {\small 
-\begin{equation}
-	\left\{ \displaystyle\sum_{k=0}^N c_k \varphi_k(\vx) \right\} \subset \fspce{\varphi}{h\mathbf{L}}.
-\end{equation}}
-Further, we denote $\mathbf{\Phii}$ to be the $M \times N$ matrix whose elements are given by sampling the basis functions anchored at each lattice site, or $\Phii_{i,j} := \varphi_j(\vx_i)$. Clearly, if our data are sampled at the lattice sites ($\vx_i = \mathbf{s}_i$), then the problem of finding an interpolative scheme reduces to finding $\mathbf{c}$ such that $\mathbf{\Phii c=f},$ which only involves inverting the square matrix $\mathbf{\Phii}.$ However, our sample locations are almost certain to not coincide with lattice sites, and we must consider alternative schemes for finding $\mathbf{c}.$
 
-\subsection{Box Splines}
-\label{sec:box_review}
+
+\subsection{Box Splines} \label{sec:box_review}
 Box splines are compact piece-wise polynomial functions $ M_\mathbf{\Xii} : \realn^s \to \realn.$ The matrix $\mathbf{\Xii}$ denotes a collection of direction vectors, $\mathbf{\Xii} := \left[ \xi_1 \ \xi_2 \hdots \xi_n\right].$ When $n=s$, the function $M_\mathbf{\Xii}(\vx)$ is defined to be $\frac{1}{det|\mathbf{\Xii}|}$ inside the polytope formed by the Minkowski sum of the direction vectors of $\mathbf{\Xii}$, and zero otherwise (that is, $\frac{1}{det|\mathbf{\Xii}|}$ when $\vx \in \{ \mathbf{\xi}_1 t_1 + \hdots + \mathbf{\xi}_s t_s  : t_i\in [0,1) \})$. When $n > s$, the box spline is recursively defined as {\small 
 \begin{equation} \label{eq:box_def}
 	M_{\mathbf{\Xii}}(\vx) := \int_0^1{\!M_{\mathbf{\Xii/\xi}_n}(\vx - t\mathbf{\xi}_n)} \mathrm{d}t,
