@@ -30,16 +30,28 @@
 %\newcommand{\cnnote}[1]{}
 
 
+% Notations for the approximation of a function 
+\newcommand{\appsf}[1]{#1_{\mathsf{app}}}
+\newcommand{\appf}[1]{\appsf{#1}}
+
+% Vector math
 \newcommand{\vect}[1]{\boldsymbol{#1}}
 \newcommand{\cvect}[1]{\boldsymbol{\mathsf{#1}}}
 \newcommand{\unitvect}[1]{\vec{\vect{#1}}}
 \newcommand{\mat}[1]{\mathbf{#1}}
 
+% Boxes 
 \newcommand{\cube}{\mathcal{P}}
 \newcommand{\ocube}{\mathcal{P}_o}
 
 \newcommand{\ucube}{\mathcal{C}}
 \newcommand{\oucube}{\mathcal{C}_o}
+
+% dual function and analysis function
+\newcommand{\dual}[1]{{\mathring{#1}}}
+\newcommand{\analysis}[1]{{\bar{#1}}}
+
+
 
 \newcommand{\Lnorm}[1]{\lVert #1 \rVert_{L_2(\ucube^s)}}
 \newcommand{\LLnorm}[1]{\lVert #1 \rVert_{L_2(\cube^s)}}

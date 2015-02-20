@@ -6,23 +6,30 @@
 \BOOKMARK [2][-]{subsection.3.3}{Shift Invariant Spaces}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.4}{Error Analysis}{section.3}% 7
 \BOOKMARK [2][-]{subsection.3.5}{The Error Kernel}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.6}{Box Splines}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.7}{Irregular Sampling}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{Approach}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{Obtaining \(x\)}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{Divergence of \(x\)}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Spaces Spanned by a Single Generating Function}{subsection.4.2}% 14
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Shifted Reconstruction Spaces}{subsection.4.2}% 15
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Four Direction Divergence on the BCC Lattice}{subsection.4.2}% 16
-\BOOKMARK [1][-]{section.5}{Recovering the Indicator}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Extracting the Iso-Contour}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Experiments}{}% 19
-\BOOKMARK [2][-]{subsubsection.6.0.1}{Cartesian Lattice}{section.6}% 20
-\BOOKMARK [3][-]{subsubsection.6.0.2}{BCC Lattice}{subsubsection.6.0.1}% 21
-\BOOKMARK [3][-]{subsubsection.6.0.3}{Shifted Basis Functions}{subsubsection.6.0.1}% 22
-\BOOKMARK [1][-]{section.7}{Results and Discussion}{}% 23
-\BOOKMARK [2][-]{subsection.7.1}{Robustness}{section.7}% 24
-\BOOKMARK [2][-]{subsection.7.2}{Complexity}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.3}{Parameter Selection}{section.7}% 26
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 27
-\BOOKMARK [1][-]{section*.2}{References}{}% 28
+\BOOKMARK [2][-]{subsection.3.6}{Approximation Error}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.7}{Box Splines}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.8}{Irregular Sampling}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Approach}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Obtaining \(x\)}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Divergence of \(x\)}{section.4}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Spaces Spanned by a Single Generating Function}{subsection.4.2}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Shifted Reconstruction Spaces}{subsection.4.2}% 16
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Four Direction Divergence on the BCC Lattice}{subsection.4.2}% 17
+\BOOKMARK [1][-]{section.5}{Recovering the Indicator}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Extracting the Iso-Contour}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Poisson's Equation}{}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Greens Function}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Fourier Interpretation}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.3}{Approximate Solution}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.4}{Error Analysis}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.5}{Relationship to the Galerkin method}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Experiments}{}% 26
+\BOOKMARK [2][-]{subsubsection.7.0.1}{Cartesian Lattice}{section.7}% 27
+\BOOKMARK [3][-]{subsubsection.7.0.2}{BCC Lattice}{subsubsection.7.0.1}% 28
+\BOOKMARK [3][-]{subsubsection.7.0.3}{Shifted Basis Functions}{subsubsection.7.0.1}% 29
+\BOOKMARK [1][-]{section.8}{Results and Discussion}{}% 30
+\BOOKMARK [2][-]{subsection.8.1}{Robustness}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.2}{Complexity}{section.8}% 32
+\BOOKMARK [2][-]{subsection.8.3}{Parameter Selection}{section.8}% 33
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 34
+\BOOKMARK [1][-]{section*.2}{References}{}% 35

@@ -73,11 +73,39 @@ In order to ensure that any function $g \in \aspace{\lattice{L}}{\varphi}$ has a
 
 \subsection{The Error Kernel}
 
-introduce error kernel.
-
+The error $\Ltwonorm{f - \appf{f}}$ between $f$ and its approximation
+$\appf{f} \in \aspace{\lattice{L}_h}{\varphi}$ can conveniently be
+quantified via an error kernel in the Fourier domain. It is defined as
+\begin{equation}
+  E(\vect{\omega}) := \underbrace{1 - \frac{\abs{\ft{\varphi}(\vect{\omega})}^2}{\ft{A}_{\varphi}(\vect{\omega})}}_{E_{\mathsf{min}}(\vect{\omega})}
+  + 
+  \underbrace{
+    \ft{A}_{\varphi}(\vect{\omega})
+    \abs{\ft{\analysis{\varphi}}(\vect{\omega}) -
+      \ft{\dual{\varphi}}(\vect{\omega})}^2
+  }_{E_{\mathsf{res}}(\vect{\omega})}.
+  \label{eq:scErrorKernel}
+\end{equation}
+For a bandlimited function $f$ whose spectrum is entirely contained
+within the Voronoi cell of $\duallattice{L}_h$ centered around
+$\vect{\omega} = 0$, we have 
+\begin{equation}
+\Ltwonorm{f - \appf{f}} = \int_{\reel^s}
+\abs{\ft{f}(\vect{\omega})}^2 E(h\vect{\omega}) d\vect{\omega},
+\label{eq:avgError}
+\end{equation}
+whereas when $f \in W_2^k(\reel^s)$ with $k > \frac{1}{2}$, the
+integral in~\eqref{eq:avgError} gives the $L_2$-error averaged over
+all possible shifts of $f$. Even though this kernel was initially
+proposed in the univariate setting by Blu and Unser~\cite{blu99}, multivariate
+non-Cartesian extensions have also appeared in the
+literature~\cite{condat05hexagonal, condat07, condat08, alim10,
+  condat11}. Note that the minimum-error approximation scenario occurs
+when $f$ is orthogonally projected to $\aspace{\lattice{L}_h}{\varphi}$,
+or in other words $\analysis{\varphi}$ is chosen to be  $\dual{\varphi}$.
  polynomial spaces, 
  
-introduce notion of decay.
+\subsection{Approximation Error}
 
 If the generating function that spans the space satisfies the \emph{Strang-Fix} conditions of order $k$, and $f$ belongs to the Sobolev space of at least order $k$, then it can be shown that the minimum approximation error (in the least-squares sense) decays asymptotically as $O(h^k)$, and the space is said to have approximation order $k$. We often only have access to $f$ through a discrete amount of samples, $\mathbf{f} := \left[ f_1 \ f_2 \ \hdots \ f_M \right]^T$ located at sample points $S := \{\vx_1, \vx_2 \hdots \vx_M \}$ respectively. When this is the case, the minimum-error approximation is unattainable. However, interpolative and quasi-interpolative methods \cite{quasibcc,interprev}, which can be seen as oblique projections onto $\fspce{\varphi}{h\mathbf{L}}$, maintain the same order of accuracy.
 
