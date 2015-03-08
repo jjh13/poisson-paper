@@ -123,7 +123,11 @@
 % Setup our packages and macros
 \usepackage[cmex10]{amsmath}
 \usepackage{amsfonts}
+\usepackage[mathscr]{eucal}
 \usepackage{amssymb}
+%\usepackage{color}
+\usepackage{psfrag}
+%\usepackage{ctable}
 
 \input{./macros.tex}
 
@@ -286,13 +290,17 @@
 % http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
 % The latest version and documentation of caption.sty can be obtained at:
 % http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
-
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\else
+  \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
 
 
 
 % *** FLOAT PACKAGES ***
 %
-%\usepackage{fixltx2e}
+\usepackage{fixltx2e}
 % fixltx2e, the successor to the earlier fix2col.sty, was written by
 % Frank Mittelbach and David Carlisle. This package corrects a few problems
 % in the LaTeX2e kernel, the most notable of which is that in current
