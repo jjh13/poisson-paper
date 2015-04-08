@@ -7,29 +7,28 @@
 	\label{fig:pipeline}
 \end{figure*}
 
-A high level description of our approach is outlined in \FG{fig:pipeline}. From the oriented surface samples, we construct the approximation $\vec{V}(\vx)$ using our variational formulation. We then apply FIR filters to the coefficients of the approximation to construct a scalar field representing the approximate divergence of the smoothed normal field (\FG{fig:pipeline}c.) We then use an appropriate discretization of the inverse Laplacian operator to solve the Poisson equation \EQ{eq:poisson}, and obtain a smooth function that approximates the original indicator function (\FG{fig:pipeline}c). Our code will is also available for download 
+A high level description of our approach is outlined in \FG{fig:pipeline}. From the oriented surface samples, we construct the approximation $\vec{V}(\vx)$ using our variational formulation. We then apply FIR filters to the coefficients of the approximation to construct a scalar field representing the approximate divergence of the smoothed normal field (\FG{fig:pipeline}c.) We then use an appropriate discretization of the inverse Laplacian operator to solve the Poisson equation \EQ{eq:poisson}, and obtain a smooth function that approximates the original indicator function (\FG{fig:pipeline}c). Our code is also freely available for download.
 
 
 \subsection{Obtaining $\vec{V}(\vx)$} \label{sec:getting_vd}
 \label{sec:obtainingV}
 We define the vector field as $\vec{V}(\vx):=\mathbf{L} \left[\upsilon_1(\vx) \ \upsilon_2(\vx) \ \upsilon_3(\vx)\right]^T$ where $\mathbf{L := [b_1 \ b_2 \ b_3]}$ is a basis for $\realn^3$ that contains the principal lattice directions of the chosen lattice. Each $\upsilon_i$ is a scalar function representing the projection of the smoothed normal field onto each respective principal lattice direction $\mathbf{b}_i$. This may seem unintuitive at first, however, using a non-canonical basis to represent $\vec{V}$ will be convenient in two ways. Firstly, it will allow us to approximate the divergence of $\vec{V}$ by taking directional derivatives of $\vec{V}$ in the principal lattice directions. This is motivated by the fact that it is more natural to approximate derivatives in the principal lattice directions on non-Cartesian lattices. Secondly, it will allow us to construct divergence of the smoothed normal field from more than three principal lattice directions. We also allow each function $\upsilon_i$ to potentially be represented in different function spaces, i.e. {\small 
 \begin{equation} 
-	\upsilon_i(\vx) = \sum_{k=0}^N \text{v}_k^i \varphi_k^i(\vx) \in \fspce{\varphi^i}{h\mathbf{L}}.
+	\upsilon_i(\vx) = \sum_{k=0}^N \text{v}_ki \varphi_k^i(\vx) \in \aspace{\lattice{L}{\varphi^i}}.
 \end{equation}}
-The coefficient vector of $\upsilon_i$ is denoted as $\mathbf{v}_i:=\left[\text{v}_1^i \ \cdots \ \text{v}_N^i \right]$. We consider each component of $\vec{V}(\vx)$ separately, thus, it suffices to only look at one $\upsilon_i$. We simply find the $\upsilon_i$ that minimizes {\small 
+The coefficient vector of $\upsilon_i$ is denoted as $\mathbf{v}_i:=\left[\text{v}_1^i \ \cdots \ \text{v}_N^i \right]$.We use the unfortunate notation $\text{v}_j^i, \varphi_k^i$ to denote that those objects belong to $\upsilon_i(x)$, not to denote exponentiation. We consider each component of $\vec{V}(\vx)$ separately, thus, it suffices to describe the process at one $\upsilon_i$. We simply find the $\upsilon_i$ that minimizes {\small 
 \begin{equation} \label{eq:vari_eqn}
  	\sump_{\forall (\vx,\vn) \in P }^{M} (\upsilon_i(\vx) - (\mathbf{L}^{-1})_i \cdot \mathbf{n})^2 + E(\upsilon_i).
 \end{equation} }
-Where $(\mathbf{L}^{-1})_i$ is the $i^{th}$ column of $(\mathbf{L}^{-1}).$ As before, this provides us with a parametrized way of controlling the smoothness of the resulting approximation, without the need to explicitly choose a smoothing kernel.
+Where $(\mathbf{L}^{-1})_i$ is the $i^{th}$ column of $(\mathbf{L}^{-1}).$ As before, this provides us with a parametrized way of controlling the smoothness of the resulting approximation, without the need to explicitly choose a smoothing kernel. These $\mathbf{v}_i$ can be obtained using the procedure of \SC{sec:vari_review}.
 
-%In what follows, $\mathbf{L}$ is chosen to be the canonical basis $\mathbf{I_3}$ for the Cartesian lattice, whereas for the BCC lattice, we choose $\mathbf{L = L}_B$.
 
 \subsection{Divergence of $\vec{V}(\vx)$}
 \label{sec:divergence}
-A simple way to obtain the divergence of $\vec{V}(\vx)$ is to consider its analytical partial derivatives which, due to the linearity of the expression, requires one to only take the analytic partial derivatives of the underlying kernel functions. However, this reduces the smoothness of the solution \cite{zahgrad}. There is also no conclusive evidence that suggests the analytic derivative of the kernel provides a better approximation to true underlying derivative. With this in mind, we choose to take a discrete filtering approach and approximate the divergence of $\vec{V}$ with a set of discrete FIR filters. While these filters do not strictly facilitate the best approximation scheme for derivatives, they provide a good compromise between compactness versus accuracy, even more so when the reconstruction spaces are shifted \cite{gradrev}. 
+A simple way to obtain the divergence of $\vec{V}(\vx)$ is to consider its analytical partial derivatives which, due to the linearity of the expression, requires one to only take the analytic partial derivatives of the underlying kernel functions. However, this reduces the smoothness of the solution \cite{zahgrad}, and there is also no conclusive evidence that suggests the analytic derivative of the kernel provides a better approximation to true underlying derivative. With this in mind, we choose to take a discrete filtering approach and approximate the divergence of $\vec{V}$ with a set of discrete FIR filters. While these filters do not strictly facilitate the best approximation scheme for derivatives, they provide a good compromise between compactness versus accuracy, even more so when the reconstruction spaces are shifted \cite{gradrev}. 
 
 \subsubsection{Spaces Spanned by a Single Generating Function}
-When each space is identical (when $\upsilon_i \in \fspce{\varphi}{L}$) the divergence can be found by taking directional derivatives of $\vec{V}$ along the vectors in $\mathbf{L}$ as follows: {\small 
+When each space is identical (when $\upsilon_i \in \aspace{\lattice{L}_h}{\varphi}$) the divergence can be found by taking directional derivatives of $\vec{V}$ along the vectors in $\mathbf{L}$ as follows: {\small 
 \begin{eqnarray}\label{eq:div_dir}
 	\grad \cdot \vec{V}(\vx) & = & \grad \cdot \mathbf{L} \left[\upsilon_1(\vx) \ \upsilon_2(\vx) \ \upsilon_3(\vx)\right]^T \notag \\
 	 & = & \left[ \mathbf{(\grad \cdot b_1) \ (\grad \cdot b_2) \ (\grad \cdot b_3 ) }\right] \cdot \left[\upsilon_1 \ \upsilon_2 \ \upsilon_3\right]^T \\
