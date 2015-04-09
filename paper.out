@@ -28,14 +28,15 @@
 \BOOKMARK [1][-]{section.7}{Experiments}{}% 28
 \BOOKMARK [2][-]{subsection.7.1}{Cartesian Lattice}{section.7}% 29
 \BOOKMARK [3][-]{subsubsection.7.1.1}{Basis function}{subsection.7.1}% 30
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Filter weights}{subsection.7.1}% 31
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Filter Design}{subsection.7.1}% 31
 \BOOKMARK [2][-]{subsection.7.2}{BCC Lattice}{section.7}% 32
 \BOOKMARK [3][-]{subsubsection.7.2.1}{Basis function}{subsection.7.2}% 33
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Filter weights}{subsection.7.2}% 34
-\BOOKMARK [2][-]{subsection.7.3}{Shifted Basis Functions}{section.7}% 35
-\BOOKMARK [1][-]{section.8}{Results and Discussion}{}% 36
-\BOOKMARK [2][-]{subsection.8.1}{Robustness}{section.8}% 37
-\BOOKMARK [2][-]{subsection.8.2}{Complexity}{section.8}% 38
-\BOOKMARK [2][-]{subsection.8.3}{Parameter Selection}{section.8}% 39
-\BOOKMARK [1][-]{section.9}{Conclusion}{}% 40
-\BOOKMARK [1][-]{section*.2}{References}{}% 41
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Filter Design}{subsection.7.2}% 34
+\BOOKMARK [3][-]{subsubsection.7.2.3}{BCC Lattice}{subsection.7.2}% 35
+\BOOKMARK [2][-]{subsection.7.3}{Shifted Basis Functions}{section.7}% 36
+\BOOKMARK [1][-]{section.8}{Results and Discussion}{}% 37
+\BOOKMARK [2][-]{subsection.8.1}{Robustness}{section.8}% 38
+\BOOKMARK [2][-]{subsection.8.2}{Complexity}{section.8}% 39
+\BOOKMARK [2][-]{subsection.8.3}{Parameter Selection}{section.8}% 40
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 41
+\BOOKMARK [1][-]{section*.2}{References}{}% 42

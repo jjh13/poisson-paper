@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 APR 2015 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 APR 2015 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,42 +350,134 @@ Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen130
 \Gin@req@width=\dimen131
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ctable/ctable.sty
+Package: ctable 2014/04/25 v1.29 ctable package for \ flexible typesetting of t
+able and figure floats using key/value directives
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+\XKV@depth=\count118
+File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen132
+\extrarowheight=\dimen133
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen134
+\TX@old@table=\dimen135
+\TX@old@col=\dimen136
+\TX@target=\dimen137
+\TX@delta=\dimen138
+\TX@cols=\count119
+\TX@ftn=\toks24
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen139
+\lightrulewidth=\dimen140
+\cmidrulewidth=\dimen141
+\belowrulesep=\dimen142
+\belowbottomsep=\dimen143
+\aboverulesep=\dimen144
+\abovetopsep=\dimen145
+\cmidrulesep=\dimen146
+\cmidrulekern=\dimen147
+\defaultaddspace=\dimen148
+\@cmidla=\count120
+\@cmidlb=\count121
+\@aboverulesep=\dimen149
+\@belowrulesep=\dimen150
+\@thisruleclass=\count122
+\@lastruleclass=\count123
+\@thisrulewidth=\dimen151
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count124
+\rotFPtop=\skip50
+\rotFPbot=\skip51
+\rot@float@box=\box29
+\rot@mess@toks=\toks25
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
+
+)
+\@ctblframesep=\dimen152
+\@defaultctblframesep=\dimen153
+\@ctblframerule=\dimen154
+\@defaultctblframerule=\dimen155
+\@ctblwidth=\dimen156
+\@defaultctblwidth=\dimen157
+\@ctblcaptionskip=\dimen158
+\@defaultctblcaptionskip=\dimen159
+\@ctblmaxwidth=\dimen160
+\@defaultctblmaxwidth=\dimen161
+\@ctblmincapwidth=\dimen162
+\@defaultctblmincapwidth=\dimen163
+\@ctblfooterwidth=\dimen164
+\@defaultctblfooterwidth=\dimen165
+\@ctblw=\dimen166
+\@ctblfloatwidth=\dimen167
+\@ctbloldsep=\dimen168
+\@ctbloldrule=\dimen169
+\ctbl@t=\box30
+\@ctblcurftwidth=\dimen170
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen132
-\captionmargin@=\dimen133
-\captionwidth=\dimen134
-\caption@tempdima=\dimen135
-\caption@indent=\dimen136
-\caption@parindent=\dimen137
-\caption@hangindent=\dimen138
+\captionmargin=\dimen171
+\captionmargin@=\dimen172
+\captionwidth=\dimen173
+\caption@tempdima=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
-\c@KVtest=\count118
-\sf@farskip=\skip48
-\sf@captopadj=\dimen139
-\sf@capskip=\skip49
-\sf@nearskip=\skip50
-\c@subfigure=\count119
-\c@subfigure@save=\count120
-\c@lofdepth=\count121
-\c@subtable=\count122
-\c@subtable@save=\count123
-\c@lotdepth=\count124
-\sf@top=\skip51
-\sf@bottom=\skip52
+\c@KVtest=\count125
+\sf@farskip=\skip52
+\sf@captopadj=\dimen178
+\sf@capskip=\skip53
+\sf@nearskip=\skip54
+\c@subfigure=\count126
+\c@subfigure@save=\count127
+\c@lofdepth=\count128
+\c@subtable=\count129
+\c@subtable@save=\count130
+\c@lotdepth=\count131
+\sf@top=\skip55
+\sf@bottom=\skip56
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2014/05/13 v1.1q fixes to LaTeX
 LaTeX Info: Redefining \em on input line 429.
 LaTeX Info: The control sequence `\[' is already robust on input line 480.
 LaTeX Info: The control sequence `\]' is already robust on input line 481.
-) (./paper.aux)
+) (./paper.aux
+
+LaTeX Warning: Label `tab:filters' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 407.
@@ -402,20 +494,19 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 407.
 LaTeX Font Info:    ... okay on input line 407.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 407.
 LaTeX Font Info:    ... okay on input line 407.
-
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen140
-\scratchbox=\box29
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen141
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count132
+\scratchdimen=\dimen179
+\scratchbox=\box31
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen180
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -431,7 +522,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box32
 Package hyperref Info: Link coloring OFF on input line 407.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -440,7 +531,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count131
+\c@section@level=\count138
 )
 LaTeX Info: Redefining \ref on input line 407.
 LaTeX Info: Redefining \pageref on input line 407.
@@ -458,42 +549,42 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Warning: No \author given.
 
 (./abstract.tex) (./introduction.tex
-<figures/lattice/cc.png, id=169, 1027.84pt x 1027.84pt>
+<figures/lattice/cc.png, id=173, 1027.84pt x 1027.84pt>
 File: figures/lattice/cc.png Graphic file (type png)
 
 <use figures/lattice/cc.png>
 Package pdftex.def Info: figures/lattice/cc.png used on input line 11.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/bcc.png, id=171, 1027.84pt x 1027.84pt>
+<figures/lattice/bcc.png, id=175, 1027.84pt x 1027.84pt>
 File: figures/lattice/bcc.png Graphic file (type png)
 
 <use figures/lattice/bcc.png>
 Package pdftex.def Info: figures/lattice/bcc.png used on input line 12.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/fcc.png, id=172, 1027.84pt x 1027.84pt>
+<figures/lattice/fcc.png, id=176, 1027.84pt x 1027.84pt>
 File: figures/lattice/fcc.png Graphic file (type png)
 
 <use figures/lattice/fcc.png>
 Package pdftex.def Info: figures/lattice/fcc.png used on input line 13.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/cc_cell.png, id=173, 1027.84pt x 1027.84pt>
+<figures/lattice/cc_cell.png, id=177, 1027.84pt x 1027.84pt>
 File: figures/lattice/cc_cell.png Graphic file (type png)
 
 <use figures/lattice/cc_cell.png>
 Package pdftex.def Info: figures/lattice/cc_cell.png used on input line 16.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/bcc_cell.png, id=174, 1027.84pt x 1027.84pt>
+<figures/lattice/bcc_cell.png, id=178, 1027.84pt x 1027.84pt>
 File: figures/lattice/bcc_cell.png Graphic file (type png)
 
 <use figures/lattice/bcc_cell.png>
 Package pdftex.def Info: figures/lattice/bcc_cell.png used on input line 17.
 (pdftex.def)             Requested size: 157.23152pt x 157.22763pt.
 
-<figures/lattice/fcc_cell.png, id=175, 1027.84pt x 1027.84pt>
+<figures/lattice/fcc_cell.png, id=179, 1027.84pt x 1027.84pt>
 File: figures/lattice/fcc_cell.png Graphic file (type png)
 
 <use figures/lattice/fcc_cell.png>
@@ -559,7 +650,7 @@ LaTeX Warning: Citation `alim10' on page 5 undefined on input line 103.
 
 LaTeX Warning: Citation `condat11' on page 5 undefined on input line 103.
 
-[5] <figures/boxspline/2dex.png, id=316, 1027.84pt x 1027.84pt>
+[5] <figures/boxspline/2dex.png, id=320, 1027.84pt x 1027.84pt>
 File: figures/boxspline/2dex.png Graphic file (type png)
 
 <use figures/boxspline/2dex.png>
@@ -577,7 +668,7 @@ ted-to.pdf images/pipeline.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/pipeline-eps-converted-to.pdf, id=324, 441.65pt x 149.55875pt>
+<images/pipeline-eps-converted-to.pdf, id=328, 441.65pt x 149.55875pt>
 File: images/pipeline-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/pipeline-eps-converted-to.pdf>
@@ -649,7 +740,7 @@ converted-to.pdf ./figures/2DCartesian.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/2DCartesian-eps-converted-to.pdf, id=365, 301.125pt x 293.095pt>
+<./figures/2DCartesian-eps-converted-to.pdf, id=369, 301.125pt x 293.095pt>
 File: ./figures/2DCartesian-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/2DCartesian-eps-converted-to.pdf>
@@ -669,7 +760,7 @@ onverted-to.pdf ./figures/2DQuincunx.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/2DQuincunx-eps-converted-to.pdf, id=366, 301.125pt x 293.095pt>
+<./figures/2DQuincunx-eps-converted-to.pdf, id=370, 301.125pt x 293.095pt>
 File: ./figures/2DQuincunx-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/2DQuincunx-eps-converted-to.pdf>
@@ -735,7 +826,49 @@ LaTeX Warning: Citation `usmanthesis' on page 11 undefined on input line 8.
 
 LaTeX Warning: Citation `bccdst' on page 11 undefined on input line 8.
 
-) (./results.tex [11]
+) (./results.tex
+
+LaTeX Warning: Reference `eq:1DBspline' on page 11 undefined on input line 34.
+
+
+LaTeX Warning: Reference `prop:1' on page 11 undefined on input line 42.
+
+[11]
+
+LaTeX Warning: Reference `eq:opCriterionHomo' on page 12 undefined on input lin
+e 55.
+
+
+LaTeX Warning: Reference `eq:quasiWeights' on page 12 undefined on input line 1
+01.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--109
+ []\OT1/ptm/m/it/10 Quasi-Interpolation: [][] \OT1/ptm/m/n/10 For the quasi-int
+erpolative
+ []
+
+
+LaTeX Warning: Reference `prop:1' on page 12 undefined on input line 123.
+
+
+LaTeX Warning: Reference `eq:discreteLaplacian' on page 12 undefined on input l
+ine 125.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--203
+[]|$[][]\OT1/cmr/m/n/8 2 [](\OML/cmm/m/it/8 u\OT1/cmr/m/n/8 ) [](\OML/cmm/m/it/
+8 v\OT1/cmr/m/n/8 ) [](\OML/cmm/m/it/8 w\OT1/cmr/m/n/8 )[]34 [](2\OML/cmm/m/it/
+8 u\OT1/cmr/m/n/8 ) + 34 [](2\OML/cmm/m/it/8 v\OT1/cmr/m/n/8 ) + 1143[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--203
+\OT1/cmr/m/n/8 +2 [](2\OML/cmm/m/it/8 w\OT1/cmr/m/n/8 )[][](2\OML/cmm/m/it/8 u\
+OT1/cmr/m/n/8 )[]5 [](2\OML/cmm/m/it/8 v\OT1/cmr/m/n/8 ) + 43[] + 43 [](2\OML/c
+mm/m/it/8 v\OT1/cmr/m/n/8 ) + 196[]$
+ []
+
 Package epstopdf Info: Source file: <figures/dist32.eps>
 (epstopdf)                    date: 2013-09-27 21:09:06
 (epstopdf)                    size: 23450 bytes
@@ -744,15 +877,14 @@ Package epstopdf Info: Source file: <figures/dist32.eps>
 (epstopdf)                    size: 6497 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dist32-eps-convert
 ed-to.pdf figures/dist32.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/dist32-eps-converted-to.pdf, id=472, 361.35pt x 252.945pt>
+<figures/dist32-eps-converted-to.pdf, id=480, 361.35pt x 252.945pt>
 File: figures/dist32-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist32-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dist32-eps-converted-to.pdf used on input line
- 72.
+ 262.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/dist64.eps>
 (epstopdf)                    date: 2013-09-27 21:09:20
@@ -762,15 +894,15 @@ Package epstopdf Info: Source file: <figures/dist64.eps>
 (epstopdf)                    size: 6488 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dist64-eps-convert
 ed-to.pdf figures/dist64.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist64-eps-converted-to.pdf, id=473, 361.35pt x 252.945pt>
+<figures/dist64-eps-converted-to.pdf, id=481, 361.35pt x 252.945pt>
 File: figures/dist64-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist64-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dist64-eps-converted-to.pdf used on input line
- 73.
+ 263.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/dist128.eps>
 (epstopdf)                    date: 2013-09-27 21:09:30
@@ -780,15 +912,15 @@ Package epstopdf Info: Source file: <figures/dist128.eps>
 (epstopdf)                    size: 6447 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dist128-eps-conver
 ted-to.pdf figures/dist128.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist128-eps-converted-to.pdf, id=474, 361.35pt x 252.945pt>
+<figures/dist128-eps-converted-to.pdf, id=482, 361.35pt x 252.945pt>
 File: figures/dist128-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist128-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dist128-eps-converted-to.pdf used on input lin
-e 74.
+e 264.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/dist256.eps>
 (epstopdf)                    date: 2013-09-27 21:09:34
@@ -798,15 +930,15 @@ Package epstopdf Info: Source file: <figures/dist256.eps>
 (epstopdf)                    size: 6461 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dist256-eps-conver
 ted-to.pdf figures/dist256.eps>
-(epstopdf)             \includegraphics on input line 75.
+(epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist256-eps-converted-to.pdf, id=475, 361.35pt x 252.945pt>
+<figures/dist256-eps-converted-to.pdf, id=483, 361.35pt x 252.945pt>
 File: figures/dist256-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist256-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dist256-eps-converted-to.pdf used on input lin
-e 75.
+e 265.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/angle32.eps>
 (epstopdf)                    date: 2013-09-27 21:09:14
@@ -816,15 +948,15 @@ Package epstopdf Info: Source file: <figures/angle32.eps>
 (epstopdf)                    size: 6013 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/angle32-eps-conver
 ted-to.pdf figures/angle32.eps>
-(epstopdf)             \includegraphics on input line 76.
+(epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle32-eps-converted-to.pdf, id=476, 361.35pt x 252.945pt>
+<figures/angle32-eps-converted-to.pdf, id=484, 361.35pt x 252.945pt>
 File: figures/angle32-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle32-eps-converted-to.pdf>
 Package pdftex.def Info: figures/angle32-eps-converted-to.pdf used on input lin
-e 76.
+e 266.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/angle64.eps>
 (epstopdf)                    date: 2013-09-27 21:09:22
@@ -834,15 +966,15 @@ Package epstopdf Info: Source file: <figures/angle64.eps>
 (epstopdf)                    size: 6234 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/angle64-eps-conver
 ted-to.pdf figures/angle64.eps>
-(epstopdf)             \includegraphics on input line 77.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle64-eps-converted-to.pdf, id=477, 361.35pt x 252.945pt>
+<figures/angle64-eps-converted-to.pdf, id=485, 361.35pt x 252.945pt>
 File: figures/angle64-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle64-eps-converted-to.pdf>
 Package pdftex.def Info: figures/angle64-eps-converted-to.pdf used on input lin
-e 77.
+e 267.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/angle128.eps>
 (epstopdf)                    date: 2013-09-27 21:09:26
@@ -852,15 +984,15 @@ Package epstopdf Info: Source file: <figures/angle128.eps>
 (epstopdf)                    size: 6271 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/angle128-eps-conve
 rted-to.pdf figures/angle128.eps>
-(epstopdf)             \includegraphics on input line 78.
+(epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle128-eps-converted-to.pdf, id=478, 361.35pt x 252.945pt>
+<figures/angle128-eps-converted-to.pdf, id=486, 361.35pt x 252.945pt>
 File: figures/angle128-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle128-eps-converted-to.pdf>
 Package pdftex.def Info: figures/angle128-eps-converted-to.pdf used on input li
-ne 78.
+ne 268.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/angle256.eps>
 (epstopdf)                    date: 2013-09-27 21:09:40
@@ -870,18 +1002,18 @@ Package epstopdf Info: Source file: <figures/angle256.eps>
 (epstopdf)                    size: 6136 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/angle256-eps-conve
 rted-to.pdf figures/angle256.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle256-eps-converted-to.pdf, id=479, 361.35pt x 252.945pt>
+<figures/angle256-eps-converted-to.pdf, id=487, 361.35pt x 252.945pt>
 File: figures/angle256-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle256-eps-converted-to.pdf>
 Package pdftex.def Info: figures/angle256-eps-converted-to.pdf used on input li
-ne 79.
+ne 269.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 
-Overfull \hbox (6.06303pt too wide) in paragraph at lines 71--81
+Overfull \hbox (6.06303pt too wide) in paragraph at lines 261--271
  [][] 
  []
 
@@ -894,14 +1026,14 @@ Package epstopdf Info: Source file: <figures/anchor/_dist.eps>
 (epstopdf)                    size: 6473 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/anchor/_dist-eps-c
 onverted-to.pdf figures/anchor/_dist.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
-<figures/anchor/_dist-eps-converted-to.pdf, id=480, 361.35pt x 252.945pt>
+<figures/anchor/_dist-eps-converted-to.pdf, id=488, 361.35pt x 252.945pt>
 File: figures/anchor/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/anchor/_dist-eps-converted-to.pdf>
 Package pdftex.def Info: figures/anchor/_dist-eps-converted-to.pdf used on inpu
-t line 88.
+t line 278.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/daratech/_dist.eps>
 (epstopdf)                    date: 2013-09-27 21:17:30
@@ -912,15 +1044,15 @@ f>
 (epstopdf)                    size: 6472 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/daratech/_dist-eps
 -converted-to.pdf figures/daratech/_dist.eps>
-(epstopdf)             \includegraphics on input line 89.
+(epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/daratech/_dist-eps-converted-to.pdf, id=481, 361.35pt x 252.945pt>
+<figures/daratech/_dist-eps-converted-to.pdf, id=489, 361.35pt x 252.945pt>
 File: figures/daratech/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/daratech/_dist-eps-converted-to.pdf>
 Package pdftex.def Info: figures/daratech/_dist-eps-converted-to.pdf used on in
-put line 89.
+put line 279.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/dc/_dist.eps>
 (epstopdf)                    date: 2013-09-27 21:17:34
@@ -930,15 +1062,15 @@ Package epstopdf Info: Source file: <figures/dc/_dist.eps>
 (epstopdf)                    size: 6471 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dc/_dist-eps-conve
 rted-to.pdf figures/dc/_dist.eps>
-(epstopdf)             \includegraphics on input line 90.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dc/_dist-eps-converted-to.pdf, id=482, 361.35pt x 252.945pt>
+<figures/dc/_dist-eps-converted-to.pdf, id=490, 361.35pt x 252.945pt>
 File: figures/dc/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dc/_dist-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dc/_dist-eps-converted-to.pdf used on input li
-ne 90.
+ne 280.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/quasimoto/_dist.eps>
 (epstopdf)                    date: 2013-09-27 21:16:16
@@ -949,15 +1081,15 @@ df>
 (epstopdf)                    size: 6594 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/quasimoto/_dist-ep
 s-converted-to.pdf figures/quasimoto/_dist.eps>
-(epstopdf)             \includegraphics on input line 91.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/quasimoto/_dist-eps-converted-to.pdf, id=483, 361.35pt x 252.945pt>
+<figures/quasimoto/_dist-eps-converted-to.pdf, id=491, 361.35pt x 252.945pt>
 File: figures/quasimoto/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/quasimoto/_dist-eps-converted-to.pdf>
 Package pdftex.def Info: figures/quasimoto/_dist-eps-converted-to.pdf used on i
-nput line 91.
+nput line 281.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/anchor/_angle.eps>
 (epstopdf)                    date: 2013-09-27 21:16:56
@@ -968,15 +1100,15 @@ Package epstopdf Info: Source file: <figures/anchor/_angle.eps>
 (epstopdf)                    size: 6139 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/anchor/_angle-eps-
 converted-to.pdf figures/anchor/_angle.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/anchor/_angle-eps-converted-to.pdf, id=484, 361.35pt x 252.945pt>
+<figures/anchor/_angle-eps-converted-to.pdf, id=492, 361.35pt x 252.945pt>
 File: figures/anchor/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/anchor/_angle-eps-converted-to.pdf>
 Package pdftex.def Info: figures/anchor/_angle-eps-converted-to.pdf used on inp
-ut line 93.
+ut line 283.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/daratech/_angle.eps>
 (epstopdf)                    date: 2013-09-27 21:17:22
@@ -987,15 +1119,15 @@ df>
 (epstopdf)                    size: 6263 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/daratech/_angle-ep
 s-converted-to.pdf figures/daratech/_angle.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/daratech/_angle-eps-converted-to.pdf, id=485, 361.35pt x 252.945pt>
+<figures/daratech/_angle-eps-converted-to.pdf, id=493, 361.35pt x 252.945pt>
 File: figures/daratech/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/daratech/_angle-eps-converted-to.pdf>
 Package pdftex.def Info: figures/daratech/_angle-eps-converted-to.pdf used on i
-nput line 94.
+nput line 284.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/dc/_angle.eps>
 (epstopdf)                    date: 2013-09-27 21:17:40
@@ -1005,15 +1137,15 @@ Package epstopdf Info: Source file: <figures/dc/_angle.eps>
 (epstopdf)                    size: 6163 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dc/_angle-eps-conv
 erted-to.pdf figures/dc/_angle.eps>
-(epstopdf)             \includegraphics on input line 95.
+(epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dc/_angle-eps-converted-to.pdf, id=486, 361.35pt x 252.945pt>
+<figures/dc/_angle-eps-converted-to.pdf, id=494, 361.35pt x 252.945pt>
 File: figures/dc/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dc/_angle-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dc/_angle-eps-converted-to.pdf used on input l
-ine 95.
+ine 285.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 Package epstopdf Info: Source file: <figures/quasimoto/_angle.eps>
 (epstopdf)                    date: 2013-09-27 21:16:12
@@ -1024,18 +1156,18 @@ pdf>
 (epstopdf)                    size: 6138 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/quasimoto/_angle-e
 ps-converted-to.pdf figures/quasimoto/_angle.eps>
-(epstopdf)             \includegraphics on input line 96.
+(epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/quasimoto/_angle-eps-converted-to.pdf, id=487, 361.35pt x 252.945pt>
+<figures/quasimoto/_angle-eps-converted-to.pdf, id=495, 361.35pt x 252.945pt>
 File: figures/quasimoto/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/quasimoto/_angle-eps-converted-to.pdf>
 Package pdftex.def Info: figures/quasimoto/_angle-eps-converted-to.pdf used on 
-input line 96.
+input line 286.
 (pdftex.def)             Requested size: 120.5407pt x 84.37912pt.
 
-Overfull \hbox (6.06303pt too wide) in paragraph at lines 87--99
+Overfull \hbox (6.06303pt too wide) in paragraph at lines 277--289
  [][] 
  []
 
@@ -1048,15 +1180,15 @@ pdf>
 (epstopdf)                    size: 113044 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/original-e
 ps-converted-to.pdf images/gargoyle/original.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/original-eps-converted-to.pdf, id=488, 667.49374pt x 721.69624
+<images/gargoyle/original-eps-converted-to.pdf, id=496, 667.49374pt x 721.69624
 pt>
 File: images/gargoyle/original-eps-converted-to.pdf Graphic file (type pdf)
  <use images/gargoyle/original-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/original-eps-converted-to.pdf used on 
-input line 106.
+input line 296.
 (pdftex.def)             Requested size: 121.46284pt x 131.32028pt.
 Package epstopdf Info: Source file: <images/gargoyle/poisson.eps>
 (epstopdf)                    date: 2013-09-25 10:39:32
@@ -1067,15 +1199,15 @@ df>
 (epstopdf)                    size: 99540 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/poisson-ep
 s-converted-to.pdf images/gargoyle/poisson.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/poisson-eps-converted-to.pdf, id=489, 667.49374pt x 721.69624p
+<images/gargoyle/poisson-eps-converted-to.pdf, id=497, 667.49374pt x 721.69624p
 t>
 File: images/gargoyle/poisson-eps-converted-to.pdf Graphic file (type pdf)
  <use images/gargoyle/poisson-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/poisson-eps-converted-to.pdf used on i
-nput line 107.
+nput line 297.
 (pdftex.def)             Requested size: 121.46284pt x 131.32028pt.
 Package epstopdf Info: Source file: <images/gargoyle/bcc.eps>
 (epstopdf)                    date: 2013-09-25 10:41:42
@@ -1085,15 +1217,15 @@ Package epstopdf Info: Source file: <images/gargoyle/bcc.eps>
 (epstopdf)                    size: 102651 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/bcc-eps-co
 nverted-to.pdf images/gargoyle/bcc.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc-eps-converted-to.pdf, id=490, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc-eps-converted-to.pdf, id=498, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bcc-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/bcc-eps-converted-to.pdf used on input
- line 109.
+ line 299.
 (pdftex.def)             Requested size: 121.46284pt x 131.32028pt.
 Package epstopdf Info: Source file: <images/gargoyle/bccs.eps>
 (epstopdf)                    date: 2013-09-25 10:42:38
@@ -1104,15 +1236,15 @@ Package epstopdf Info: Source file: <images/gargoyle/bccs.eps>
 (epstopdf)                    size: 107815 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/bccs-eps-c
 onverted-to.pdf images/gargoyle/bccs.eps>
-(epstopdf)             \includegraphics on input line 110.
+(epstopdf)             \includegraphics on input line 300.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bccs-eps-converted-to.pdf, id=491, 667.49374pt x 721.69624pt>
+<images/gargoyle/bccs-eps-converted-to.pdf, id=499, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bccs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bccs-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/bccs-eps-converted-to.pdf used on inpu
-t line 110.
+t line 300.
 (pdftex.def)             Requested size: 121.46284pt x 131.32028pt.
 Package epstopdf Info: Source file: <images/gargoyle/bcc4.eps>
 (epstopdf)                    date: 2013-09-25 10:51:12
@@ -1123,15 +1255,15 @@ Package epstopdf Info: Source file: <images/gargoyle/bcc4.eps>
 (epstopdf)                    size: 102571 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/bcc4-eps-c
 onverted-to.pdf images/gargoyle/bcc4.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 302.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc4-eps-converted-to.pdf, id=492, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc4-eps-converted-to.pdf, id=500, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bcc4-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/bcc4-eps-converted-to.pdf used on inpu
-t line 112.
+t line 302.
 (pdftex.def)             Requested size: 123.99582pt x 134.06232pt.
 Package epstopdf Info: Source file: <images/gargoyle/bcc4s.eps>
 (epstopdf)                    date: 2013-09-25 10:51:26
@@ -1142,14 +1274,14 @@ Package epstopdf Info: Source file: <images/gargoyle/bcc4s.eps>
 (epstopdf)                    size: 107824 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/bcc4s-eps-
 converted-to.pdf images/gargoyle/bcc4s.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc4s-eps-converted-to.pdf, id=493, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc4s-eps-converted-to.pdf, id=501, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc4s-eps-converted-to.pdf Graphic file (type pdf)
 <use images/gargoyle/bcc4s-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/bcc4s-eps-converted-to.pdf used on inp
-ut line 113.
+ut line 303.
 (pdftex.def)             Requested size: 123.99582pt x 134.06232pt.
 Package epstopdf Info: Source file: <images/gargoyle/cc.eps>
 (epstopdf)                    date: 2013-09-25 10:51:40
@@ -1159,15 +1291,15 @@ Package epstopdf Info: Source file: <images/gargoyle/cc.eps>
 (epstopdf)                    size: 101189 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/cc-eps-con
 verted-to.pdf images/gargoyle/cc.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/cc-eps-converted-to.pdf, id=494, 667.49374pt x 721.69624pt>
+<images/gargoyle/cc-eps-converted-to.pdf, id=502, 667.49374pt x 721.69624pt>
 File: images/gargoyle/cc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/cc-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/cc-eps-converted-to.pdf used on input 
-line 115.
+line 305.
 (pdftex.def)             Requested size: 123.99582pt x 134.06232pt.
 Package epstopdf Info: Source file: <images/gargoyle/ccs.eps>
 (epstopdf)                    date: 2013-09-25 10:51:56
@@ -1177,23 +1309,23 @@ Package epstopdf Info: Source file: <images/gargoyle/ccs.eps>
 (epstopdf)                    size: 104299 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/gargoyle/ccs-eps-co
 nverted-to.pdf images/gargoyle/ccs.eps>
-(epstopdf)             \includegraphics on input line 116.
+(epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/ccs-eps-converted-to.pdf, id=495, 667.49374pt x 721.69624pt>
+<images/gargoyle/ccs-eps-converted-to.pdf, id=503, 667.49374pt x 721.69624pt>
 File: images/gargoyle/ccs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/ccs-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/ccs-eps-converted-to.pdf used on input
- line 116.
+ line 306.
 (pdftex.def)             Requested size: 123.99582pt x 134.06232pt.
 
-Overfull \hbox (18.94177pt too wide) in paragraph at lines 105--119
+Overfull \hbox (18.94177pt too wide) in paragraph at lines 295--309
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 19.53719pt on input line 121.
+LaTeX Warning: Float too large for page by 19.53719pt on input line 311.
 
 Package epstopdf Info: Source file: <images/robust/pointset.eps>
 (epstopdf)                    date: 2013-09-27 09:44:44
@@ -1204,15 +1336,15 @@ f>
 (epstopdf)                    size: 217434 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/robust/pointset-eps
 -converted-to.pdf images/robust/pointset.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/pointset-eps-converted-to.pdf, id=496, 518.93875pt x 526.96875pt
+<images/robust/pointset-eps-converted-to.pdf, id=504, 518.93875pt x 526.96875pt
 >
 File: images/robust/pointset-eps-converted-to.pdf Graphic file (type pdf)
  <use images/robust/pointset-eps-converted-to.pdf>
 Package pdftex.def Info: images/robust/pointset-eps-converted-to.pdf used on in
-put line 126.
+put line 316.
 (pdftex.def)             Requested size: 121.46284pt x 123.33913pt.
 Package epstopdf Info: Source file: <images/robust/poisson.eps>
 (epstopdf)                    date: 2013-09-27 09:43:48
@@ -1223,14 +1355,14 @@ Package epstopdf Info: Source file: <images/robust/poisson.eps>
 (epstopdf)                    size: 52181 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/robust/poisson-eps-
 converted-to.pdf images/robust/poisson.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/poisson-eps-converted-to.pdf, id=497, 518.93875pt x 526.96875pt>
+<images/robust/poisson-eps-converted-to.pdf, id=505, 518.93875pt x 526.96875pt>
 File: images/robust/poisson-eps-converted-to.pdf Graphic file (type pdf)
 <use images/robust/poisson-eps-converted-to.pdf>
 Package pdftex.def Info: images/robust/poisson-eps-converted-to.pdf used on inp
-ut line 127.
+ut line 317.
 (pdftex.def)             Requested size: 121.46284pt x 123.33913pt.
 Package epstopdf Info: Source file: <images/robust/bcclowlambda.eps>
 (epstopdf)                    date: 2013-09-27 09:45:46
@@ -1241,15 +1373,15 @@ o.pdf>
 (epstopdf)                    size: 56048 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/robust/bcclowlambda
 -eps-converted-to.pdf images/robust/bcclowlambda.eps>
-(epstopdf)             \includegraphics on input line 129.
+(epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/bcclowlambda-eps-converted-to.pdf, id=498, 518.93875pt x 526.968
+<images/robust/bcclowlambda-eps-converted-to.pdf, id=506, 518.93875pt x 526.968
 75pt>
 File: images/robust/bcclowlambda-eps-converted-to.pdf Graphic file (type pdf)
  <use images/robust/bcclowlambda-eps-converted-to.pdf>
 Package pdftex.def Info: images/robust/bcclowlambda-eps-converted-to.pdf used o
-n input line 129.
+n input line 319.
 (pdftex.def)             Requested size: 121.46284pt x 123.33913pt.
 Package epstopdf Info: Source file: <images/robust/bccbiggerlambda.eps>
 (epstopdf)                    date: 2013-09-27 09:47:12
@@ -1260,67 +1392,71 @@ d-to.pdf>
 (epstopdf)                    size: 47317 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/robust/bccbiggerlam
 bda-eps-converted-to.pdf images/robust/bccbiggerlambda.eps>
-(epstopdf)             \includegraphics on input line 130.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/bccbiggerlambda-eps-converted-to.pdf, id=499, 518.93875pt x 526.
+<images/robust/bccbiggerlambda-eps-converted-to.pdf, id=507, 518.93875pt x 526.
 96875pt>
 File: images/robust/bccbiggerlambda-eps-converted-to.pdf Graphic file (type pdf
 )
  <use images/robust/bccbiggerlambda-eps-converted-to.pdf>
 Package pdftex.def Info: images/robust/bccbiggerlambda-eps-converted-to.pdf use
-d on input line 130.
+d on input line 320.
 (pdftex.def)             Requested size: 121.46284pt x 123.33913pt.
 
-Overfull \hbox (13.87582pt too wide) in paragraph at lines 125--133
+Overfull \hbox (13.87582pt too wide) in paragraph at lines 315--323
  [][] 
  []
 
-) (./conclusion.tex) [12] (./paper.bbl [13 <./figures/dist32-eps-converted-to.p
-df> <./figures/dist64-eps-converted-to.pdf> <./figures/dist128-eps-converted-to
-.pdf> <./figures/dist256-eps-converted-to.pdf> <./figures/angle32-eps-converted
--to.pdf> <./figures/angle64-eps-converted-to.pdf> <./figures/angle128-eps-conve
-rted-to.pdf> <./figures/angle256-eps-converted-to.pdf> <./figures/anchor/_dist-
-eps-converted-to.pdf> <./figures/daratech/_dist-eps-converted-to.pdf> <./figure
-s/dc/_dist-eps-converted-to.pdf> <./figures/quasimoto/_dist-eps-converted-to.pd
-f> <./figures/anchor/_angle-eps-converted-to.pdf> <./figures/daratech/_angle-ep
-s-converted-to.pdf> <./figures/dc/_angle-eps-converted-to.pdf> <./figures/quasi
-moto/_angle-eps-converted-to.pdf>]
+) (./conclusion.tex [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+[14 <./figures/dist32-eps-converted-to.pdf> <./figures/dist64-eps-converted-to.
+pdf> <./figures/dist128-eps-converted-to.pdf> <./figures/dist256-eps-converted-
+to.pdf> <./figures/angle32-eps-converted-to.pdf> <./figures/angle64-eps-convert
+ed-to.pdf> <./figures/angle128-eps-converted-to.pdf> <./figures/angle256-eps-co
+nverted-to.pdf> <./figures/anchor/_dist-eps-converted-to.pdf> <./figures/darate
+ch/_dist-eps-converted-to.pdf> <./figures/dc/_dist-eps-converted-to.pdf> <./fig
+ures/quasimoto/_dist-eps-converted-to.pdf> <./figures/anchor/_angle-eps-convert
+ed-to.pdf> <./figures/daratech/_angle-eps-converted-to.pdf> <./figures/dc/_angl
+e-eps-converted-to.pdf> <./figures/quasimoto/_angle-eps-converted-to.pdf>])
+(./paper.bbl [15 <./images/gargoyle/original-eps-converted-to.pdf> <./images/ga
+rgoyle/poisson-eps-converted-to.pdf> <./images/gargoyle/bcc-eps-converted-to.pd
+f> <./images/gargoyle/bccs-eps-converted-to.pdf> <./images/gargoyle/bcc4-eps-co
+nverted-to.pdf> <./images/gargoyle/bcc4s-eps-converted-to.pdf> <./images/gargoy
+le/cc-eps-converted-to.pdf> <./images/gargoyle/ccs-eps-converted-to.pdf> <./ima
+ges/robust/pointset-eps-converted-to.pdf> <./images/robust/poisson-eps-converte
+d-to.pdf> <./images/robust/bcclowlambda-eps-converted-to.pdf> <./images/robust/
+bccbiggerlambda-eps-converted-to.pdf>]
 Missing character: There is no Ã in font ptmr7t!
- [14 <./images/gargoyle/original-eps-converted-to.pdf> <./images/gargoyle/poiss
-on-eps-converted-to.pdf> <./images/gargoyle/bcc-eps-converted-to.pdf> <./images
-/gargoyle/bccs-eps-converted-to.pdf> <./images/gargoyle/bcc4-eps-converted-to.p
-df> <./images/gargoyle/bcc4s-eps-converted-to.pdf> <./images/gargoyle/cc-eps-co
-nverted-to.pdf> <./images/gargoyle/ccs-eps-converted-to.pdf> <./images/robust/p
-ointset-eps-converted-to.pdf> <./images/robust/poisson-eps-converted-to.pdf> <.
-/images/robust/bcclowlambda-eps-converted-to.pdf> <./images/robust/bccbiggerlam
-bda-eps-converted-to.pdf>]
 Missing character: There is no ö in font ptmr7t!
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 719.
- [15
-
-]
+ [16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 719.
  (./paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 719.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 719.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: FBC267BA5EC6B2EBCB4C565F49606FC3;2774.
+(rerunfilecheck)             Checksum: B928B6A74BCE8580B91C70DF2B733AF9;2843.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 719.
  ) 
 Here is how much of TeX's memory you used:
- 8903 strings out of 493117
- 136004 string characters out of 6135433
- 245355 words of memory out of 5000000
- 12027 multiletter control sequences out of 15000+600000
- 52826 words of font info for 122 fonts, out of 8000000 for 9000
+ 9609 strings out of 493117
+ 146322 string characters out of 6135433
+ 280555 words of memory out of 5000000
+ 12691 multiletter control sequences out of 15000+600000
+ 53441 words of font info for 124 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,20n,47p,1562b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,26n,92p,1562b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texl
@@ -1338,35 +1474,37 @@ texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/20
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/euler/eusm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/euler/eusm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
-rw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on paper.pdf (15 pages, 3243672 bytes).
+-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
+w/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on paper.pdf (16 pages, 3286256 bytes).
 PDF statistics:
- 803 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 133 named destinations out of 1000 (max. 500000)
- 519 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 

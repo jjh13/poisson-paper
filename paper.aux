@@ -1,5 +1,6 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
+\providecommand{\transparent@use}[1]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
 \global\let\oldcontentsline\contentsline
@@ -150,9 +151,6 @@
 \citation{practicalbox}
 \citation{practicalbox}
 \citation{fastbox}
-\citation{linearrev}
-\citation{gradrev}
-\citation{reconbench}
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Recovering the Indicator}{11}{section.6}}
 \newlabel{sec:recoveringX}{{VI}{11}{Recovering the Indicator}{section.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Extracting the Iso-Contour}{11}{subsection.6.1}}
@@ -160,33 +158,49 @@
 \@writefile{toc}{\contentsline {section}{\numberline {VII}Experiments}{11}{section.7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Cartesian Lattice}{11}{subsection.7.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}1}Basis function}{11}{subsubsection.7.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}2}Filter weights}{11}{subsubsection.7.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}2}Filter Design}{11}{subsubsection.7.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}}BCC Lattice}{11}{subsection.7.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}1}Basis function}{11}{subsubsection.7.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}2}Filter weights}{11}{subsubsection.7.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-C}}Shifted Basis Functions}{11}{subsection.7.3}}
+\newlabel{sec:poissonFilterDesign}{{\unhbox \voidb@x \hbox {VII-B}2}{11}{Filter Design}{subsubsection.7.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}2}Filter Design}{11}{subsubsection.7.2.2}}
+\citation{linearrev}
+\citation{gradrev}
 \citation{reconbench}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Filters used in our experiments. These filters are applied along the principal lattice directions.}}{12}{table.1}}
-\newlabel{tab:filters}{{I}{12}{Filters used in our experiments. These filters are applied along the principal lattice directions}{table.1}{}}
+\citation{reconbench}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {VII-B}2a}Interpolation}{12}{paragraph.7.2.2.1}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {VII-B}2b}Quasi-Interpolation}{12}{paragraph.7.2.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}3}BCC Lattice}{12}{subsubsection.7.2.3}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\unhbox \voidb@x \hbox {VII-B}3a}Interpolation}{12}{paragraph.7.2.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-C}}Shifted Basis Functions}{12}{subsection.7.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {VIII}Results and Discussion}{12}{section.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}}Robustness}{12}{subsection.8.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}}Complexity}{12}{subsection.8.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}}Parameter Selection}{12}{subsection.8.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{12}{section.9}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Poisson filters for the Cartesian lattice}}{13}{table.1}}
+\newlabel{tab:filters}{{I}{13}{Poisson filters for the Cartesian lattice}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Poisson filters for the BCC lattice}}{13}{table.2}}
+\newlabel{tab:filtersBCC}{{II}{13}{Poisson filters for the BCC lattice}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Filters used in our experiments. These filters are applied along the principal lattice directions.}}{13}{table.3}}
+\newlabel{tab:filters}{{III}{13}{Filters used in our experiments. These filters are applied along the principal lattice directions}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-A}}Robustness}{13}{subsection.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-B}}Complexity}{13}{subsection.8.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\ensuremath  {\times 10^{-3}}$, $1\ensuremath  {\times 10^{-4}}$, $1\ensuremath  {\times 10^{-5}}$ and $1\ensuremath  {\times 10^{-6}}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error.}}{14}{figure.5}}
+\newlabel{fig:t1}{{5}{14}{An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\scint {-3}$, $1\scint {-4}$, $1\scint {-5}$ and $1\scint {-6}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\ensuremath  {\times 10^{2}}$, and $\lambda _2=5\ensuremath  {\times 10^{-5}}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach.}}{14}{figure.6}}
+\newlabel{fig:t2}{{6}{14}{A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\scint {2}$, and $\lambda _2=5\scint {-5}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VIII-C}}Parameter Selection}{14}{subsection.8.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{14}{section.9}}
 \bibstyle{IEEEtran}
 \bibdata{IEEEabrv,./paper}
 \bibcite{practicalbox}{1}
 \bibcite{gradrev}{2}
 \bibcite{reconstar_eg14}{3}
 \bibcite{delaunay}{4}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\ensuremath  {\times 10^{2}}$ and $\lambda _2 = 1\ensuremath  {\times 10^{-4}}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model.}}{15}{figure.7}}
+\newlabel{fig:r1}{{7}{15}{A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\scint {2}$ and $\lambda _2 = 1\scint {-4}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\ensuremath  {\times 10^{2}})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor.}}{15}{figure.8}}
+\newlabel{fig:r2}{{8}{15}{Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\scint {2})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor}{figure.8}{}}
+\@writefile{toc}{\contentsline {section}{References}{15}{section*.2}}
 \bibcite{powercrust}{5}
 \bibcite{cocone}{6}
 \bibcite{hoppecut}{7}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\ensuremath  {\times 10^{-3}}$, $1\ensuremath  {\times 10^{-4}}$, $1\ensuremath  {\times 10^{-5}}$ and $1\ensuremath  {\times 10^{-6}}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error.}}{13}{figure.5}}
-\newlabel{fig:t1}{{5}{13}{An error comparison for the Gargoyle model as the grid resolution increases from $32^3$ to $256^3$ in steps of powers of two. The top row represents the Hausdorff (bar height) and mean distance (black line) to the original baseline model, while the bottom row represents the max angle deviation. $\lambda _1 = 100$, and $\lambda _2$, was chosen to be $1\scint {-3}$, $1\scint {-4}$, $1\scint {-5}$ and $1\scint {-6}$ from left to right respectively. Notice that the introduced shift greatly reduces angular error}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\ensuremath  {\times 10^{2}}$, and $\lambda _2=5\ensuremath  {\times 10^{-5}}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach.}}{13}{figure.6}}
-\newlabel{fig:t2}{{6}{13}{A similar comparison for the case in which the grid is fixed at a resolution of $128^3$ for all models. Here, $\lambda _1=1\scint {2}$, and $\lambda _2=5\scint {-5}$. Again, we see the same trend of the BCC lattice outperforming the comparable Cartesian lattices, and the Screened Poisson approach}{figure.6}{}}
-\@writefile{toc}{\contentsline {section}{References}{13}{section*.2}}
 \bibcite{ssdrecon}{8}
 \bibcite{radial}{9}
 \bibcite{hermite}{10}
@@ -198,10 +212,6 @@
 \bibcite{wavelet}{16}
 \bibcite{firstbox}{17}
 \bibcite{hvolrecon}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\ensuremath  {\times 10^{2}}$ and $\lambda _2 = 1\ensuremath  {\times 10^{-4}}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model.}}{14}{figure.7}}
-\newlabel{fig:r1}{{7}{14}{A set of reconstructions on a $128^3$ Cartesian grid, $50\times 50\times 100$ BCC grid or an oct-tree depth of 7. Parameters were chosen as $\lambda _1 = 1\scint {2}$ and $\lambda _2 = 1\scint {-4}$. Comparing between the Cartesian and BCC reconstruction spaces, the BCC lattice seems to consistently outperform the Cartesian lattice beyond a resolution of $128^3$, moreover, the advantage of shifting the reconstruction space is apparent, specifically around the teeth and lips of the model}{figure.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\ensuremath  {\times 10^{2}})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor.}}{14}{figure.8}}
-\newlabel{fig:r2}{{8}{14}{Varying the smoothing parameter $\lambda _2$ allows us to smooth our noise from practical data sets $(\lambda _1 = 1\scint {2})$. The Screened Poisson method is able to more faithfully reconstruct the center hole of the Anchor model. Our method, however, is unable to infer the importance of the samples on the interior of the Anchor}{figure.8}{}}
 \bibcite{lboltzman}{19}
 \bibcite{hamilton2013}{20}
 \bibcite{hamilton2013hexagonal}{21}
