@@ -16,45 +16,45 @@ Warning--I didn't find a database entry for "finite_el"
 Warning--edition ordinal word "Softcover reprint of hardcover 1st ed. 1993" may be too high (or improper) for conversion in boorboxsplines
 
 Done.
-You've used 30 entries,
+You've used 43 entries,
             4039 wiz_defined-function locations,
-            1394 strings with 20016 characters,
-and the built_in function-call counts, 26924 in all, are:
-= -- 2216
-> -- 625
-< -- 266
-+ -- 351
-- -- 98
-* -- 1348
-:= -- 3882
-add.period$ -- 69
-call.type$ -- 30
-change.case$ -- 32
-chr.to.int$ -- 612
-cite$ -- 31
-duplicate$ -- 1898
-empty$ -- 2100
-format.name$ -- 127
-if$ -- 6279
+            1462 strings with 21891 characters,
+and the built_in function-call counts, 36896 in all, are:
+= -- 3050
+> -- 813
+< -- 366
++ -- 461
+- -- 123
+* -- 1809
+:= -- 5349
+add.period$ -- 96
+call.type$ -- 43
+change.case$ -- 42
+chr.to.int$ -- 849
+cite$ -- 44
+duplicate$ -- 2600
+empty$ -- 2917
+format.name$ -- 161
+if$ -- 8619
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 319
-newline$ -- 115
-num.names$ -- 30
-pop$ -- 685
+int.to.str$ -- 43
+missing$ -- 428
+newline$ -- 154
+num.names$ -- 43
+pop$ -- 918
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2076
+skip$ -- 2872
 stack$ -- 0
-substring$ -- 1456
-swap$ -- 1658
-text.length$ -- 62
+substring$ -- 2023
+swap$ -- 2270
+text.length$ -- 83
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 43
 warning$ -- 1
-while$ -- 122
-width$ -- 32
-write$ -- 334
+while$ -- 162
+width$ -- 45
+write$ -- 459
 (There were 2 warnings)

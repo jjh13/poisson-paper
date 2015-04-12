@@ -150,6 +150,42 @@ X.~Xu, A.~Alvarado, and A.~Entezari, ``Reconstruction of irregularly-sampled
   volumetric data in efficient box spline spaces,'' \emph{IEEE Trans. Med.
   Img.}, vol.~31, no.~7, pp. 1472--1480, 2012.
 
+\bibitem{kreyszig89}
+E.~Kreyszig, \emph{{Introductory Functional Analysis with Applications}}, ser.
+  Wiley Classics Library.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, 1989.
+
+\bibitem{blu99}
+T.~Blu and M.~Unser, ``Quantitative {F}ourier analysis of approximation
+  techniques: {P}art {I}---{I}nterpolators and projectors,'' \emph{{IEEE}
+  Transactions on Signal Processing}, vol.~47, no.~10, pp. 2783--2795, Oct.
+  1999.
+
+\bibitem{condat05hexagonal}
+L.~Condat, D.~Van De~Ville, and T.~Blu, ``Hexagonal versus orthogonal lattices:
+  A new comparison using approximation theory,'' in \emph{IEEE International
+  Conference on Image Processing}, vol.~3.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2005, pp. III--1116.
+
+\bibitem{condat07}
+L.~Condat and D.~Van De~Ville, ``Quasi-interpolating spline models for
+  hexagonally-sampled data,'' \emph{IEEE Transactions on Image Processing},
+  vol.~16, no.~5, pp. 1195 --1206, May 2007.
+
+\bibitem{condat08}
+------, ``New optimized spline functions for interpolation on the hexagonal
+  lattice,'' in \emph{Image Processing, 2008. ICIP 2008. 15th IEEE
+  International Conference on}, Oct 2008, pp. 1256--1259.
+
+\bibitem{alim10}
+U.~R. Alim, T.~M\"{o}ller, and L.~Condat, ``Gradient estimation revitalized,''
+  \emph{IEEE Transactions on Visualization and Computer Graphics}, vol.~16,
+  no.~6, pp. 1494--1503, Nov. 2010.
+
+\bibitem{condat11}
+L.~Condat and T.~M\"{o}ller, ``Quantitative error analysis for the
+  reconstruction of derivatives,'' \emph{IEEE Transactions on Signal
+  Processing}, vol.~59, no.~6, pp. 2965 --2969, Jun. 2011.
+
 \bibitem{quasibcc}
 A.~Entezari, M.~Mirzargar, and L.~Kalantari, ``Quasi-interpolation on the body
   centered cubic lattice,'' in \emph{Proc. Eurographics / IEEE - VGTC Conf. on
@@ -169,6 +205,36 @@ C.~de~Boor, K.~H{\"o}llig, and S.~Riemenschneider, \emph{Box Splines (Applied
 Z.~Hossain, U.~Alim, and T.~M\"oller, ``Toward high-quality gradient estimation
   on regular lattices,'' \emph{IEEE Trans. on Vis. and Comp. Graph.}, vol.~17,
   no.~4, pp. 426--439, 2011.
+
+\bibitem{marshall99}
+S.~L. Marshall, ``A rapidly convergent modified {Green's} function for
+  {Laplace's} equation in a rectangular region,'' \emph{Proceedings of the
+  Royal Society A: Mathematical, Physical and Engineering Sciences}, vol. 455,
+  no. 1985, pp. 1739--1766, 1999.
+
+\bibitem{nied92}
+H.~Niederreiter, \emph{{Random Number Generation and Quasi-Monte Carlo
+  Methods}}.\hskip 1em plus 0.5em minus 0.4em\relax Society for Industrial and
+  Applied Mathematics, 1992.
+
+\bibitem{jacob02}
+M.~Jacob, T.~Blu, and M.~Unser, ``Sampling of periodic signals: A quantitative
+  error analysis,'' \emph{{IEEE} Transactions on Signal Processing}, vol.~50,
+  no.~5, pp. 1153–--1159, 2002.
+
+\bibitem{quarteroni08}
+A.~Quarteroni and A.~Valli, \emph{{Numerical Approximation of Partial
+  Differential Equations}}, ser. Springer Series in Computational
+  Mathematics.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2008.
+
+\bibitem{usmanthesis}
+U.~R. Alim, ``Data processing on the body-centered cubic lattice,'' Ph.D.
+  dissertation, Simon Fraser University, Burnaby BC, Canada, 2012.
+
+\bibitem{bccdst}
+U.~R. Alim and T.~M\"{o}ller, ``A fast {Fourier} transform with rectangular
+  output on the {BCC} and {FCC} lattices,'' in \emph{Proc. SampTA'09)},
+  Marseille, France, May 18-22, 2009.
 
 \bibitem{fastbox}
 B.~Finkbeiner, A.~Entezari, D.~Van De~Ville, and T.~M\"{o}ller, ``Efficient

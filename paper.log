@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 APR 2015 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 APR 2015 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,29 +628,7 @@ Underfull \hbox (badness 1354) in paragraph at lines 64--65
 []\OT1/ptm/m/n/10 The in-ner prod-uct be-tween two real val-ued func-tions
  []
 
-
-LaTeX Warning: Citation `kreyszig89' on page 5 undefined on input line 67.
-
-
-LaTeX Warning: Citation `blu99' on page 5 undefined on input line 100.
-
-
-LaTeX Warning: Citation `condat05hexagonal' on page 5 undefined on input line 1
-03.
-
-
-LaTeX Warning: Citation `condat07' on page 5 undefined on input line 103.
-
-
-LaTeX Warning: Citation `condat08' on page 5 undefined on input line 103.
-
-
-LaTeX Warning: Citation `alim10' on page 5 undefined on input line 103.
-
-
-LaTeX Warning: Citation `condat11' on page 5 undefined on input line 103.
-
-[5] <figures/boxspline/2dex.png, id=320, 1027.84pt x 1027.84pt>
+[5] <figures/boxspline/2dex.png, id=328, 1027.84pt x 1027.84pt>
 File: figures/boxspline/2dex.png Graphic file (type png)
 
 <use figures/boxspline/2dex.png>
@@ -668,7 +646,7 @@ ted-to.pdf images/pipeline.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/pipeline-eps-converted-to.pdf, id=328, 441.65pt x 149.55875pt>
+<images/pipeline-eps-converted-to.pdf, id=336, 441.65pt x 149.55875pt>
 File: images/pipeline-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/pipeline-eps-converted-to.pdf>
@@ -706,9 +684,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ) (./poisson_errker.tex [7 <./images/pipeline-eps-converted-to.pdf>]
 
-LaTeX Warning: Citation `marshall99' on page 8 undefined on input line 32.
-
-
 LaTeX Font Warning: Command \small invalid in math mode on input line 45.
 
 
@@ -724,9 +699,6 @@ LaTeX Font Info:    Try loading font information for U+eus on input line 138.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-
-LaTeX Warning: Citation `nied92' on page 8 undefined on input line 158.
-
 (./figures/2DCartesian.tex
 Package epstopdf Info: Source file: <./figures/2DCartesian.eps>
 (epstopdf)                    date: 2014-07-08 11:54:05
@@ -740,7 +712,7 @@ converted-to.pdf ./figures/2DCartesian.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/2DCartesian-eps-converted-to.pdf, id=369, 301.125pt x 293.095pt>
+<./figures/2DCartesian-eps-converted-to.pdf, id=379, 301.125pt x 293.095pt>
 File: ./figures/2DCartesian-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/2DCartesian-eps-converted-to.pdf>
@@ -760,7 +732,7 @@ onverted-to.pdf ./figures/2DQuincunx.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<./figures/2DQuincunx-eps-converted-to.pdf, id=370, 301.125pt x 293.095pt>
+<./figures/2DQuincunx-eps-converted-to.pdf, id=380, 301.125pt x 293.095pt>
 File: ./figures/2DQuincunx-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/2DQuincunx-eps-converted-to.pdf>
@@ -769,22 +741,7 @@ t line 42.
 (pdftex.def)             Requested size: 301.12425pt x 293.09427pt.
 ) [8]
 
-LaTeX Warning: Citation `jacob02' on page 9 undefined on input line 186.
-
-
-LaTeX Warning: Citation `jacob02' on page 9 undefined on input line 230.
-
-
 LaTeX Warning: Reference `app:1' on page 9 undefined on input line 247.
-
-
-LaTeX Warning: Citation `jacob02' on page 9 undefined on input line 278.
-
-
-LaTeX Warning: Citation `blu99' on page 9 undefined on input line 286.
-
-
-LaTeX Warning: Citation `jacob02' on page 9 undefined on input line 295.
 
 [9 <./figures/2DCartesian-eps-converted-to.pdf> <./figures/2DQuincunx-eps-conve
 rted-to.pdf>]
@@ -801,9 +758,6 @@ LaTeX Warning: Reference `sec:interpQuasiInterp' on page 10 undefined on input
 line 408.
 
 
-LaTeX Warning: Citation `quarteroni08' on page 10 undefined on input line 414.
-
-
 LaTeX Warning: Reference `sec:approximateSolution' on page 10 undefined on inpu
 t line 419.
 
@@ -816,17 +770,7 @@ LaTeX Warning: Reference `eq:quasiCondition' on page 11 undefined on input line
 LaTeX Warning: Reference `sec:interpQuasiInterp' on page 11 undefined on input 
 line 500.
 
-) (./indicator.tex
-
-LaTeX Warning: Citation `usmanthesis' on page 11 undefined on input line 4.
-
-
-LaTeX Warning: Citation `usmanthesis' on page 11 undefined on input line 8.
-
-
-LaTeX Warning: Citation `bccdst' on page 11 undefined on input line 8.
-
-) (./results.tex
+) (./indicator.tex) (./results.tex
 
 LaTeX Warning: Reference `eq:1DBspline' on page 11 undefined on input line 34.
 
@@ -879,7 +823,7 @@ Package epstopdf Info: Source file: <figures/dist32.eps>
 ed-to.pdf figures/dist32.eps>
 (epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
-<figures/dist32-eps-converted-to.pdf, id=480, 361.35pt x 252.945pt>
+<figures/dist32-eps-converted-to.pdf, id=505, 361.35pt x 252.945pt>
 File: figures/dist32-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist32-eps-converted-to.pdf>
@@ -897,7 +841,7 @@ ed-to.pdf figures/dist64.eps>
 (epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist64-eps-converted-to.pdf, id=481, 361.35pt x 252.945pt>
+<figures/dist64-eps-converted-to.pdf, id=506, 361.35pt x 252.945pt>
 File: figures/dist64-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist64-eps-converted-to.pdf>
@@ -915,7 +859,7 @@ ted-to.pdf figures/dist128.eps>
 (epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist128-eps-converted-to.pdf, id=482, 361.35pt x 252.945pt>
+<figures/dist128-eps-converted-to.pdf, id=507, 361.35pt x 252.945pt>
 File: figures/dist128-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist128-eps-converted-to.pdf>
@@ -933,7 +877,7 @@ ted-to.pdf figures/dist256.eps>
 (epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dist256-eps-converted-to.pdf, id=483, 361.35pt x 252.945pt>
+<figures/dist256-eps-converted-to.pdf, id=508, 361.35pt x 252.945pt>
 File: figures/dist256-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dist256-eps-converted-to.pdf>
@@ -951,7 +895,7 @@ ted-to.pdf figures/angle32.eps>
 (epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle32-eps-converted-to.pdf, id=484, 361.35pt x 252.945pt>
+<figures/angle32-eps-converted-to.pdf, id=509, 361.35pt x 252.945pt>
 File: figures/angle32-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle32-eps-converted-to.pdf>
@@ -969,7 +913,7 @@ ted-to.pdf figures/angle64.eps>
 (epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle64-eps-converted-to.pdf, id=485, 361.35pt x 252.945pt>
+<figures/angle64-eps-converted-to.pdf, id=510, 361.35pt x 252.945pt>
 File: figures/angle64-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle64-eps-converted-to.pdf>
@@ -987,7 +931,7 @@ rted-to.pdf figures/angle128.eps>
 (epstopdf)             \includegraphics on input line 268.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle128-eps-converted-to.pdf, id=486, 361.35pt x 252.945pt>
+<figures/angle128-eps-converted-to.pdf, id=511, 361.35pt x 252.945pt>
 File: figures/angle128-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle128-eps-converted-to.pdf>
@@ -1005,7 +949,7 @@ rted-to.pdf figures/angle256.eps>
 (epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/angle256-eps-converted-to.pdf, id=487, 361.35pt x 252.945pt>
+<figures/angle256-eps-converted-to.pdf, id=512, 361.35pt x 252.945pt>
 File: figures/angle256-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/angle256-eps-converted-to.pdf>
@@ -1028,7 +972,7 @@ Package epstopdf Info: Source file: <figures/anchor/_dist.eps>
 onverted-to.pdf figures/anchor/_dist.eps>
 (epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
-<figures/anchor/_dist-eps-converted-to.pdf, id=488, 361.35pt x 252.945pt>
+<figures/anchor/_dist-eps-converted-to.pdf, id=513, 361.35pt x 252.945pt>
 File: figures/anchor/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/anchor/_dist-eps-converted-to.pdf>
@@ -1047,7 +991,7 @@ f>
 (epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/daratech/_dist-eps-converted-to.pdf, id=489, 361.35pt x 252.945pt>
+<figures/daratech/_dist-eps-converted-to.pdf, id=514, 361.35pt x 252.945pt>
 File: figures/daratech/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/daratech/_dist-eps-converted-to.pdf>
@@ -1065,7 +1009,7 @@ rted-to.pdf figures/dc/_dist.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dc/_dist-eps-converted-to.pdf, id=490, 361.35pt x 252.945pt>
+<figures/dc/_dist-eps-converted-to.pdf, id=515, 361.35pt x 252.945pt>
 File: figures/dc/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dc/_dist-eps-converted-to.pdf>
@@ -1084,7 +1028,7 @@ s-converted-to.pdf figures/quasimoto/_dist.eps>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/quasimoto/_dist-eps-converted-to.pdf, id=491, 361.35pt x 252.945pt>
+<figures/quasimoto/_dist-eps-converted-to.pdf, id=516, 361.35pt x 252.945pt>
 File: figures/quasimoto/_dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/quasimoto/_dist-eps-converted-to.pdf>
@@ -1103,7 +1047,7 @@ converted-to.pdf figures/anchor/_angle.eps>
 (epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/anchor/_angle-eps-converted-to.pdf, id=492, 361.35pt x 252.945pt>
+<figures/anchor/_angle-eps-converted-to.pdf, id=517, 361.35pt x 252.945pt>
 File: figures/anchor/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/anchor/_angle-eps-converted-to.pdf>
@@ -1122,7 +1066,7 @@ s-converted-to.pdf figures/daratech/_angle.eps>
 (epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/daratech/_angle-eps-converted-to.pdf, id=493, 361.35pt x 252.945pt>
+<figures/daratech/_angle-eps-converted-to.pdf, id=518, 361.35pt x 252.945pt>
 File: figures/daratech/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/daratech/_angle-eps-converted-to.pdf>
@@ -1140,7 +1084,7 @@ erted-to.pdf figures/dc/_angle.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/dc/_angle-eps-converted-to.pdf, id=494, 361.35pt x 252.945pt>
+<figures/dc/_angle-eps-converted-to.pdf, id=519, 361.35pt x 252.945pt>
 File: figures/dc/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/dc/_angle-eps-converted-to.pdf>
@@ -1159,7 +1103,7 @@ ps-converted-to.pdf figures/quasimoto/_angle.eps>
 (epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/quasimoto/_angle-eps-converted-to.pdf, id=495, 361.35pt x 252.945pt>
+<figures/quasimoto/_angle-eps-converted-to.pdf, id=520, 361.35pt x 252.945pt>
 File: figures/quasimoto/_angle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/quasimoto/_angle-eps-converted-to.pdf>
@@ -1183,7 +1127,7 @@ ps-converted-to.pdf images/gargoyle/original.eps>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/original-eps-converted-to.pdf, id=496, 667.49374pt x 721.69624
+<images/gargoyle/original-eps-converted-to.pdf, id=521, 667.49374pt x 721.69624
 pt>
 File: images/gargoyle/original-eps-converted-to.pdf Graphic file (type pdf)
  <use images/gargoyle/original-eps-converted-to.pdf>
@@ -1202,7 +1146,7 @@ s-converted-to.pdf images/gargoyle/poisson.eps>
 (epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/poisson-eps-converted-to.pdf, id=497, 667.49374pt x 721.69624p
+<images/gargoyle/poisson-eps-converted-to.pdf, id=522, 667.49374pt x 721.69624p
 t>
 File: images/gargoyle/poisson-eps-converted-to.pdf Graphic file (type pdf)
  <use images/gargoyle/poisson-eps-converted-to.pdf>
@@ -1220,7 +1164,7 @@ nverted-to.pdf images/gargoyle/bcc.eps>
 (epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc-eps-converted-to.pdf, id=498, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc-eps-converted-to.pdf, id=523, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bcc-eps-converted-to.pdf>
@@ -1239,7 +1183,7 @@ onverted-to.pdf images/gargoyle/bccs.eps>
 (epstopdf)             \includegraphics on input line 300.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bccs-eps-converted-to.pdf, id=499, 667.49374pt x 721.69624pt>
+<images/gargoyle/bccs-eps-converted-to.pdf, id=524, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bccs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bccs-eps-converted-to.pdf>
@@ -1258,7 +1202,7 @@ onverted-to.pdf images/gargoyle/bcc4.eps>
 (epstopdf)             \includegraphics on input line 302.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc4-eps-converted-to.pdf, id=500, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc4-eps-converted-to.pdf, id=525, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/bcc4-eps-converted-to.pdf>
@@ -1277,7 +1221,7 @@ converted-to.pdf images/gargoyle/bcc4s.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/bcc4s-eps-converted-to.pdf, id=501, 667.49374pt x 721.69624pt>
+<images/gargoyle/bcc4s-eps-converted-to.pdf, id=526, 667.49374pt x 721.69624pt>
 File: images/gargoyle/bcc4s-eps-converted-to.pdf Graphic file (type pdf)
 <use images/gargoyle/bcc4s-eps-converted-to.pdf>
 Package pdftex.def Info: images/gargoyle/bcc4s-eps-converted-to.pdf used on inp
@@ -1294,7 +1238,7 @@ verted-to.pdf images/gargoyle/cc.eps>
 (epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/cc-eps-converted-to.pdf, id=502, 667.49374pt x 721.69624pt>
+<images/gargoyle/cc-eps-converted-to.pdf, id=527, 667.49374pt x 721.69624pt>
 File: images/gargoyle/cc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/cc-eps-converted-to.pdf>
@@ -1312,7 +1256,7 @@ nverted-to.pdf images/gargoyle/ccs.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/gargoyle/ccs-eps-converted-to.pdf, id=503, 667.49374pt x 721.69624pt>
+<images/gargoyle/ccs-eps-converted-to.pdf, id=528, 667.49374pt x 721.69624pt>
 File: images/gargoyle/ccs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/gargoyle/ccs-eps-converted-to.pdf>
@@ -1339,7 +1283,7 @@ f>
 (epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/pointset-eps-converted-to.pdf, id=504, 518.93875pt x 526.96875pt
+<images/robust/pointset-eps-converted-to.pdf, id=529, 518.93875pt x 526.96875pt
 >
 File: images/robust/pointset-eps-converted-to.pdf Graphic file (type pdf)
  <use images/robust/pointset-eps-converted-to.pdf>
@@ -1358,7 +1302,7 @@ converted-to.pdf images/robust/poisson.eps>
 (epstopdf)             \includegraphics on input line 317.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/poisson-eps-converted-to.pdf, id=505, 518.93875pt x 526.96875pt>
+<images/robust/poisson-eps-converted-to.pdf, id=530, 518.93875pt x 526.96875pt>
 File: images/robust/poisson-eps-converted-to.pdf Graphic file (type pdf)
 <use images/robust/poisson-eps-converted-to.pdf>
 Package pdftex.def Info: images/robust/poisson-eps-converted-to.pdf used on inp
@@ -1376,7 +1320,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/bcclowlambda-eps-converted-to.pdf, id=506, 518.93875pt x 526.968
+<images/robust/bcclowlambda-eps-converted-to.pdf, id=531, 518.93875pt x 526.968
 75pt>
 File: images/robust/bcclowlambda-eps-converted-to.pdf Graphic file (type pdf)
  <use images/robust/bcclowlambda-eps-converted-to.pdf>
@@ -1395,7 +1339,7 @@ bda-eps-converted-to.pdf images/robust/bccbiggerlambda.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/robust/bccbiggerlambda-eps-converted-to.pdf, id=507, 518.93875pt x 526.
+<images/robust/bccbiggerlambda-eps-converted-to.pdf, id=532, 518.93875pt x 526.
 96875pt>
 File: images/robust/bccbiggerlambda-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1431,6 +1375,9 @@ d-to.pdf> <./images/robust/bcclowlambda-eps-converted-to.pdf> <./images/robust/
 bccbiggerlambda-eps-converted-to.pdf>]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ö in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 719.
  [16]
@@ -1450,9 +1397,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 719.
  ) 
 Here is how much of TeX's memory you used:
- 9609 strings out of 493117
- 146322 string characters out of 6135433
- 280555 words of memory out of 5000000
+ 9622 strings out of 493117
+ 146501 string characters out of 6135433
+ 280968 words of memory out of 5000000
  12691 multiletter control sequences out of 15000+600000
  53441 words of font info for 124 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1501,10 +1448,10 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on paper.pdf (16 pages, 3286256 bytes).
+Output written on paper.pdf (16 pages, 3289956 bytes).
 PDF statistics:
- 832 PDF objects out of 1000 (max. 8388607)
- 688 compressed objects within 7 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 155 named destinations out of 1000 (max. 500000)
  527 words of extra memory for PDF output out of 10000 (max. 10000000)
 
