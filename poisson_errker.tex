@@ -41,17 +41,18 @@ Fourier sine series that converges to $\rho$ almost everywhere in
 $\oucube^s$, we need to extend $\rho$ periodically such that it is odd
 with respect to each variable. Particularly, let us extend the domain
 of $\rho$ so that, within the interval $\cube^s$, it satisfies
-\begin{equation}
-  \small{
+{\small
+\begin{equation}  
  \rho(\vect{x}) :=  
 \begin{cases}
 \bigl( \prod_{i=1}^s \sgn(x_i) \bigr)
 \rho(|x_1|, \ldots, |x_s| ) &\mbox{if } \forall i \; |x_i| \ne 0 \\ 
 0 &\mbox{otherwise},
 \end{cases}
-}
 \label{eq:oddextension}
 \end{equation}
+}
+
 while outside $\cube^s$, it is $\cube^s$-periodic, i.e. $\rho(\vect{x}
 + 2\vect{k}) = \rho(\vect{x})$ for $\vect{k} \in \ints^s$. The
 extended function $\rho$ can be developed into a multidimensional
@@ -66,17 +67,16 @@ series. In fact, with an odd extension of the sequence $\st{\rho}$, the
 function $\rho$ can be expressed as a Fourier series. In particular,
 if we define the Fourier series coefficients $\ft{\rho}[\vect{m}]$
 (for $\vect{m} \in \ints^s$) as
-\begin{equation}
-  \small{
-  \ft{\rho}[\vect{m}] := 
-\begin{cases}
-\frac{1}{(2\imath)^{s}} \prod_i \sgn(m_i)
-\st{\rho}[|m_1|,\ldots,|m_s|] &\mbox{if } \forall i \; |m_i| \ne 0 \\
-0 &\mbox{otherwise},
-\end{cases}
-}
-\label{eq:oddFourierExtension}
-\end{equation}
+{\small \begin{equation}
+	\ft{\rho}[\vect{m}] := 
+	\begin{cases}
+	\frac{1}{(2\imath)^{s}} \prod_i \sgn(m_i)
+	\st{\rho}[|m_1|,\ldots,|m_s|] &\mbox{if } \forall i \; |m_i| \ne 0 \\
+	0 &\mbox{otherwise},
+	\end{cases}
+	\label{eq:oddFourierExtension}
+\end{equation}}
+
 then  $\rho$ is also given by the Fourier series
 $
   \rho(\vect{x}) = \sum_{\vect{m} \in

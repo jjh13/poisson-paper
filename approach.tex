@@ -3,14 +3,14 @@
 \begin{figure*} 
 	\centering
 	\input{images/pipeline.pdf_tex}
-	\caption{A high level overview of our surface reconstruction pipeline in 2D. On the far left, a) shows the initial point-set. b) is the result of the smoothed variational reconstruction of the gradient of the indicator, the top image is the component in basis, the bottom is the y component. The approximate divergence of the smoothed indicator function is c), and d) is the resulting indicator function. \ednote{UA: Please fix this.}}
+	\caption{A high level overview of our surface reconstruction pipeline in 2D. On the far left, a) shows the initial point-set. b) is the result of the smoothed variational reconstruction of the gradient of the indicator, the top image is the x component, the bottom is the y component. The approximate divergence of the smoothed indicator function is c), and d) is the resulting indicator function. }
 	\label{fig:pipeline}
 \end{figure*}
 
 A high level description of our approach is outlined in \FG{fig:pipeline}. From the oriented surface samples, we construct the approximation $\vec{V}(\vx)$ using our variational formulation. We then apply FIR filters to the coefficients of the approximation to construct a scalar field representing the approximate divergence of the smoothed normal field (\FG{fig:pipeline}c.) We then use an appropriate discretization of the inverse Laplacian operator to solve the Poisson equation \EQ{eq:poisson}, and obtain a smooth function that approximates the original indicator function (\FG{fig:pipeline}c). Our code is also freely available for download.
 
 
-\subsection{Obtaining $\vec{V}(\vx)$} \label{sec:getting_vd}
+\subsection{Obtaining the smoothed vector field} \label{sec:getting_vd}
 \label{sec:obtainingV}
 We define the vector field as $\vec{V}(\vx):=\mathbf{L} \left[\upsilon_1(\vx) \ \upsilon_2(\vx) \ \upsilon_3(\vx)\right]^T$ where $\mathbf{L := [b_1 \ b_2 \ b_3]}$ is a basis for $\realn^3$ that contains the principal lattice directions of the chosen lattice. Each $\upsilon_i$ is a scalar function representing the projection of the smoothed normal field onto each respective principal lattice direction $\mathbf{b}_i$. This may seem unintuitive at first, however, using a non-canonical basis to represent $\vec{V}$ will be convenient in two ways. Firstly, it will allow us to approximate the divergence of $\vec{V}$ by taking directional derivatives of $\vec{V}$ in the principal lattice directions. This is motivated by the fact that it is more natural to approximate derivatives in the principal lattice directions on non-Cartesian lattices. Secondly, it will allow us to construct divergence of the smoothed normal field from more than three principal lattice directions. We also allow each function $\upsilon_i$ to potentially be represented in different function spaces, i.e. {\small 
 \begin{equation} 
@@ -23,7 +23,7 @@ The coefficient vector of $\upsilon_i$ is denoted as $\mathbf{v}_i:=\left[\text{
 Where $(\mathbf{L}^{-1})_i$ is the $i^{th}$ column of $(\mathbf{L}^{-1}).$ As before, this provides us with a parametrized way of controlling the smoothness of the resulting approximation, without the need to explicitly choose a smoothing kernel. These $\mathbf{v}_i$ can be obtained using the procedure of \SC{sec:vari_review}.
 
 
-\subsection{Divergence of $\vec{V}(\vx)$}
+\subsection{Divergence of the Smoothed Vector Field}
 \label{sec:divergence}
 A simple way to obtain the divergence of $\vec{V}(\vx)$ is to consider its analytical partial derivatives which, due to the linearity of the expression, requires one to only take the analytic partial derivatives of the underlying kernel functions. However, this reduces the smoothness of the solution \cite{zahgrad}, and there is also no conclusive evidence that suggests the analytic derivative of the kernel provides a better approximation to true underlying derivative. With this in mind, we choose to take a discrete filtering approach and approximate the divergence of $\vec{V}$ with a set of discrete FIR filters. While these filters do not strictly facilitate the best approximation scheme for derivatives, they provide a good compromise between compactness versus accuracy, even more so when the reconstruction spaces are shifted \cite{gradrev}. 
 

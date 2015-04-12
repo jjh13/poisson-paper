@@ -54,8 +54,8 @@
     \put(0.41270952,0.00287642){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b)}}}%
     \put(0.70545455,0.06181829){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c)}}}%
     \put(0.90545455,0.06181829){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{d)}}}%
-    \put(0.54062605,0.24204357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\dv{\mathbf{b_1}}$}}}%
+    \put(0.54062605,0.24204357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\partial_{x}$}}}%
     \put(0.79249301,0.31294922){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Delta^{-1}$}}}%
-    \put(0.54062605,0.11178866){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\dv{\mathbf{b_2}}$}}}%
+    \put(0.54062605,0.11178866){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\partial_{y}$}}}%
   \end{picture}%
 \endgroup%
