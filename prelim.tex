@@ -1,12 +1,14 @@
 \section{Preliminaries}
 \label{sec:pois_review}
 \subsection{Poisson Surface Reconstruction}
-We denote the indicator function of a model $M$ as $$ \chi_M(\vect{x}) :=
-\begin{cases}
-1, & \text{if }\vect{x}\text{ is in the interior of the model } M \\
-\frac{1}{2}, & \text{if } \vect{x}\text{ is on the model's surface}\\
-0, & \text{if }\vect{x}\text{ is exterior to } M
-\end{cases}. $$
+We denote the indicator function of a model $M$ as 
+$$ \chi_M(\vect{x}) :=
+	\begin{cases}
+		1, & \text{if }\vect{x}\text{ is in the interior of the model } M \\
+		\frac{1}{2}, & \text{if } \vect{x}\text{ is on the model's surface} \\
+		0, & \text{if }\vect{x}\text{ is exterior to } M
+	\end{cases}. 
+$$.
 The key observation of the Poisson surface reconstruction formulation, is that if one obtains a function $\vec{V}(\vect{x})$ with $\vec{V}(\vect{x})\approx{\nabla}\chi_M$, that approximates the smoothed gradient of the indicator function, finding an approximation to the indicator function reduces to finding a $\inda$ such that {\small 
 \begin{equation} \label{eq:poisson}
 	\lapl{\inda} = {\grad} \cdot \vec{V}.
