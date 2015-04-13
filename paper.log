@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 APR 2015 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 APR 2015 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,7 +615,7 @@ Underfull \vbox (badness 2158) has occurred while \output is active []
 File: figures/boxspline/2dex.png Graphic file (type png)
 
 <use figures/boxspline/2dex.png>
-Package pdftex.def Info: figures/boxspline/2dex.png used on input line 115.
+Package pdftex.def Info: figures/boxspline/2dex.png used on input line 117.
 (pdftex.def)             Requested size: 253.04987pt x 253.03848pt.
 ) (./approach.tex (./images/pipeline.pdf_tex
 Package epstopdf Info: Source file: <images/pipeline.eps>
@@ -1354,10 +1354,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 719.
  ) 
 Here is how much of TeX's memory you used:
- 9617 strings out of 493117
- 146402 string characters out of 6135433
+ 9618 strings out of 493117
+ 146417 string characters out of 6135433
  273003 words of memory out of 5000000
- 12687 multiletter control sequences out of 15000+600000
+ 12688 multiletter control sequences out of 15000+600000
  53441 words of font info for 124 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  53i,26n,92p,1544b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1405,7 +1405,7 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on paper.pdf (16 pages, 3289857 bytes).
+Output written on paper.pdf (16 pages, 3289644 bytes).
 PDF statistics:
  865 PDF objects out of 1000 (max. 8388607)
  720 compressed objects within 8 object streams
