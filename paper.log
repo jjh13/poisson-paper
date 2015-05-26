@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 APR 2015 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 MAY 2015 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -473,11 +473,7 @@ Package: fixltx2e 2014/05/13 v1.1q fixes to LaTeX
 LaTeX Info: Redefining \em on input line 429.
 LaTeX Info: The control sequence `\[' is already robust on input line 480.
 LaTeX Info: The control sequence `\]' is already robust on input line 481.
-) (./paper.aux
-
-LaTeX Warning: Label `tab:filters' multiply defined.
-
-)
+) (./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 407.
@@ -494,7 +490,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 407.
 LaTeX Font Info:    ... okay on input line 407.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 407.
 LaTeX Font Info:    ... okay on input line 407.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
 \scratchdimen=\dimen179
@@ -704,34 +701,34 @@ t line 42.
 (pdftex.def)             Requested size: 301.12425pt x 293.09427pt.
 ) [8]
 
-LaTeX Warning: Reference `app:1' on page 9 undefined on input line 247.
+LaTeX Warning: Reference `app:1' on page 9 undefined on input line 229.
 
 [9 <./figures/2DCartesian-eps-converted-to.pdf> <./figures/2DQuincunx-eps-conve
 rted-to.pdf>]
-Underfull \hbox (badness 2735) in paragraph at lines 354--361
+Underfull \hbox (badness 2735) in paragraph at lines 336--343
 []\OT1/ptm/m/n/10 Suppose that $\OT1/cmr/m/n/10 ^^@$ \OT1/ptm/m/n/10 is self-ad
 joint and shift-
  []
 
 
-LaTeX Warning: Reference `app:proofs' on page 10 undefined on input line 373.
+LaTeX Warning: Reference `app:proofs' on page 10 undefined on input line 355.
 
 
 LaTeX Warning: Reference `sec:interpQuasiInterp' on page 10 undefined on input 
-line 408.
+line 390.
 
 
 LaTeX Warning: Reference `sec:approximateSolution' on page 10 undefined on inpu
-t line 419.
+t line 401.
 
 [10]
 
 LaTeX Warning: Reference `eq:quasiCondition' on page 11 undefined on input line
- 499.
+ 481.
 
 
 LaTeX Warning: Reference `sec:interpQuasiInterp' on page 11 undefined on input 
-line 500.
+line 482.
 
 ) (./indicator.tex) (./results.tex
 
@@ -1348,15 +1345,12 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 719.
  ) 
 Here is how much of TeX's memory you used:
  9618 strings out of 493117
  146417 string characters out of 6135433
- 273003 words of memory out of 5000000
+ 274027 words of memory out of 5000000
  12688 multiletter control sequences out of 15000+600000
  53441 words of font info for 124 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1405,7 +1399,7 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on paper.pdf (16 pages, 3289644 bytes).
+Output written on paper.pdf (16 pages, 3289610 bytes).
 PDF statistics:
  865 PDF objects out of 1000 (max. 8388607)
  720 compressed objects within 8 object streams
