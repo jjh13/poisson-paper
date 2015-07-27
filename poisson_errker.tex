@@ -127,13 +127,8 @@ for any $\cube^s$-periodic functions $a$ and $b$ that are in
 $L_2(\cube^s)$ and odd.
 
 
-
-\subsection{Approximate Solution} \sec{sub:approximatesol}
-We are interested in the scenario where the function $f$ is only known
-through its point samples. Specifically, we assume that the samples of
-$f$ reside on the sites of the lattice $\lattice{L}_h$. For the
-purpose of enumerating the samples that are contained within
-$\cube^s$, let us define the point set
+\subsection{Approximate Solution} \label{sub:approximatesol}
+We are interested in the scenario where the function $f$ is only known through its point samples. Specifically, we assume that the samples of $f$ reside on the sites of the lattice $\lattice{L}_h$. For the purpose of enumerating the samples that are contained within $\cube^s$, let us define the point set
 \begin{equation}
   \pointset{T}_h := \underbrace{\{\vect{x}_1,\ldots,\vect{x}_{2^sN} \}}_{\pointset{I}_h}
   \cup
@@ -389,7 +384,8 @@ $\appf{\chi}$ such that $\LLnorm{\chi - \appf{chi}} = O(h^k)$. %As discussed ear
 
 \subsection{Relationship to the Galerkin method}
 \label{sec:Galerkin}
-The modified residue error kernel~\eqref{eq:opResidue} can also be analyzed in light of the Galerkin method~\cite{quarteroni08} using a weak formulation of the Poisson equation~\eqref{eq:PoissonEquation}, where the trial and test spaces are the same with the notable difference that the spaces are not required to explicitly satisfy any particular boundary conditions. Rather, a zero boundary condition is implicitly obtained by requiring that the solution coefficients $c[\cdot]$ be odd as explained in~\SC{sub:approximatesol}. Here, we establish the connection for the homogeneous case but the analysis also easily extends to the non-homogeneous case, as well as to other types of differential operators.
+The modified residue error kernel~\eqref{eq:opResidue} can also be analyzed in light of the Galerkin method~\cite{quarteroni08} using a weak formulation of the Poisson equation~\eqref{eq:PoissonEquation}, where the trial and test spaces are the same with the notable difference that the spaces are not required to explicitly satisfy any particular boundary conditions. Rather, a zero boundary condition is implicitly obtained by requiring that the solution coefficients $c[\cdot]$ be odd. % as explained in~\SC{sub:approximatesol}. 
+Here, we establish the connection for the homogeneous case but the analysis also easily extends to the non-homogeneous case, as well as to other types of differential operators.
 
 In its weak form, the solution $\chi \in L_2(\cube^s)$ to the homogeneous Poisson equation~\eqref{eq:PoissonEquation} satisfies the weak formulation
 \begin{equation}
@@ -448,6 +444,6 @@ procedure is to find a suitable correction filter $\gamma$ such that $E_{\mathsf
 %\vect{x}^{\vect{\mu}}(\phi(\vect{x}) - \invlaplacian
 %\dual{\varphi}(\vect{x})) d\vect{x} = 0$ for $0 \le \abs{\vect{\mu}} <
 %k$. 
-In other words, our approximation procedure attempts to reproduce the Galerkin orthogonality condition given by~\eqref{eq:GalerkinOrthogonality}. This is akin to the quasi-interpolation condition~\eqref{eq:quasiCondition} introduced
+In other words, our approximation procedure attempts to reproduce the Galerkin orthogonality condition given by~\eqref{eq:GalerkinOrthogonality}. %This is akin to the quasi-interpolation condition~\eqref{eq:quasiCondition} introduced
 in~\SC{sec:interpQuasiInterp}.
 
