@@ -1,17 +1,19 @@
 \section{Poisson's Equation} 
-Before detailing how to obtain an indicator function from the divergence of $\vec{V}(\vect{x})$, we discuss a general framework for solving Poisson's equation on a rectangular domain. We provide an analysis in $s$-dimensions, as this generalization comes at little cost. Explicitly, we seek an approximation of the function $\chi(\vect{x})$ that satisfies the Poisson equation with homogeneous Dirichlet boundary conditions, i.e. 
+Before detailing how to obtain an indicator function from the divergence of $\vec{V}(\vect{x})$, we discuss a general framework for solving Poisson's equation on a rectangular domain. 
+We provide an analysis in $s$-dimensions, as this generalization comes at little cost.
+Explicitly, we seek an approximation of the function $\chi(\vect{x})$ that satisfies the Poisson equation with homogeneous Dirichlet boundary conditions, i.e. 
 \begin{equation} \label{eq:PoissonEquation}
 	\begin{split}
 		\laplacian{\chi} &= f, \;\; \text{in} \;\; \oucube^s, \\
 		\chi &= 0, \;\; \text{on} \;\; \partial \ucube^s,
 	\end{split}
 \end{equation}
-where $\laplacian$ is the $s$-dimensional Laplace operator and
-$\partial \ucube^s$ denotes the boundary of $\ucube^s$,
-i.e. $\partial \ucube^s \cup \oucube^s = \ucube^s$.
+where $\laplacian$ is the $s$-dimensional Laplace operator and $\partial \ucube^s$ denotes the boundary of $\ucube^s$, i.e. $\partial \ucube^s \cup \oucube^s = \ucube^s$.
 
 \subsection{Greens Function}
-The Poisson equation is an example of a well-studied partial differential equation. When the domain of interest is the unit cube $\ucube^s$, the solution can be analytically expressed in terms of a Green's function $\mathsf{G}(\vect{x},\vect{y})$ that represents the potential due to a point source placed at the location $\vect{x}$ inside $\ucube^s$.  In other words $\laplacian_{\vect{x}} \mathsf{G}(\vect{x},\vect{y}) = \delta(\vect{x}-\vect{y})$. The Green's function $\mathsf{G}$ has the Fourier Sine series expansion 
+The Poisson equation is an example of a well-studied partial differential equation. 
+When the domain of interest is the unit cube $\ucube^s$, the solution can be analytically expressed in terms of a Green's function $\mathsf{G}(\vect{x},\vect{y})$ that represents the potential due to a point source placed at the location $\vect{x}$ inside $\ucube^s$.  
+In other words $\laplacian_{\vect{x}} \mathsf{G}(\vect{x},\vect{y}) = \delta(\vect{x}-\vect{y})$. The Green's function $\mathsf{G}$ has the Fourier Sine series expansion 
 \begin{equation}
 	\mathsf{G}(\vect{x},\vect{y}) = \sum_{\vect{m} \in \ints^s_+} 
 	\frac{\prod_{i=1}^s \sin(m_i \pi x_i) \sin(m_i \pi y_i)}
@@ -26,13 +28,7 @@ and the solution $\chi$ is given by
 
 
 \subsection{Fourier Interpretation}
-
-Even though there has been much effort on finding alternate rapidly
-convergent series representations of the Green's function (see
-e.g. Marshall~\cite{marshall99}), it turns out that the form of the
-Green's function given in~\eqref{eq:green}, is ideally suited
-for our needs as it allows us to easily express the solution in the
-Fourier domain in terms of the Fourier coefficients of $f$.
+Even though there has been much effort on finding alternate rapidly convergent series representations of the Green's function (see e.g. Marshall~\cite{marshall99}), it turns out that the form of the Green's function given in~\eqref{eq:green}, is ideally suited for our needs as it allows us to easily express the solution in the Fourier domain in terms of the Fourier coefficients of $f$.
 
 Suppose we are given an $L_2(\ucube^s)$ function $\rho(
 \vect{x})$ that is

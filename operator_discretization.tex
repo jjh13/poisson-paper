@@ -1,0 +1,187 @@
+\section{Operator Discretization}
+\label{sec:opDisc}
+
+The asymptotic optimality criterion amounts to requiring that the
+residue error kernel asymptotically behaves like the minimum error
+kernel, i.e. $E_{\mathsf{mod}}(\vect{\omega}) \approx
+E_{\mathsf{min}}(\vect{\omega}) = O(\norm{\vect{\omega}}^{2k})$ around
+$\vect{\omega} = 0$. In this section, we consider two discretization
+models: an \emph{interpolative} model that is based on an
+interpolation prefilter obtained from the samples of $\varphi$, and a
+more accurate two-stage \emph{quasi-interpolative} model that makes
+use of a higher order auxiliary generator $\psi$. Both scenarios yield
+digital filters that can be readily applied to the samples in the
+Fourier domain via the MDST.
+
+\subsection{Interpolative Model}
+\label{sec:interpModel}
+Suppose that our desired approximation space is spanned by generator
+$\varphi$ where $\order{\lattice{L}}{\varphi} =
+k$. From~\eqref{eq:fourierSolution}, the operator that we need to
+discretize is $\invlaplacian$. In order to obtain a discretization, we
+make use of the filter $\ft{P}_{\varphi}(\vect{\omega})$ that is
+obtained from the samples of $\varphi$ that lie on the nodes of
+$\lattice{L}$. Recall that the inverse filter
+$(\ft{P}_{\varphi}(\vect{\omega}))^{-1}$ is needed to make the generator $\varphi$
+interpolating (\SC{sec:interpQuasiInterp}).
+
+Let us denote the discretization of $\invlaplacian$ on the normalized lattice
+$\lattice{L}$ as $l^{-1}$ so that the approximate solution on the lattice
+$\lattice{L}_h$ can be written as
+\begin{equation}
+\appf{V}(\vect{x}) = h^2 \sum_{j=1}^{2^s N}
+\underbrace{(f \pconv l^{-1}_h)}_{c}[\vect{x}_j]
+\varphi_p(\frac{\vect{x}-\vect{x}_j}{h}).
+\label{eq:approxHomogeneous}
+\end{equation}
+Using the
+residue error kernel~\eqref{eq:opResidue}, the optimality criterion
+boils down to requiring that
+\begin{equation}
+  \ft{A}_{\varphi}(\vect{\omega})
+  \bigl|
+  4 \pi^2 \norm{\vect{\omega}}^2 \wft{L^{-1}}(\vect{\omega})
+  + 
+  \ft{\dual{\varphi}}(\vect{\omega}) 
+  \bigr|^2
+  = 
+  O(\norm{\vect{\omega}}^{2k}).
+  \label{eq:opCriterionHomo}
+  \end{equation}
+  In order to arrive at this result, we have extended the operator
+  $\invlaplacian$ to $L_2(\reel^s)$ where $\ftpairs{\invlaplacian}{(-4
+    \pi^2 \norm{\vect{\omega}}^2)^{-1}}$. The reason for choosing
+  $l^{-1}$ as a discretization of $\invlaplacian$ will become apparent
+  in light of the following proposition which gives us a way of
+  reformulating the problem of designing $l^{-1}$, a filter that
+  discretizes $\invlaplacian$, into a simpler problem of designing the
+  filter $l := (l^{-1})^{-1}$ that discretizes the Laplacian
+  $\laplacian$.
+
+\begin{prop}
+\label{prop:1}
+  Let the digital filter $\ft{L}(\vect{\omega})$ be given by the
+  combined filter $\ft{L}(\vect{\omega}) =
+  \ft{P}_{\varphi}(\vect{\omega})\ft{\Lambda}(\vect{\omega})$, where
+  $\ftpairs{\ft{\Lambda}(\cdot)}{\lambda[\cdot]}$ is a digital filter that satisfies
+  \begin{equation}
+    \ft{\Lambda}(\vect{\omega}) = -4\pi^2\norm{\vect{\omega}}^2 
+    + O(\norm{\vect{\omega}}^{k+2}).
+    \label{eq:discreteLaplacian}
+  \end{equation}
+  Then the combined inverse filter $\wft{L^{-1}}(\vect{\omega}) =
+  (\ft{P}_{\varphi}(\vect{\omega})\ft{\Lambda}(\vect{\omega}))^{-1}$
+  provides a $k$-th order asymptotically optimal discretization of the
+  inverse Laplacian $\invlaplacian$.
+\end{prop}
+The proof is provided in Appendix~\ref{app:proofs}.
+
+It is not hard to see that this method is essentially a collocation method with
+respect to the trial space spanned by the generator $\varphi_p$. If we apply the
+discrete Laplacian filter $\ftpairs{\lambda}{\ft{\Lambda}}$ to the
+coefficients in approximation~\eqref{eq:approxHomogeneous}, we obtain
+\begin{equation}
+  (\laplacian \appf{V})(\vect{x}) \approx
+  \sum_{j=1}^{2^s N}
+  (f \pconv p_{\varphi}^{-1})[\vect{x}_j]
+  \varphi_p(\frac{\vect{x}-\vect{x}_j}{h}),
+\end{equation}
+where
+$\ftpairs{p_{\varphi}^{-1}[\cdot]}{(\ft{P}_{\varphi}(\cdot))^{-1}}$. Owing to 
+the fact that $p^{-1}_{\varphi}$ is an interpolation filter, this approximation,
+when evaluated at the lattice sites contained in $\oucube^s$, will yield the
+samples of $f$.
+
+\subsection{Quasi-interpolative Model}
+% The model described in the previous section heavily relies on the
+% interpolation prefilter $1/\ft{P}_{\varphi}$ that ensures that the
+% discretized Laplacian of the approximate solution, exactly reproduces
+% the sample values of $f$ at the lattice sites. For this reason, it can
+% also be regarded as a collocation method with respect to the trial
+% space spanned by the generator $\varphi_P$. 
+
+We now describe a two-stage model that relies on two spaces: a desired
+target space $\aspace{\lattice{L}_h}{\varphi_p}$ spanned by the
+generator $\varphi_p$ where $\order{\lattice{L}}{\varphi} = k$, and an
+auxiliary space $\aspace{\lattice{L}_h}{\psi_p}$ spanned by the
+generator $\psi_p$ where $\order{\lattice{L}}{\psi} \ge k$. In the
+first stage, we use the interpolative model from the previous section
+to seek an auxiliary solution that lies in
+$\aspace{\lattice{L}_h}{\psi_p}$. Then, the auxiliary solution is
+orthogonally projected to the target space
+$\aspace{\lattice{L}_h}{\varphi_p}$. This method is similar to our
+two-stage gradient estimation framework~\cite{hossain10}. Owing to the
+shift-invariant nature of the spaces, the orthogonal projection is
+tantamount to applying a digital filter to the first-stage
+approximation coefficients as described below.
+
+Let us denote the first-stage approximation coefficients as
+$c_{\psi}[\vect{x}_j]$. These coefficients are obtained by applying the discrete
+operator $l_{\psi}^{-1}$ to the samples of $f$ as given
+in~\eqref{eq:approxHomogeneous}. The discretization $l_{\psi}^{-1}$ is obtained
+from the interpolative model where the interpolation prefilter $p_\psi$ is derived
+from the samples of the first-stage generator $\psi$. Now, if $\psi$ is chosen
+to have a sufficiently high order, then we know that this auxiliary
+approximation will be very close to the true solution. Therefore, we can use it
+to find an approximation in our desired target space
+$\aspace{\lattice{L}_h}{\varphi}$. In particular, we orthogonally project the
+auxiliary approximation onto the target space so as to minimize the $L_2$ error.
+The orthogonal projection is obtained by taking inner products of the auxiliary
+approximation with the lattice translates of $\dual{\varphi}_p$: the dual of the
+target space generator $\varphi_p$. In particular, the second-stage
+approximation can be written as
+\begin{equation}
+  \begin{split}
+  & \appf{V}(\vect{x}) = \\
+  & \sum_{j =1}^{2^s N} 
+  \Bigl(
+    \sum_{k = 1}^{2^s N}
+    c_\psi \innerproduct{\psi_p(\frac{\cdot - \vect{x}_k}{h})}
+    {h^{-s}\dual{\varphi}_p(\frac{\cdot - \vect{x}_j}{h})}
+  \Bigr)
+  \varphi_p(\frac{\vect{x}-\vect{x}_j}{h}).
+\end{split}
+\end{equation}
+Assuming that $\psi$ and $\varphi$ are symmetric admissible
+generators, this is equivalent to the digital filtering scheme
+\begin{equation}
+  \appf{V}(\vect{x}) = \sum_{j=1}^{2^s N} (c_\psi \pconv q_h)[\vect{x}_j]
+  \varphi_p(\frac{\vect{x}-\vect{x}_j}{h}),
+  \label{eq:quasiApprox}
+\end{equation}
+where the weights of the filter $q_h$ are obtained according to
+\begin{equation}
+  q_h[h\mat{L}\vect{k}] =  q[\mat{L}\vect{k}] := (\psi \ast
+  \dual{\varphi})(\mat{L}\vect{k}).
+  \label{eq:quasiWeights}
+\end{equation}
+Here, $(\psi \ast \dual{\varphi})$ denotes the continuous convolution
+of the two generators $\psi$ and $\dual{\varphi}$ in $L_2(\reel^s)$.
+
+An approximation model is said to be
+quasi-interpolating of order $k$ if it is capable of reproducing all
+multivariate polynomials in $\Pi_{k-1}(\reel^s)$, or  equivalently,
+$E_{\mathsf{res}}(\vect{\omega}) = O(\norm{\vect{\omega}}^{2m})$  ($m \ge k$)
+where $E_{\mathsf{res}}$ is as defined in~\eqref{eq:scErrorKernel}. We retain
+the same terminology and say that an approximate solution to the Poisson
+equation~\eqref{eq:PoissonEquation} is quasi-interpolating of order $k$ if it
+satisfies $E_{\mathsf{mod}}(\vect{\omega}) = O(\norm{\vect{\omega}}^{2m})$,
+where $m \ge k$. The following proposition gives us a way of choosing the
+auxiliary space $\aspace{\lattice{L}_h}{\psi_p}$ so as to ensure that the
+resulting approximation~\eqref{eq:quasiApprox} is quasi-interpolating of order
+$k$.
+
+\begin{prop}
+  Let $\aspace{\lattice{L}_h}{\psi_p}$ and
+  $\aspace{\lattice{L}_h}{\varphi_p}$ be the auxiliary and target
+  approximation spaces respectively, with $\order{\lattice{L}}{\psi} = m$ and
+  $\order{\lattice{L}}{\varphi} = k$. The approximation $\appf{V}$ obtained
+  through \eqref{eq:quasiApprox} is quasi-interpolating of order $k$
+  if $m \ge k$.
+\label{prop:2}
+\end{prop}
+Please refer to Appendix~\ref{app:proofs} for the proof.\\
+We note that when the auxiliary space is chosen to be the same as the
+target space, i.e. when $\psi = \varphi$, then $q[\mat{L}\vect{k}] =
+\delta[\vect{k}]$, this scheme reduces to the interpolative model
+described in the previous section.

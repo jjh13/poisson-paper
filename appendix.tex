@@ -1,0 +1,141 @@
+\label{app:1}
+We need to show that if $\varphi$ is an even function and $c[\cdot]$ is odd, then $\appf{\chi}$~\eqref{eq:simplifiedAnsatz} is also odd. 
+This is done by inspecting the Fourier series coefficients of $\appf{\chi}$. 
+Using the Poisson summation formula, the Fourier series coefficients $\wft{\appf{\chi}}[\cdot]$ are given by
+\begin{equation}
+  \wft{\appf{\chi}}[\vect{m}] = \ft{\varphi}\left(\frac{h}{2}\vect{m}\right) 
+  \sum_{j=1}^{2^sN} c[\vect{x}_j]
+  \exp(-\imath \pi \vect{m} \cdot \vect{x}_j),
+\label{eq:ftansatz}
+\end{equation}
+where $\vect{m} \in \ints^s$.
+Since the coefficient sequence $c[\cdot]$ is odd, the summation in~\eqref{eq:ftansatz} can be simplified to yield
+\begin{equation}
+  \wft{\appf{\chi}}[\vect{m}] = \ft{\varphi}\left(\frac{h}{2}\vect{m}\right)(2\imath)^s
+  \st{C}[\vect{m}],
+\end{equation}
+where $\st{C}[\vect{m}]$ denotes the multidimensional discrete sine transform of the sequence $c[\cdot]$ (not to be confused with the Fourier sine series), and is given by
+\begin{equation}
+  \st{C}[\vect{m}] := \sum_{j=1}^N c[\vect{x}_j]
+  \bigl( 
+  \textstyle\prod_{i=1}^s
+  \sin(m_i \pi x_{j,i})
+  \bigr),
+\label{eq:MDST}
+\end{equation}
+where $\vect{m} \in \ints^s$.
+Now, since $\ft{\varphi}(\vect{\omega})$ is a real even function and $\st{C}[\vect{m}]$ is odd, the Fourier series coefficients $\wft{\appf{\chi}}[\vect{m}]$ satisfy the odd extension~\eqref{eq:oddFourierExtension} with the sine series coefficients being $\wst{\appf{\chi}}[\vect{m}] = (-4)^s \ft{\varphi}(\frac{h}{2}\vect{m})\st{C}[\vect{m}]$, for $\vect{m} \in \ints^s_+$. This establishes the fact that the approximate solution $\appf{\chi}$ is also odd.
+
+\section{Proofs}
+\label{app:proofs}
+
+\begin{proof}[Theorem~\ref{thm:1}]
+  For the purpose of approximating $\Gamma z$ in the space spanned by the
+  periodic generator $\varphi_p$, we need to analyze $\Gamma z$ in a manner
+  similar to~\eqref{eq:measurements}. Let the analysis function used
+  to measure $\Gamma z$ be $\analysis{\psi}_p$, which is obtained by
+  periodizing the function $\analysis{\psi}$. Let the resulting coefficient
+  sequence be $\tau[\cdot]$, i.e.
+  \begin{equation*}
+    \tau[\vect{x}_j] = 
+    \innerproduct{(\Gamma
+    z)(\vect{x})}{\analysis{\psi}_p(\frac{\vect{x}-\vect{x}_j}{h})},
+  \end{equation*}
+  so that the approximation of $\Gamma z$ is 
+  $
+  \appf{(\Gamma z)}(\vect{x}) = \sum_{\vect{x}_j \in \pointset{P}_h}
+  \tau[\vect{x}_j] \varphi_p(\frac{\vect{x}-\vect{x}_j}{h})
+  $.
+
+  The error $\LLnorm{\appf{(\Gamma z)} - \Gamma z}$ can thus be predicted
+  according to~\eqref{eq:prediction} and~\eqref{eq:scErrorKernel} with
+  the substitutions $\ft{z} \rightarrow \wft{(\Gamma z)}$ and
+  $\ft{\analysis{\varphi}} \rightarrow \ft{\analysis{\psi}}$ respectively.
+
+  Now, since $\Gamma$ is self-adjoint and shift-invariant, we have
+  \begin{equation*}
+    \innerproduct{(\Gamma
+    z)(\vect{x})}{\analysis{\psi}_p(\frac{\vect{x}-\vect{x}_j}{h})} = C_h
+    \innerproduct{z(\vect{x})}{(\Gamma
+    \analysis{\psi})_p(\frac{\vect{x}-\vect{x}_j}{h})},
+  \end{equation*}
+  where $C_h$ is some constant depending on the scale $h$. Thus,
+  measuring $\Gamma z$ with $\analysis{\psi}_p$ is equivalent to measuring
+  $z$ with $(\Gamma \analysis{\psi})_p$ in a distributional sense. We are
+  interested in a digital filtering solution where $\tau[\vect{x}_j] =
+  C_h (\zeta \pconv \gamma_h)[\vect{x}_j]$. This can be realized by requiring
+  that $\analysis{\psi}$ satisfies
+  $\ft{\Gamma}(\vect{\omega})\ft{\analysis{\psi}}(\vect{\omega}) =
+  \ft{\analysis{\varphi}}(\vect{\omega}) \ft{G}(\vect{\omega})$. From
+  here, we infer that $\ft{\analysis{\psi}}(\vect{\omega}) =
+  \frac{\ft{\analysis{\varphi}}(\vect{\omega})\ft{G}(\vect{\omega})}
+  {\ft{\Gamma}(\vect{\omega})}$ and the result follows.
+\end{proof}
+
+\begin{proof}[Proposition~\ref{prop:1}]
+  From~\eqref{eq:discreteLaplacian},
+  \begin{equation*}
+    \ft{L}(\vect{\omega}) =
+    \ft{P}_{\varphi}(\vect{\omega})\ft{\Lambda}(\vect{\omega}) = -4 \pi^2 \ft{P}_{\varphi}(\vect{\omega})\norm{\vect{\omega}}^2 + O(\norm{\vect{\omega}}^{k+2}).
+  \end{equation*}
+  After some rearrangement and using the fact that
+  $\ft{L}(\vect{\omega}) = O(\norm{\vect{\omega}}^2)$, we obtain
+  \begin{equation*}
+    -\frac{4\pi^2\norm{\vect{\omega}}^2}{\ft{L}(\vect{\omega})} 
+    = \frac{1}{\ft{P}_{\varphi}(\vect{\omega})}
+    + O(\norm{\vect{\omega}}^k),
+  \end{equation*}
+  which satisifies the asymptotic optimality
+  criterion~\eqref{eq:opCriterionHomo} since
+  $\ft{P}_{\varphi}(\vect{\omega}))^{-1}$ is a quasi-interpolation
+  filter and satisfies $(\ft{P}_{\varphi}(\vect{\omega}))^{-1}
+  = \ft{\dual{\varphi}}(\vect{\omega}) + O(\norm{\vect{\omega}}^k)$.
+\end{proof}
+
+
+\begin{proof}[Proposition~\ref{prop:2}]
+  The modified residue error kernel for this approximation scheme is given by
+  \begin{equation*}
+    E_{\mathsf{mod}}(\vect{\omega}) = 
+    \ft{A}_{\varphi}(\vect{\omega})
+    \abs{
+      \frac{4\pi^2 \norm{\vect{\omega}}^2}{\ft{L}_\psi(\vect{\omega})}
+      \ft{Q}(\vect{\omega})
+      + 
+      \ft{\dual{\varphi}}(\vect{\omega})}^2,
+  \end{equation*}
+  where $\ftpairs{l_{\psi}^{-1}}{1/\ft{L}_\psi}$ denotes the filter
+  obtained from~\SC{sec:interpModel} with $\psi$ as the generator. Given that 
+  $m \ge k$, we need to show that
+  $-\frac{4\pi^2\norm{\vect{\omega}}^2}{\ft{L}_\psi(\vect{\omega})}\ft{Q}(\vect{\omega})
+  = \ft{\dual{\varphi}}(\vect{\omega}) + O(\norm{\vect{\omega}}^n)$
+  for some $n \ge k$.
+
+  Now, from the proof of Proposition~\ref{prop:1} we know that
+  $-\frac{4\pi^2\norm{\vect{\omega}}^2}{\ft{L}_\psi(\vect{\omega})} =
+  \ft{\dual{\psi}}(\vect{\omega}) +
+  O(\norm{\vect{\omega}}^m)$. Furthermore,
+  using~\eqref{eq:quasiWeights} and the fact that $\order{\lattice{L}}{\psi} = m$
+  and $\order{\lattice{L}}{\varphi} = k$, we have $\ft{Q}(\vect{\omega}) =
+  \ft{\psi}(\vect{\omega})\ft{\dual{\varphi}}(\vect{\omega}) +
+  O(\norm{\vect{\omega}}^{m+k})$. Therefore,
+  \begin{equation*}
+    \begin{split}
+      & -\frac{4\pi^2 \norm{\vect{\omega}}^2}{\ft{L}_\psi(\vect{\omega})}
+      \ft{Q}(\vect{\omega}) =\\
+      & \bigl(\ft{\dual{\psi}}(\vect{\omega}) +
+      O(\norm{\vect{\omega}}^m)\bigr)
+      \bigl(
+      \ft{\psi}(\vect{\omega})\ft{\dual{\varphi}}(\vect{\omega}) +
+      O(\norm{\vect{\omega}}^{m+k})
+      \bigr)\\
+      &= \ft{\psi}(\vect{\omega})
+      \ft{\dual{\psi}}(\vect{\omega})
+      \ft{\dual{\varphi}}(\vect{\omega}) + O(\norm{\vect{\omega}}^m)
+      =\ft{\dual{\varphi}}(\vect{\omega}) + O(\norm{\vect{\omega}}^m),
+    \end{split}
+  \end{equation*}
+since $\ft{\psi}$, $\ft{\dual{\psi}}$ and $\ft{\dual{\varphi}}$ are all $O(1)$
+around $\vect{\omega} = \vect{0}$.
+\end{proof}
+
