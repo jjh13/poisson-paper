@@ -1,18 +1,41 @@
 \subsection{Robustness}
-When the input data contain noise, our method allows us to choose an appropriate smoothing parameter $\lambda_2$ to average out said error. However, our method fails to be as robust as the Screened Poisson algorithm when the data are non-uniform. We speculate that this is due to the fact that we employ no heuristics to account for the deviation from the assumption of uniformity (\FG{fig:r2}.)
+When the input data contain noise, our method allows us to choose an appropriate smoothing parameter $\lambda_2$ to average out said error. 
+However, our method fails to be as robust as the Screened Poisson algorithm when the data are non-uniform. 
+We speculate that this is due to the fact that we employ no heuristics to account for the deviation from the assumption of uniformity (\FG{fig:r2}).
 
 \subsection{Complexity}
-In terms of re-sampling speed, representation memory consumption, and reconstruction time, the BCC approach tends to outperform the Cartesian. However, when compared to similar methods whose function spaces are sparse, our method is limited. Specifically, our memory requirement grows as $O(n^3)$ where $n$ is the grid size, and the matrix solve is quite slow as $n$ is large. While the regularization matrices on the BCC lattice are more sparse, and tend to converge faster, their size is still prohibitive for big $n$. These limitations prevent us from going to the same resolutions that similar methods allow.
+In terms of re-sampling speed, representation memory consumption, and reconstruction time, the BCC approach tends to outperform the Cartesian. 
+However, when compared to similar methods whose function spaces are sparse, our method is limited. 
+Specifically, our memory requirement grows as $O(n^3)$ where $n$ is the grid size, and the matrix solve is quite slow as $n$ is large. 
+While the regularization matrices on the BCC lattice are more sparse, and tend to converge faster, their size is still prohibitive for big $n$. 
+These limitations prevent us from going to the same resolutions that similar methods allow.
 
-One possible remedy to this, is to construct our solution within a wavelet or multiresolution space defined over the BCC lattice. Since the function we wish to reconstruct only needs a detailed representation near the surface or the model, one can expect much better memory consumption. However, this is still an open problem, and needs further research. Another possibility, would be to break the initial point-set up into smaller sets, reconstruct the surface over those sets, then join the resulting meshes. 
+One possible remedy to this, is to construct our solution within a wavelet or multiresolution space defined over the BCC lattice. 
+Since the function we wish to reconstruct only needs a detailed representation near the surface or the model, one can expect much better memory consumption. 
+However, this is still an open problem, and needs further research. 
+Another possibility, would be to break the initial point-set up into smaller sets, reconstruct the surface over those sets, then join the resulting meshes. 
 
 \subsection{Parameter Selection}
-In our experiments, choosing $\lambda_2$ to be small reduced smoothing as expected. However, we observed that when $\lambda_2$ passed below a threshold, the surface began to show ringing or aliasing artifacts. This is somewhat to be expected, as choosing a very thin smoothing will cause the approximation \EQ{eq:vdef} to break down. Additionally, the choice of $\lambda_1$, the compactness constraint, didn't seem to effect the solution much, it's only effect was on the choice of the parameter $\lambda_2$. That is, when $\lambda_1$ was large, $\lambda_2$ had to be large to obtain similar smooth solutions.
+In our experiments, choosing $\lambda_2$ to be small reduced smoothing as expected. 
+However, we observed that when $\lambda_2$ passed below a threshold, the surface began to show ringing or aliasing artifacts. 
+% What do I mean here? This is also very awkward...
+This is somewhat to be expected, as choosing a very thin smoothing will cause the approximation \EQ{eq:vdef} to break down. 
+Additionally, the choice of $\lambda_1$, the compactness constraint, didn't seem to effect the solution much, it's only effect was on the choice of the parameter $\lambda_2$. 
+That is, when $\lambda_1$ was large, $\lambda_2$ had to be large to obtain similar smooth solutions.
 
-The parameterized nature of our solution allows us to control the degree to which the initial data are smoothed. However, this also makes it difficult to conclusively compare methods. More investigation and exploration of the parameter space is required. Moreover, there also appears to be a point at which choosing $\lambda_2$ to be too small introduces aliasing artifacts.  
+The parameterized nature of our solution allows us to control the degree to which the initial data are smoothed.
+However, this also makes it difficult to conclusively compare methods. 
+More investigation and exploration of the parameter space is required. 
+Moreover, there also appears to be a point at which choosing $\lambda_2$ to be too small introduces aliasing artefacts.  
 
 
 \section{Conclusion}
-The results regarding reconstruction methods are not surprising, they show that the Poisson methods in question are not using the full representation power of their approximation spaces they use. Further, when the we focus on solely on the method presented in this paper, we see an improvement in reconstruction quality. Reconstruction space can play a significant role in the fidelity of surface reconstruction. From the optimality argument, it is not surprising to see that function spaces defined over the BCC lattice tend to reconstruct more details at equivalent resolutions when compared to those defined over the Cartesian lattice. Furthermore, reconstructing within shifted spaces seems to better reconstruct higher frequency details.
+The results regarding reconstruction methods are not surprising, they show that the Poisson methods in question are not using the full representation power of their approximation spaces they use. 
+Further, when the we focus on solely on the method presented in this paper, we see an improvement in reconstruction quality. 
+Reconstruction space can play a significant role in the fidelity of surface reconstruction. 
+From the optimality argument, it is not surprising to see that function spaces defined over the BCC lattice tend to reconstruct more details at equivalent resolutions when compared to those defined over the Cartesian lattice.
+Furthermore, reconstructing within shifted spaces seems to better reconstruct higher frequency details.
 
-The main hindrance for this method its cubic memory requirement, which prevents us from utilizing high density grids, and prevents the method from being used in practical settings verbatim. However, since no multiresolution techniques are currently available on non-Cartesian lattices in 3D, such topics are subject of future work. Additionally, a more complete analysis is required for parameter selection between the two lattices, and research into a faster (perhaps multiresolution) variational algorithm is needed.
+The main hindrance for this method its cubic memory requirement, which prevents us from utilizing high density grids, and prevents the method from being used in practical settings verbatim. 
+However, since no multiresolution techniques are currently available on non-Cartesian lattices in 3D, such topics are subject of future work. 
+Additionally, a more complete analysis is required for parameter selection between the two lattices, and research into a faster (perhaps multiresolution) variational algorithm is needed.

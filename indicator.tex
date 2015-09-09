@@ -1,12 +1,25 @@
 \section{Recovering the Indicator}
 
 \label{sec:recoveringX}
-Returning to the surface reconstruction approach, once the divergence of the smoothed vector field has been computed, the remaining step is to find a function that satisfies equation \EQ{eq:poisson}. As with the computation of a function's derivative, we also seek a filtering solution for the inverse of the Laplacian. We desire a filter $\mathbf{l}^{-1}[\mathbf{m}]$ that provides a fourth-order discretization of the inverse Laplacian operator $\Delta^{-1}$. This can be achieved by first obtaining a 1D filter $l$ that provides a fourth-order discretization of the 1D second-derivative operator. On the Cartesian and BCC lattices, application of this filter along the principal directions followed by a summation of the resulting coefficients, yields a fourth-order discretization of the Laplacian~\cite{usmanthesis}. The inverse Laplacian filter $\mathbf{l}^{-1}$ is simply the inverse of the resulting Laplacian filter. Our approximation $\inda(\vx)$ can now be written as {\small
+Returning to the surface reconstruction approach, once the divergence of the smoothed vector field has been computed, the remaining step is to find a function that satisfies equation \EQ{eq:poisson}. 
+As with the computation of a function's derivative, we also seek a filtering solution for the inverse of the Laplacian. 
+We desire a filter $\mathbf{l}^{-1}[\mathbf{m}]$ that provides a fourth-order discretization of the inverse Laplacian operator $\Delta^{-1}$. 
+This can be achieved by first obtaining a 1D filter $l$ that provides a fourth-order discretization of the 1D second-derivative operator. 
+On the Cartesian and BCC lattices, application of this filter along the principal directions followed by a summation of the resulting coefficients, yields a fourth-order discretization of the Laplacian~\cite{usmanthesis}. 
+The inverse Laplacian filter $\mathbf{l}^{-1}$ is simply the inverse of the resulting Laplacian filter. 
+Our approximation $\inda(\vx)$ can now be written as {\small
 \begin{equation}
 	\inda(\vx)  = \displaystyle\sum_{\mathbf{k}} (\mathbf{f} \ast \mathbf{l}^{-1})_k\varphi_k(\vx)
 \end{equation}}
-where $\mathbf{f}$ is the coefficient vector obtained in the previous step (cf. equation~\EQ{eq:divergenceViaFiltering}). The only stipulations to this is that the indicator function must satisfy zero Dirichlet boundary conditions (which is given as part of the problem definition). In practice, the filter $\mathbf{l}^{-1}$ does not need to be computed explicitly as it can be efficiently applied in the Fourier domain via a Discrete Sine Transform (DST) that only depends on the 1D filter $l$~\cite[Chapter 4]{usmanthesis}. Whereas the DST on the Cartesian lattice is well-defined, on the BCC lattice, we utilize a  modified DST that can be efficiently implemented via 1D DSTs~\cite{bccdst}. 
+where $\mathbf{f}$ is the coefficient vector obtained in the previous step (cf. equation~\EQ{eq:divergenceViaFiltering}). 
+The only stipulations to this is that the indicator function must satisfy zero Dirichlet boundary conditions (which is given as part of the problem definition). 
+In practice, the filter $\mathbf{l}^{-1}$ does not need to be computed explicitly as it can be efficiently applied in the Fourier domain via a Discrete Sine Transform (DST) that only depends on the 1D filter $l$~\cite[Chapter 4]{usmanthesis}. 
+Whereas the DST on the Cartesian lattice is well-defined, on the BCC lattice, we utilize a  modified DST that can be efficiently implemented via 1D DSTs~\cite{bccdst}. 
 %The particular filter $l$ used in our experiments can be found in \TA{tab:filters}.
 
 \subsection{Extracting the Iso-Contour}\label{sec:levelset}
-With a true indicator function, the level-set desired is the set of points $\vx$ such that $\inda(\vx) = \frac{1}{2}$, which can readily be visualized either via marching algorithms, ray tracing, or other volumetric visualization techniques. However, the constant scaling factor of equation \EQ{eq:vdef} offsets the appropriate level set at which to threshold the indicator function. A common approach that has shown to be quite robust in this situation \cite{fftk}, is to average the levelset obtained by evaluating the approximation at the input points ${1}/{|P|}\sum_{(\vx,\vn)\in P}{\tilde{\chi}(\vx)}.$ The reasoning for this, is that the iso-value at the input data should be on, or at least near the surface of the model. Once the iso-surface has been determined, the mesh is extracted via marching cubes, with the step density set to half the lattice scaling factor ($\frac{h}{2}$) % \cite{}
+With a true indicator function, the level-set desired is the set of points $\vx$ such that $\inda(\vx) = \frac{1}{2}$, which can readily be visualized either via marching algorithms, ray tracing, or other volumetric visualization techniques. 
+However, the constant scaling factor of equation \EQ{eq:vdef} offsets the appropriate level set at which to threshold the indicator function. 
+A common approach that has shown to be quite robust in this situation \cite{fftk}, is to average the levelset obtained by evaluating the approximation at the input points ${1}/{|P|}\sum_{(\vx,\vn)\in P}{\tilde{\chi}(\vx)}.$ 
+The reasoning for this, is that the iso-value at the input data should be on, or at least near the surface of the model. 
+Once the iso-surface has been determined, the mesh is extracted via marching cubes, with the step density set to half the lattice scaling factor ($\frac{h}{2}$) % \cite{}
