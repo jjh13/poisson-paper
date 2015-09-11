@@ -191,17 +191,17 @@ More generally and relevant to our purposes, they have also been shown to reduce
 	\centering
 	% Some packages, such as MDW tools, offer better commands for making tables
 	% than the plain LaTeX2e tabular which is used here.
-	\begin{tabular}{|r||c||c|c|}
-		\hline
-		Filter & Notation & Filter wieghts  \\
-		\hline
-		\hline
+	\begin{tabular}{r|c|c c}
+		\toprule
+		Filter & Notation & Filter wieghts  \\		
+    \midrule
 		Derivative & $d[n]$ & $[\frac{-1}{12} \ \frac{2}{3} \ 0 \ \frac{-2}{3} \ \frac{1}{12}]$ \\
-		\hline
+    \midrule
 		Shifted Derivative & $s[n]$  & $[\frac{-1}{24} \ \frac{9}{8} \ \frac{-9}{8} \ \frac{1}{24} \ 0]$ \\
-		\hline
+		
+    \midrule
 		Second Derivative & $l[n]$  & $[\frac{-1}{12} \ \frac{4}{3} \ \frac{-5}{2} \ \frac{4}{3} \ \frac{-1}{12}]$ \\
-		\hline
+	\bottomrule
 	\end{tabular}
 	\caption{Filters used in our experiments. These filters are applied along the principal lattice directions.}
 	\label{tab:d_filters}

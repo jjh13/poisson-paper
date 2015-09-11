@@ -151,7 +151,7 @@ When $n > s$, the box spline is recursively defined as {\small
 	M_{\mathbf{\Xii}}(\vx) := \int_0^1{\!M_{\mathbf{\Xii/\xi}_n}(\vx - t\mathbf{\xi}_n)} \mathrm{d}t,
 \end{equation}}
 where ${\mathbf{\Xii/\xi}_n}$ is the matrix obtained by removing the column vector $\xi_n$ from $\mathbf{\Xii}$. 
-Box splines are a natural fit for our purposes, and are chosen to span our function spaces.
+Box splines are a natural fit for our purposes, and are chosen as bases for our reconstruction spaces.
 One motivating factor that encourages the use of box splines on the BCC lattice over the Cartesian lattice is that the support of the box splines on the BCC lattice contains less lattice sites as opposed to their Cartesian counterparts. 
 At the same time, they maintain the same order of accuracy and smoothness. 
 This implies that one should expect roughly the same quality reconstruction, with less memory accesses per reconstructed value.
@@ -193,7 +193,7 @@ The second order Beppo-Levi norm can be thought to measure the ``smoothness'' of
 We propose that the smoothed normal field should also minimize the inner product of the function with itself. 
 This has the physical interpretation of forcing the solution to be close to zero everywhere except near the input points. 
 Our proposed cost functional is then $E(g) := \lambda_1 \left|\left|{g}\right|\right| + \lambda_2 \bln{2}{g}.$ 
-Here, $\lambda_1$ controls the amount to which the function is penalized for large coefficient values. 
+Here, $\lambda_1$ controls the penalization of the function large coefficient values. 
 When combined with the interpolation constraint, this imposes the behavior of forcing the function to be zero away from the surface. 
 The parameter $\lambda_2$ controls the smoothness of the resulting normal field.
 %\begin{equation} \label{eq:functional}
